@@ -1,0 +1,4650 @@
+fileFormatVersion: 2
+guid: b6522f3199a2172409f832c9d0672534
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3520381303327764749
+    second: GuiControllers_0
+  - first:
+      213: -1122851525249300991
+    second: GuiControllers_1
+  - first:
+      213: 4704561987475025166
+    second: GuiControllers_2
+  - first:
+      213: 4320146641664900364
+    second: XboxController_0
+  - first:
+      213: -561065296621369082
+    second: XboxController_2
+  - first:
+      213: 1879500679163586791
+    second: XboxController_3
+  - first:
+      213: 1969450004411414365
+    second: XboxController_4
+  - first:
+      213: -8839221857746703643
+    second: XboxController_5
+  - first:
+      213: 5502801723447471591
+    second: XboxController_6
+  - first:
+      213: 7401722677063894415
+    second: XboxController_7
+  - first:
+      213: -6705509945808685596
+    second: XboxController_8
+  - first:
+      213: 1104681043468319188
+    second: XboxController_9
+  - first:
+      213: 4883122293699631147
+    second: XboxController_10
+  - first:
+      213: 1743118474309783000
+    second: XboxController_11
+  - first:
+      213: -1802882149546071856
+    second: XboxController_12
+  - first:
+      213: 214082247981984806
+    second: XboxController_13
+  - first:
+      213: 200237507434458626
+    second: XboxController_14
+  - first:
+      213: 1664452999438587556
+    second: XboxController_15
+  - first:
+      213: 601182506252549338
+    second: XboxController_16
+  - first:
+      213: -5440129303227358952
+    second: XboxController_17
+  - first:
+      213: 8468557130144328317
+    second: XboxController_19
+  - first:
+      213: -1442172211273935197
+    second: XboxController_21
+  - first:
+      213: 1356834740906899346
+    second: XboxController_22
+  - first:
+      213: -3995428106972532215
+    second: XboxController_23
+  - first:
+      213: -2927293282940463440
+    second: XboxController_24
+  - first:
+      213: 6116153025745184076
+    second: XboxController_25
+  - first:
+      213: 2030142284074837190
+    second: XboxController_26
+  - first:
+      213: -4636128328998790598
+    second: XboxController_27
+  - first:
+      213: -7322207437015994904
+    second: XboxController_18
+  - first:
+      213: 1363022150351393644
+    second: XboxController_28
+  - first:
+      213: 4870085740338012891
+    second: XboxController_1
+  - first:
+      213: -2935152435959904133
+    second: XboxController_20
+  - first:
+      213: -1285547372230545716
+    second: XboxController_29
+  - first:
+      213: -2353741067604649145
+    second: XboxController_30
+  - first:
+      213: -133517630409714806
+    second: XboxController_31
+  - first:
+      213: -3909796398854550621
+    second: XboxController_32
+  - first:
+      213: -3365297072824489297
+    second: XboxController_33
+  - first:
+      213: 56689156477939084
+    second: XboxController_34
+  - first:
+      213: -6165397757560253085
+    second: XboxController_35
+  - first:
+      213: -6179061417286733961
+    second: XboxController_36
+  - first:
+      213: 4387860427030421858
+    second: XboxController_37
+  - first:
+      213: -8400442219421065888
+    second: XboxController_38
+  - first:
+      213: -6240340481202201715
+    second: XboxController_39
+  - first:
+      213: 441282903127712465
+    second: XboxController_40
+  - first:
+      213: 3689861074793889965
+    second: XboxController_41
+  - first:
+      213: -1823402121622647262
+    second: XboxController_42
+  - first:
+      213: 7500996971867541207
+    second: XboxController_43
+  - first:
+      213: -758324022479699474
+    second: XboxController_44
+  - first:
+      213: 530850060283433728
+    second: PlaystationController_0
+  - first:
+      213: 3775295265062846505
+    second: PlaystationController_1
+  - first:
+      213: 866108943782757002
+    second: PlaystationController_2
+  - first:
+      213: 3925445383214428407
+    second: PlayStationController_3
+  - first:
+      213: 5068503893589078664
+    second: PlayStationController_4
+  - first:
+      213: 726572301146606146
+    second: PlayStationController_5
+  - first:
+      213: 1653724102011572307
+    second: PlayStationController_6
+  - first:
+      213: -4600438869930898279
+    second: PlaystationController_7
+  - first:
+      213: 2503786322265639350
+    second: PlaystationController_8
+  - first:
+      213: 2900192384692690911
+    second: PlaystationController_9
+  - first:
+      213: 6331181476592737361
+    second: PlaystationController_10
+  - first:
+      213: 7829421548737763007
+    second: PlaystationController_11
+  - first:
+      213: -3430338236764515309
+    second: PlaystationController_12
+  - first:
+      213: 5027242891198917090
+    second: PlaystationController_13
+  - first:
+      213: -922297117239817869
+    second: PlaystationController_14
+  - first:
+      213: 5288956710337421038
+    second: PlaystationController_15
+  - first:
+      213: 5907455544580946001
+    second: PlaystationController_16
+  - first:
+      213: -6204193253044195215
+    second: PlaystationController_17
+  - first:
+      213: -2579784341966481945
+    second: PlaystationController_18
+  - first:
+      213: 1823517727411231811
+    second: PlaystationController_19
+  - first:
+      213: 8579268672782269161
+    second: PlayStationController_20
+  - first:
+      213: 3895868637401870756
+    second: PlayStationController_21
+  - first:
+      213: 2079731359538025165
+    second: PlaystationController_22
+  - first:
+      213: 7382417105261577141
+    second: PlayStationController_23
+  - first:
+      213: 914751479288873773
+    second: PlaystationController_24
+  - first:
+      213: 7868211343686297550
+    second: PlaystationController_25
+  - first:
+      213: -7476469367625914493
+    second: PlayStationController_26
+  - first:
+      213: -7622435778095656584
+    second: PlayStationController_27
+  - first:
+      213: 695129572321758918
+    second: PlayStationController_28
+  - first:
+      213: 5103997758178109140
+    second: PlayStationController_29
+  - first:
+      213: 2061912357639510440
+    second: PlaystationController_30
+  - first:
+      213: -603710383412038829
+    second: PlaystationController_31
+  - first:
+      213: 7401341699073961370
+    second: PlaystationController_32
+  - first:
+      213: 7554274402006849950
+    second: PlaystationController_33
+  - first:
+      213: -6149280183035928402
+    second: PlaystationController_34
+  - first:
+      213: 8455740885363444534
+    second: PlaystationController_35
+  - first:
+      213: 2799138813817556033
+    second: PlaystationController_36
+  - first:
+      213: 6520094939755964492
+    second: PlaystationController_37
+  - first:
+      213: -1101645791989260147
+    second: PlaystationController_38
+  - first:
+      213: 8486738476219348078
+    second: PlaystationController_39
+  - first:
+      213: 4592778578284085173
+    second: PlaystationController_40
+  - first:
+      213: 209500173534389827
+    second: PlaystationController_41
+  - first:
+      213: 8314585476343656406
+    second: PlayStationController_42
+  - first:
+      213: 4733172248969648111
+    second: PlaystationController_43
+  - first:
+      213: -5201521235409816239
+    second: PlayStationController_44
+  - first:
+      213: -2386627712390348090
+    second: SwitchController_0
+  - first:
+      213: -8576118360882278189
+    second: SwitchController_1
+  - first:
+      213: 883382057958891478
+    second: SwitchController_2
+  - first:
+      213: 265937313528965641
+    second: SwitchController_3
+  - first:
+      213: 329319795925690879
+    second: SwitchController_4
+  - first:
+      213: 7163999831176851296
+    second: SwitchController_5
+  - first:
+      213: -6932911033135837655
+    second: SwitchController_6
+  - first:
+      213: -5216660482946625277
+    second: SwitchController_7
+  - first:
+      213: -237796638388882373
+    second: SwitchController_8
+  - first:
+      213: 6945180048056264962
+    second: SwitchController_9
+  - first:
+      213: -7805875586836574446
+    second: SwitchController_10
+  - first:
+      213: 7949656616394000594
+    second: SwitchController_11
+  - first:
+      213: 8860865117594090839
+    second: SwitchController_12
+  - first:
+      213: -5676123302434949187
+    second: SwitchController_13
+  - first:
+      213: -6314603649432636802
+    second: SwitchController_14
+  - first:
+      213: -6776819344537564861
+    second: SwitchController_15
+  - first:
+      213: 5147568090673167874
+    second: SwitchController_16
+  - first:
+      213: -7346460828537645311
+    second: SwitchController_17
+  - first:
+      213: -2276898669903635655
+    second: SwitchController_18
+  - first:
+      213: 714370128072505336
+    second: SwitchController_19
+  - first:
+      213: -188215513618401960
+    second: SwitchController_20
+  - first:
+      213: -6372146285365961882
+    second: SwitchController_21
+  - first:
+      213: 53857520898474042
+    second: SwitchController_22
+  - first:
+      213: 6228096816077320374
+    second: SwitchController_23
+  - first:
+      213: -8498533714249316330
+    second: SwitchController_24
+  - first:
+      213: -6397748433240481169
+    second: SwitchController_25
+  - first:
+      213: 143349945413160618
+    second: SwitchController_26
+  - first:
+      213: 3401845975781110750
+    second: SwitchController_27
+  - first:
+      213: 4870981848517542056
+    second: SwitchController_28
+  - first:
+      213: -7370765234832157405
+    second: SwitchController_29
+  - first:
+      213: -6308581883743034747
+    second: SwitchController_30
+  - first:
+      213: 8482816703102805634
+    second: SwitchController_31
+  - first:
+      213: 4826948920565928229
+    second: SwitchController_32
+  - first:
+      213: 1806943445834967499
+    second: SwitchController_33
+  - first:
+      213: -8116472662008128279
+    second: SwitchController_34
+  - first:
+      213: -7887754026654674248
+    second: SwitchController_35
+  - first:
+      213: 3093925323256416139
+    second: SwitchController_36
+  - first:
+      213: 2371531640812035209
+    second: SwitchController_37
+  - first:
+      213: -594731830866438668
+    second: SwitchController_38
+  - first:
+      213: -4847884759643248223
+    second: SwitchController_39
+  - first:
+      213: -5571662613540555741
+    second: SwitchController_41
+  - first:
+      213: -7604337641151710288
+    second: SwitchController_42
+  - first:
+      213: 344242630129823857
+    second: SwitchController_44
+  - first:
+      213: -6176994757610047556
+    second: SwitchController_45
+  - first:
+      213: -822617372614067249
+    second: SwitchController_46
+  - first:
+      213: -53307708117309190
+    second: SwitchController_48
+  - first:
+      213: 3503113356417774196
+    second: SwitchController_49
+  - first:
+      213: 1541297557151391630
+    second: SwitchController_50
+  - first:
+      213: 1078074958006836734
+    second: SwitchController_52
+  - first:
+      213: 6151076212400425619
+    second: SwitchController_55
+  - first:
+      213: -8416490121581328627
+    second: SwitchController_40
+  - first:
+      213: -749548694124793726
+    second: SwitchController_43
+  - first:
+      213: -6686697355125404156
+    second: SwitchController_47
+  - first:
+      213: -1711258957506022486
+    second: SwitchController_51
+  - first:
+      213: 5175102614005541780
+    second: PlaystationController_45
+  - first:
+      213: -5202043583991940156
+    second: PlaystationController_46
+  - first:
+      213: 4010062404171739568
+    second: PlaystationController_47
+  - first:
+      213: 5553741883361582003
+    second: PlaystationController_48
+  - first:
+      213: -2212971471702449060
+    second: PlaystationController_49
+  - first:
+      213: -1172167809661281816
+    second: XboxController_45
+  - first:
+      213: 1550755901524749071
+    second: XboxController_46
+  - first:
+      213: 3052001090781899276
+    second: XboxController_47
+  - first:
+      213: -2671246551717052846
+    second: XboxController_48
+  - first:
+      213: -6962740592318817011
+    second: XboxController_49
+  - first:
+      213: -3942392971136267317
+    second: D-pad_0
+  - first:
+      213: -1180890173399140381
+    second: D-pad_1
+  - first:
+      213: 6870651054826847947
+    second: D-pad_2
+  - first:
+      213: 8681573536271626693
+    second: D-pad_3
+  - first:
+      213: 2278375204223930598
+    second: D-pad_4
+  - first:
+      213: -2423952471734697533
+    second: Thumbstick_0
+  - first:
+      213: 222126835416035965
+    second: Thumbstick_1
+  - first:
+      213: 3244991003105109727
+    second: Thumbstick_2
+  - first:
+      213: 7410004818330130684
+    second: Thumbstick_3
+  - first:
+      213: 3719796991258390400
+    second: Thumbstick_4
+  - first:
+      213: -8552464877829814573
+    second: Thumbstick_5
+  - first:
+      213: -6985535384166161708
+    second: Thumbstick_6
+  - first:
+      213: -6274915339299534678
+    second: Thumbstick_7
+  - first:
+      213: 9022587618347217103
+    second: Thumbstick_8
+  - first:
+      213: -8701365499710760286
+    second: Thumbstick_9
+  - first:
+      213: -5246572578927467390
+    second: Thumbstick_10
+  - first:
+      213: -7206772087153207508
+    second: Thumbstick_11
+  - first:
+      213: 8441264595124018821
+    second: Thumbstick_12
+  - first:
+      213: -6732273575223798810
+    second: Thumbstick_13
+  - first:
+      213: 7918447007999462281
+    second: Thumbstick_14
+  - first:
+      213: -4820682495474381084
+    second: Thumbstick_15
+  - first:
+      213: 6185575783231873102
+    second: Thumbstick_16
+  - first:
+      213: -1764517387361133887
+    second: Thumbstick_17
+  - first:
+      213: -1616175548640691187
+    second: Thumbstick_18
+  - first:
+      213: 589291501503571887
+    second: Thumbstick_19
+  - first:
+      213: 2507270996260102854
+    second: Thumbstick_20
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 1
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 8
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 1
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Xbox_Dpad_Up_Highlighted
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 352
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e5793a4b3e31f2a0800000000000000
+      internalID: -6705509945808685596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Xbox_Dpad_Up
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 320
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d979026e8d945f00800000000000000
+      internalID: 1104681043468319188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Xbox_Dpad_Left_Highlighted
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 312
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b28d1ceaad554c340800000000000000
+      internalID: 4883122293699631147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Xbox_Dpad_Right_Highlighted
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 312
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ed20f8712b426a90800000000000000
+      internalID: -7322207437015994904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Xbox_Trigger_LT
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 336
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e8a6a0e8e3551a10800000000000000
+      internalID: 1879500679163586791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Xbox_Trigger_RT
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 336
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5775db2854e45b10800000000000000
+      internalID: 1969450004411414365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Xbox_Trigger_LT_Pressed
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 336
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5eaa3267d86c45580800000000000000
+      internalID: -8839221857746703643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Xbox_Trigger_RT_Pressed
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 336
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ed6e7b2301ed5c40800000000000000
+      internalID: 5502801723447471591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Xbox_Button_Select
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 328
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f85c85c0f8338b660800000000000000
+      internalID: 7401722677063894415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Xbox_Button_Start
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 328
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62ceea79ba298f200800000000000000
+      internalID: 214082247981984806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Xbox_Button_Select_Pressed
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 328
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20e275db3f267c200800000000000000
+      internalID: 200237507434458626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Xbox_Button_Start_Pressed
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 328
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a6ded03f23591710800000000000000
+      internalID: 1664452999438587556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Xbox_Bumper_LB
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 320
+        width: 16
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adcbc52ed44d75800800000000000000
+      internalID: 601182506252549338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Xbox_Bumper_RB
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 320
+        width: 16
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 811a0f4c837c084b0800000000000000
+      internalID: -5440129303227358952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Xbox_Bumper_LB_Pressed
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 320
+        width: 16
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7aaa5e67db568570800000000000000
+      internalID: 8468557130144328317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Xbox_Bumper_RB_Pressed
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 320
+        width: 16
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b78ccfc196e3447d0800000000000000
+      internalID: -2935152435959904133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Xbox_Trigger_LT_Highlighted
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 304
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a6d31ac3006cfbe0800000000000000
+      internalID: -1442172211273935197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Xbox_Trigger_RT_Highlighted
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 304
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2973aae020274d210800000000000000
+      internalID: 1356834740906899346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Xbox_Trigger_LT_Pressed_Highlighted
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 304
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9027a4e2e436d88c0800000000000000
+      internalID: -3995428106972532215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Xbox_Trigger_RT_Pressed_Highlighted
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 304
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b652f4c44a2067d0800000000000000
+      internalID: -2927293282940463440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Xbox_Button_Select_Highlighted
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 296
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c45e87ba5c0f0e450800000000000000
+      internalID: 6116153025745184076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Xbox_Button_Start_Highlighted
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 296
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c4e7c5b6a38c2c10800000000000000
+      internalID: 2030142284074837190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Xbox_Button_Select_Pressed_Highlighted
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 296
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3ad6e819d929afb0800000000000000
+      internalID: -4636128328998790598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Xbox_Button_Start_Pressed_Highlighted
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 296
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c631fa49c6d6ae210800000000000000
+      internalID: 1363022150351393644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Xbox_Bumper_LB_Highlighted
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 288
+        width: 16
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccee240e971d82ee0800000000000000
+      internalID: -1285547372230545716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Xbox_Bumper_RB_Highlighted
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 288
+        width: 16
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74b1d2c38f4d55fd0800000000000000
+      internalID: -2353741067604649145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Xbox_Bumper_LB_Pressed_Highlighted
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 288
+        width: 16
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a835d2c2c66a52ef0800000000000000
+      internalID: -133517630409714806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Xbox_Bumper_RB_Pressed_Highlighted
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 288
+        width: 16
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ab4c26e3ec9db9c0800000000000000
+      internalID: -3909796398854550621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Xbox_Button_Y
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 336
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd2ea829d25069340800000000000000
+      internalID: 4870085740338012891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Xbox_Button_Y_Pressed
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 336
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 609851bd512b638f0800000000000000
+      internalID: -561065296621369082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Xbox_Button_X
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 328
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ddc7a6540dc03810800000000000000
+      internalID: 1743118474309783000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Xbox_Button_B
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 328
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d8e960bc30eaf6e0800000000000000
+      internalID: -1802882149546071856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Xbox_Button_X_Pressed
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 328
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: faa62a274201c41d0800000000000000
+      internalID: -3365297072824489297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Xbox_Button_B_Pressed
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 328
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8deb7acc7669c000800000000000000
+      internalID: 56689156477939084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Xbox_Button_A
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 320
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36591a9b76b107aa0800000000000000
+      internalID: -6165397757560253085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Xbox_Button_A_Pressed
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 320
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77f6d4901609f3aa0800000000000000
+      internalID: -6179061417286733961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Xbox_Button_Y_Highlighted
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 304
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 261642d7fcfc4ec30800000000000000
+      internalID: 4387860427030421858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Xbox_Button_Y_Pressed_Highlighted
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 304
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06d96331f42ab6b80800000000000000
+      internalID: -8400442219421065888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Xbox_Button_X_Highlighted
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 296
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8bd374256bd569a0800000000000000
+      internalID: -6240340481202201715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Xbox_Button_B_Highlighted
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 296
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d2616e5670cf1600800000000000000
+      internalID: 441282903127712465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Xbox_Button_X_Pressed_Highlighted
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 296
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da081a90915053330800000000000000
+      internalID: 3689861074793889965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Xbox_Button_B_Pressed_Highlighted
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 296
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22e0df16e69f1b6e0800000000000000
+      internalID: -1823402121622647262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Xbox_Button_A_Highlighted
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 288
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7de02710105e81860800000000000000
+      internalID: 7500996971867541207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Xbox_Button_A_Pressed_Highlighted
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 288
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee1c37fb154e975f0800000000000000
+      internalID: -758324022479699474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayStation_Button_Triangle
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 208
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 920094c8a0b846430800000000000000
+      internalID: 3775295265062846505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayStation_Button_Triangle_Pressed
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 208
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a82c5fade79050c00800000000000000
+      internalID: 866108943782757002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayStation_Trigger_L2
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 208
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f071b337cbf97630800000000000000
+      internalID: 3925445383214428407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayStation_Trigger_R2
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 208
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 882bf08ef61f65640800000000000000
+      internalID: 5068503893589078664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayStation_Trigger_L2_Pressed
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 208
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24a4b7988ad451a00800000000000000
+      internalID: 726572301146606146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayStation_Trigger_R2_Pressed
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 208
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 350d6e81f4533f610800000000000000
+      internalID: 1653724102011572307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayStation_Button_Square
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 200
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99c8ed2d835f720c0800000000000000
+      internalID: -4600438869930898279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayStation_Button_Circle
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 200
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b9002cf46c3fb220800000000000000
+      internalID: 2503786322265639350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayStation_Button_Square_Pressed
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 200
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdf96e5ab9d8f3820800000000000000
+      internalID: 2900192384692690911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayStation_Button_Circle_Pressed
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 200
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15cd7d84200ecd750800000000000000
+      internalID: 6331181476592737361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayStation_Button_Select
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 200
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb69d41aa61b7ac60800000000000000
+      internalID: 7829421548737763007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayStation_Button_Start
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 200
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31416326c8df460d0800000000000000
+      internalID: -3430338236764515309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayStation_Button_Select_Pressed
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 200
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e9e48926ca54c540800000000000000
+      internalID: 5027242891198917090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayStation_Button_Start_Pressed
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 200
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 379cd8d88a75333f0800000000000000
+      internalID: -922297117239817869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayStation_Dpad_Up_Highlighted
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 224
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eee94102b16266940800000000000000
+      internalID: 5288956710337421038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayStation_Dpad_Up
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 192
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 158b82dc48f7bf150800000000000000
+      internalID: 5907455544580946001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayStation_Dpad_Left_Highlighted
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 184
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 170fc6a8b1746e9a0800000000000000
+      internalID: -6204193253044195215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayStation_Button_X
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 192
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e519fb2fc3c23cd0800000000000000
+      internalID: -2579784341966481945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayStation_Button_X_Pressed
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 192
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34c59ff26bf6e4910800000000000000
+      internalID: 1823517727411231811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayStation_Trigger_L1
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 192
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9eaf2d9276faf0770800000000000000
+      internalID: 8579268672782269161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayStation_Trigger_R1
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 192
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a17cef62e7e01630800000000000000
+      internalID: 3895868637401870756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayStation_Trigger_L1_Pressed
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 192
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc2118117a0bcdc10800000000000000
+      internalID: 2079731359538025165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayStation_Trigger_R1_Pressed
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 192
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b342e65e3d937660800000000000000
+      internalID: 7382417105261577141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayStation_Button_Triangle_Highlighted
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 176
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d23c6c4bf99d1bc00800000000000000
+      internalID: 914751479288873773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayStation_Button_Triangle_Pressed_Highlighted
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 176
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec7ee1e8780813d60800000000000000
+      internalID: 7868211343686297550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayStation_Trigger_L2_Highlighted
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 176
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3876190e8be3e3890800000000000000
+      internalID: -7476469367625914493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayStation_Trigger_R2_Highlighted
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 176
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87151639b0ba73690800000000000000
+      internalID: -7622435778095656584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayStation_Trigger_L2_Pressed_Highlighted
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 176
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ce8b1fb9a895a900800000000000000
+      internalID: 695129572321758918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayStation_Trigger_R2_Pressed_Highlighted
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 176
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d6a89e3bea05d640800000000000000
+      internalID: 5103997758178109140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayStation_Button_Square_Highlighted
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 168
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a957136d526d9c10800000000000000
+      internalID: 2061912357639510440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayStation_Button_Circle_Highlighted
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 168
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 353b289da903f97f0800000000000000
+      internalID: -603710383412038829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayStation_Button_Square_Pressed_Highlighted
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 168
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9de692bf09d6b660800000000000000
+      internalID: 7401341699073961370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayStation_Button_Circle_Pressed_Highlighted
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 168
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e99d17b5b8c26d860800000000000000
+      internalID: 7554274402006849950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayStation_Button_Select_Highlighted
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 168
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea06bc9f04e59aaa0800000000000000
+      internalID: -6149280183035928402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayStation_Button_Start_Highlighted
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 168
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63bc5d8e883d85570800000000000000
+      internalID: 8455740885363444534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayStation_Button_Select_Pressed_Highlighted
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 168
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14c8a92bbe988d620800000000000000
+      internalID: 2799138813817556033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayStation_Button_Start_Pressed_Highlighted
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 168
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c48e9f18dc70c7a50800000000000000
+      internalID: 6520094939755964492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayStation_Dpad_Right_Highlighted
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 184
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d802d2c2dfa26b0f0800000000000000
+      internalID: -1101645791989260147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayStation_Button_X_Highlighted
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 160
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e64b1b0fda3f6c570800000000000000
+      internalID: 8486738476219348078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayStation_Button_X_Pressed_Highlighted
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 160
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bf75aa88c3dcbf30800000000000000
+      internalID: 4592778578284085173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayStation_Trigger_L1_Highlighted
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 160
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34666ef3c4b48e200800000000000000
+      internalID: 209500173534389827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayStation_Trigger_R1_Highlighted
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 160
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dfe51c2077536370800000000000000
+      internalID: 8314585476343656406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayStation_Trigger_L1_Pressed_Highlighted
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 160
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe79290451b9fa140800000000000000
+      internalID: 4733172248969648111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayStation_Trigger_R1_Pressed_Highlighted
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 160
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1553fb7cefb70d7b0800000000000000
+      internalID: -5201521235409816239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Switch_Trigger_ZL
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 80
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c2cedf8dbef0eed0800000000000000
+      internalID: -2386627712390348090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Switch_Trigger_ZR
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 80
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d018ebf9c18bf880800000000000000
+      internalID: -8576118360882278189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Switch_Trigger_ZL_Pressed
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 80
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dfd7952d47624c00800000000000000
+      internalID: 883382057958891478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Switch_Trigger_ZR_Pressed
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 80
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90a6a61e39cc0b300800000000000000
+      internalID: 265937313528965641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Switch_Button_X
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 80
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff9a7ad0c9af19400800000000000000
+      internalID: 329319795925690879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Switch_Button_X_Pressed
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 80
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06f2144d3e3ab6360800000000000000
+      internalID: 7163999831176851296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Switch_Button_Y
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 72
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92e4d82c52a59cf90800000000000000
+      internalID: -6932911033135837655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Switch_Button_A
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 72
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30116280ee2ba97b0800000000000000
+      internalID: -5216660482946625277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Switch_Button_Y_Pressed
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 72
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b347c00a73d23bcf0800000000000000
+      internalID: -237796638388882373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Switch_Button_A_Pressed
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 72
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2092681e47c326060800000000000000
+      internalID: 6945180048056264962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Switch_Button_Minus
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 74
+        width: 8
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21f46b5d285fba390800000000000000
+      internalID: -7805875586836574446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Switch_Button_Plus
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 72
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d88f72d29ad25e60800000000000000
+      internalID: 7949656616394000594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Switch_Button_Minus_Pressed
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 74
+        width: 8
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75d78d8a0ed18fa70800000000000000
+      internalID: 8860865117594090839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Switch_Button_Plus_Pressed
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 72
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db73c090eeb5a31b0800000000000000
+      internalID: -5676123302434949187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Switch_Button_B
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 64
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e72be22ef650e58a0800000000000000
+      internalID: -6314603649432636802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Switch_Button_B_Pressed
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 64
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 349c7d516b6e3f1a0800000000000000
+      internalID: -6776819344537564861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Switch_Trigger_L
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 64
+        width: 16
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20eb5bdc7e5df6740800000000000000
+      internalID: 5147568090673167874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Switch_Trigger_R
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 64
+        width: 16
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10711b6bcc02c0a90800000000000000
+      internalID: -7346460828537645311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Switch_Trigger_L_Pressed
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 64
+        width: 16
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93b95d629b4d660e0800000000000000
+      internalID: -2276898669903635655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Switch_Trigger_R_Pressed
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 64
+        width: 16
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f779e9b8d3f9e900800000000000000
+      internalID: 714370128072505336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Switch_Trigger_ZL_Highlighted
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 48
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 855be81dcf2536df0800000000000000
+      internalID: -188215513618401960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Switch_Trigger_ZR_Highlighted
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 48
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66bdfebe6b69197a0800000000000000
+      internalID: -6372146285365961882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Switch_Trigger_ZL_Pressed_Highlighted
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 48
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3003a141275fb000800000000000000
+      internalID: 53857520898474042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Switch_Trigger_ZR_Pressed_Highlighted
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 48
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b0b70d6e05ae6650800000000000000
+      internalID: 6228096816077320374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Switch_Button_X_Highlighted
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 48
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6180d723d942f0a80800000000000000
+      internalID: -8498533714249316330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Switch_Button_X_Pressed_Highlighted
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 48
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f62a36a52b1a637a0800000000000000
+      internalID: -6397748433240481169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Switch_Button_Y_Highlighted
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 40
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aae4cee04084df100800000000000000
+      internalID: 143349945413160618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Switch_Button_A_Highlighted
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 40
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed3760724e8c53f20800000000000000
+      internalID: 3401845975781110750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Switch_Button_Y_Pressed_Highlighted
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 40
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a083440f24399340800000000000000
+      internalID: 4870981848517542056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Switch_Button_A_Pressed_Highlighted
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 40
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 325d7072218c5b990800000000000000
+      internalID: -7370765234832157405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Switch_Button_Minus_Highlighted
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 42
+        width: 8
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5822807733a6378a0800000000000000
+      internalID: -6308581883743034747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Switch_Button_Plus_Highlighted
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 40
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 286613bf8d409b570800000000000000
+      internalID: 8482816703102805634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Switch_Button_Minus_Pressed_Highlighted
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 42
+        width: 8
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 521994f0874ccf240800000000000000
+      internalID: 4826948920565928229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Switch_Button_Plus_Pressed_Highlighted
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 40
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc9a63a8d7d831910800000000000000
+      internalID: 1806943445834967499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Switch_Button_B_Highlighted
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 32
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ec16d7ed1f7c5f80800000000000000
+      internalID: -8116472662008128279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Switch_Button_B_Pressed_Highlighted
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 32
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b2579df081198290800000000000000
+      internalID: -7887754026654674248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Switch_Trigger_L_Highlighted
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 32
+        width: 16
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b87c84e60b4dfea20800000000000000
+      internalID: 3093925323256416139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Switch_Trigger_R_Highlighted
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 32
+        width: 16
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98c5330667f59e020800000000000000
+      internalID: 2371531640812035209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Switch_Trigger_L_Pressed_Highlighted
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 32
+        width: 16
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f596940d861fb7f0800000000000000
+      internalID: -594731830866438668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Switch_Trigger_R_Pressed_Highlighted
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 32
+        width: 16
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a92f6d0f7ad8bcb0800000000000000
+      internalID: -4847884759643248223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Switch_Dpad_Up_Pressed_Highlighted
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 96
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bb35037437f77690800000000000000
+      internalID: -7604337641151710288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Switch_Dpad_Up_Pressed
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 96
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1703f6529def6c400800000000000000
+      internalID: 344242630129823857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Switch_Dpad_Left_Pressed_Highlighted
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 56
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb7f33dbef7e64aa0800000000000000
+      internalID: -6176994757610047556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Switch_Dpad_Right_Pressed_Highlighted
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 56
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcbf547abd97594f0800000000000000
+      internalID: -822617372614067249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Switch_Dpad_Left_Pressed
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 56
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af8a0e10cec924ff0800000000000000
+      internalID: -53307708117309190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Switch_Dpad_Down
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 48
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4723531990f8d9030800000000000000
+      internalID: 3503113356417774196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Switch_Dpad_Right_Pressed
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 56
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8f9f2b46f9c36510800000000000000
+      internalID: 1541297557151391630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Switch_Dpad_Down_Pressed
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 16
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efddd31667716fe00800000000000000
+      internalID: 1078074958006836734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Switch_Dpad_Up
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 64
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d078f8fa3de923b80800000000000000
+      internalID: -8416490121581328627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Switch_Dpad_Left
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 56
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28075d81f611995f0800000000000000
+      internalID: -749548694124793726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Switch_Dpad_Right
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 56
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40ec433ee241433a0800000000000000
+      internalID: -6686697355125404156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Switch_Dpad_Down_Pressed_Highlighted
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 16
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa3f5277b036048e0800000000000000
+      internalID: -1711258957506022486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayStation_Dpad_Left
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 184
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49beef79868a1d740800000000000000
+      internalID: 5175102614005541780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayStation_Dpad_Center
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 184
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cb7f060ce0aec7b0800000000000000
+      internalID: -5202043583991940156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayStation_Dpad_Right
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 184
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b13ec7a28a96a730800000000000000
+      internalID: 4010062404171739568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayStation_Dpad_Down
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 176
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bbd9f361dad21d40800000000000000
+      internalID: 5553741883361582003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayStation_Dpad_Down_Highlighted
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 144
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c542a1bdb22f941e0800000000000000
+      internalID: -2212971471702449060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Xbox_Dpad_Left
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 312
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e9ddf7669f9bbfe0800000000000000
+      internalID: -1172167809661281816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Xbox_Dpad_Center
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 312
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0b29b3b644658510800000000000000
+      internalID: 1550755901524749071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Xbox_Dpad_Right
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 312
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0ae82662d2ea5a20800000000000000
+      internalID: 3052001090781899276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Xbox_Dpad_Down
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 304
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25efa610a63ddead0800000000000000
+      internalID: -2671246551717052846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Xbox_Dpad_Down_Highlighted
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 272
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0dd4ab42506f5f90800000000000000
+      internalID: -6962740592318817011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thumbstick_L_Up
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 288
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c1c2d1d1146c5ed0800000000000000
+      internalID: -2423952471734697533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thumbstick_R_Up
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 288
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d72fd001e27251300800000000000000
+      internalID: 222126835416035965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thumbstick_L_Left
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 272
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd62b67ef16880d20800000000000000
+      internalID: 3244991003105109727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thumbstick_L_Center
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 272
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf810845f10a5d660800000000000000
+      internalID: 7410004818330130684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thumbstick_L_Right
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 272
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08fe58cb7af5f9330800000000000000
+      internalID: 3719796991258390400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thumbstick_R_Left
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 272
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d603faa18a8f4980800000000000000
+      internalID: -8552464877829814573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thumbstick_R_Center
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 272
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d2aadc34946e0f90800000000000000
+      internalID: -6985535384166161708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thumbstick_R_Right
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 272
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa8c66daeb50be8a0800000000000000
+      internalID: -6274915339299534678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thumbstick_L_Down
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 256
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc07c6a92aba63d70800000000000000
+      internalID: 9022587618347217103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thumbstick_R_Down
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 256
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2aa96e80e2a8e3780800000000000000
+      internalID: -8701365499710760286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thumbstick_L_Up_Highlighted
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 224
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28429b8790e6037b0800000000000000
+      internalID: -5246572578927467390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thumbstick_R_Up_Highlighted
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 224
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c27580848f66cfb90800000000000000
+      internalID: -7206772087153207508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thumbstick_L_Left_Highlighted
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 208
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58ed27fec65652570800000000000000
+      internalID: 8441264595124018821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thumbstick_L_Center_Highlighted
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 208
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e3590a3ad82292a0800000000000000
+      internalID: -6732273575223798810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thumbstick_L_Right_Highlighted
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 208
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98b009c9999f3ed60800000000000000
+      internalID: 7918447007999462281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thumbstick_R_Left_Highlighted
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 208
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ee4e4abfce791db0800000000000000
+      internalID: -4820682495474381084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thumbstick_R_Center_Highlighted
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 208
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e406bcaf66497d550800000000000000
+      internalID: 6185575783231873102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thumbstick_R_Right_Highlighted
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 208
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cad656f8cc2387e0800000000000000
+      internalID: -1764517387361133887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thumbstick_L_Down_Highlighted
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 192
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0c7990c6e03299e0800000000000000
+      internalID: -1616175548640691187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thumbstick_R_Down_Highlighted
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 192
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa7e6489f759d2800800000000000000
+      internalID: 589291501503571887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mini_Dpad_Center
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 251
+        width: 2
+        height: 2
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ba3aa2ad8dc35244a0905188d57cca6
+      internalID: -1586631473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mini_Dpad_Up
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 253
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6ded74440a0b6a428507d61303b49d7
+      internalID: 452636881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mini_Dpad_Down
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 247
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51cb744f405b2f7438abb11123cec9e5
+      internalID: 1447554136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mini_Dpad_Right
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 250
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25aa45c852c84ac4193ae3a9e2229017
+      internalID: 1545113220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mini_Dpad_Left
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 250
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 469bb76cb6f20bc4b90bc3a4c0e12be0
+      internalID: 923718212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mini_Dpad_Right_Highlighted
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 250
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d470112db38529c43b2af956c7e5dea3
+      internalID: 2111564345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mini_Dpad_Up_Highlighted
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 269
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f857e7284e95b87459655dc4b82f3ee8
+      internalID: 1989221533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mini_Dpad_Left_Highlighted
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 250
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e01ebfda063d7a468792edcde7153e9
+      internalID: -167241842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mini_Dpad_Down_Highlighted
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 231
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68c580aef8262354d95c3fa8786a0f98
+      internalID: -109191529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mini_Dpad_Highlighted
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 184
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa866b59b0006824ea90da94a7376058
+      internalID: 2113786501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Switch_Button_Y_Pressed_Highlighted: -7805875586836574446
+      Switch_Trigger_ZL: -2386627712390348090
+      Switch_Button_A: -6314603649432636802
+      Xbox_Dpad_Left: -1172167809661281816
+      PlaystationController_5: 726572301146606146
+      Switch_Trigger_L_Highlighted: 3093925323256416139
+      Switch_Dpad_Right_Pressed: -53307708117309190
+      Xbox_Trigger_LT_Pressed_Highlighted: -3995428106972532215
+      Xbox_Dpad_Center: 1550755901524749071
+      Switch_Button_B_Highlighted: 143349945413160618
+      PlayStation_Trigger_R2: 5068503893589078664
+      Thumbstick_L_Down: 9022587618347217103
+      Playstation_Button_Square_Pressed: 2900192384692690911
+      PlayStation_Trigger_L2_Pressed: 726572301146606146
+      Xbox_Dpad_Right_Highlighted: -7322207437015994904
+      Mini_Dpad_Right: 452636881
+      Switch_Dpad_Left_Pressed: 344242630129823857
+      Xbox_Button_Y_Pressed_Highlighted: -8400442219421065888
+      Switch_Button_X_Pressed_Highlighted: -5216660482946625277
+      Switch_Button_B: -6932911033135837655
+      Xbox_Dpad_Up: 1104681043468319188
+      Switch_Trigger_ZR_Pressed_Highlighted: 6228096816077320374
+      Playstation_Button_Select_Pressed_Highlighted: 2799138813817556033
+      Xbox_Bumper_LB_Pressed: 8468557130144328317
+      Xbox_Button_Select_Pressed: 200237507434458626
+      Switch_Button_Y: 7163999831176851296
+      Xbox_Bumper_LB_Highlighted: -1285547372230545716
+      Switch_Button_Y_Highlighted: -7370765234832157405
+      Xbox_Button_Start_Pressed_Highlighted: 1363022150351393644
+      Switch_Dpad_Down_Pressed_Highlighted: -6176994757610047556
+      D-pad_2: 6870651054826847947
+      Xbox_Dpad_Right: 3052001090781899276
+      Mini_Dpad_Left_Highlighted: -167241842
+      Thumbstick_R_Center_Highlighted: 6185575783231873102
+      Xbox_Button_Start: 214082247981984806
+      Playstation_Button_Start_Highlighted: 8455740885363444534
+      PlaystationController_42: 8314585476343656406
+      Switch_Button_Plus_Highlighted: 8860865117594090839
+      Playstation_Button_X_Pressed_Highlighted: 4592778578284085173
+      PlaystationController_4: 5068503893589078664
+      Switch_Button_X_Pressed: 6945180048056264962
+      Thumbstick_R_Left: -8552464877829814573
+      PlaystationController_28: 695129572321758918
+      Playstation_Trigger_L1_Highlighted: 209500173534389827
+      PlayStation_Trigger_L2_Pressed_Highlighted: 695129572321758918
+      Switch_Button_X: -6397748433240481169
+      PlayStation_Trigger_R1_Highlighted: 8314585476343656406
+      PlayStation_Trigger_L1: 8579268672782269161
+      Xbox_Button_B_Pressed_Highlighted: -1823402121622647262
+      PlaystationController_6: 1653724102011572307
+      Playstation_Button_Start_Pressed: -922297117239817869
+      D-pad_0: -3942392971136267317
+      Playstation_Button_Select: 7829421548737763007
+      Xbox_Button_B_Highlighted: 441282903127712465
+      Playstation_Button_Select_Pressed: 5027242891198917090
+      Switch_Trigger_L_Pressed_Highlighted: -594731830866438668
+      Xbox_Trigger_RT: 1969450004411414365
+      PlaystationController_44: -5201521235409816239
+      PlayStation_Trigger_R1_Pressed: 7382417105261577141
+      Xbox_Button_X: 1743118474309783000
+      Mini_Dpad_Left: 1447554136
+      Switch_Button_X_Highlighted: 3401845975781110750
+      Mini_Dpad_Highlighted: 2113786501
+      PlaystationController_20: 8579268672782269161
+      Xbox_Trigger_LT_Pressed: -8839221857746703643
+      Xbox_Dpad_Down_Highlighted: -6962740592318817011
+      Xbox_Button_X_Highlighted: -6240340481202201715
+      Thumbstick_L_Center: 7410004818330130684
+      Playstation_Button_X: -2579784341966481945
+      Xbox_Trigger_RT_Highlighted: 1356834740906899346
+      Switch_Trigger_ZR: -8576118360882278189
+      Switch_Button_A_Pressed_Highlighted: -7887754026654674248
+      Switch_Button_B_Pressed_Highlighted: 4870981848517542056
+      Switch_Button_Minus: 7949656616394000594
+      PlayStation_Trigger_R1_Pressed_Highlighted: -5201521235409816239
+      Playstation_Button_Triangle_Pressed: 866108943782757002
+      Mini_Dpad_Right_Highlighted: 2111564345
+      Switch_Dpad_Up_Pressed_Highlighted: -1711258957506022486
+      Xbox_Button_Y: 4870085740338012891
+      Switch_Trigger_ZR_Pressed: 265937313528965641
+      Xbox_Button_Select_Pressed_Highlighted: -4636128328998790598
+      Xbox_Button_Y_Highlighted: 4387860427030421858
+      Switch_Button_Plus_Pressed: -5676123302434949187
+      Switch_Button_Minus_Pressed: 8860865117594090839
+      Xbox_Button_A_Highlighted: 7500996971867541207
+      Playstation_Button_Circle_Highlighted: -603710383412038829
+      PlayStation_Trigger_L2: 3925445383214428407
+      Playstation_Button_Circle: 2503786322265639350
+      Switch_Trigger_R_Pressed_Highlighted: -4847884759643248223
+      Switch_Dpad_Left: 3503113356417774196
+      Switch_Button_A_Highlighted: -8116472662008128279
+      Playstation_Button_X_Pressed: 1823517727411231811
+      PlayStation_Trigger_R2_Pressed_Highlighted: 5103997758178109140
+      Thumbstick_R_Right: -6274915339299534678
+      Xbox_Dpad_Down: -2671246551717052846
+      Xbox_Button_Start_Pressed: 1664452999438587556
+      Playstation_Dpad_Up_Highlighted: 5288956710337421038
+      Xbox_Bumper_RB: -5440129303227358952
+      Thumbstick_R_Up: 222126835416035965
+      Xbox_Dpad_Left_Highlighted: 4883122293699631147
+      Thumbstick_R_Up_Highlighted: -7206772087153207508
+      PlaystationController_3: 3925445383214428407
+      Xbox_Button_B_Pressed: 56689156477939084
+      Playstation_Button_Triangle: 3775295265062846505
+      Xbox_Button_Start_Highlighted: 2030142284074837190
+      PlaystationController_23: 7382417105261577141
+      Playstation_Dpad_Down: -2212971471702449060
+      Xbox_Bumper_RB_Pressed_Highlighted: -3909796398854550621
+      Switch_Dpad_Right_Pressed_Highlighted: -7604337641151710288
+      Playstation_Button_Select_Highlighted: -6149280183035928402
+      Switch_Dpad_Down: 1078074958006836734
+      PlayStation_Trigger_R1: 3895868637401870756
+      Xbox_Dpad_Up_Highlighted: -6705509945808685596
+      PlayStation_Trigger_R2_Highlighted: -7622435778095656584
+      Thumbstick_R_Left_Highlighted: -4820682495474381084
+      Xbox_Button_B: -1802882149546071856
+      Playstation_Button_Circle_Pressed: 6331181476592737361
+      Xbox_Bumper_LB_Pressed_Highlighted: -133517630409714806
+      Xbox_Button_Select: 7401722677063894415
+      Switch_Dpad_Up_Pressed: -822617372614067249
+      PlaystationController_26: -7476469367625914493
+      PlaystationController_21: 3895868637401870756
+      Playstation_Dpad_Center: -5202043583991940156
+      Playstation_Button_Square_Highlighted: 2061912357639510440
+      Switch_Trigger_ZR_Highlighted: -6372146285365961882
+      Switch_Button_Minus_Pressed_Highlighted: 4826948920565928229
+      PlayStation_Trigger_L2_Highlighted: -7476469367625914493
+      Mini_Dpad_Center: 1545113220
+      Playstation_Dpad_Down_Highlighted: -6686697355125404156
+      Xbox_Button_A: -6165397757560253085
+      Switch_Dpad_Right: 209500173534389827
+      Thumbstick_L_Down_Highlighted: 8482816703102805634
+      Switch_Button_Minus_Highlighted: 7868211343686297550
+      Playstation_Button_Triangle_Pressed_Highlighted: 589291501503571887
+      D-pad_1: 8441264595124018821
+      Thumbstick_R_Down_Highlighted: 2079731359538025165
+      Playstation_Trigger_L1_Pressed: -758324022479699474
+      Xbox_Button_A_Pressed_Highlighted: 2799138813817556033
+      Thumbstick_L_Left_Highlighted: 5553741883361582003
+      Playstation_Dpad_Left_Highlighted: 1653724102011572307
+      PlayStation_Trigger_R2_Pressed: 601182506252549338
+      Xbox_Bumper_LB: -4600438869930898279
+      Playstation_Button_Square: 6520094939755964492
+      Playstation_Button_Start_Pressed_Highlighted: -6985535384166161708
+      Playstation_Dpad_Up: -2935152435959904133
+      Mini_Dpad_Up_Highlighted: 1989221533
+      Thumbstick_R_Center: 5103997758178109140
+      Thumbstick_R_Right_Highlighted: 4010062404171739568
+      PlaystationController_29: -237796638388882373
+      Switch_Button_B_Pressed: 3689861074793889965
+      Xbox_Button_X_Pressed_Highlighted: 452636881
+      Playstation_Dpad_Right: 53857520898474042
+      Switch_Trigger_ZL_Pressed_Highlighted: -8701365499710760286
+      D-pad_4: 7401341699073961370
+      Playstation_Button_Square_Pressed_Highlighted: 7500996971867541207
+      Thumbstick_R_Down: -6204193253044195215
+      Playstation_Dpad_Left: 5147568090673167874
+      Switch_Trigger_L: 714370128072505336
+      Switch_Trigger_R_Pressed: 2371531640812035209
+      Switch_Trigger_R_Highlighted: 4733172248969648111
+      Playstation_Trigger_L1_Pressed_Highlighted: 1447554136
+      Thumbstick_L_Center_Highlighted: 914751479288873773
+      Playstation_Button_Triangle_Highlighted: 1541297557151391630
+      Switch_Dpad_Down_Pressed: -2276898669903635655
+      Switch_Trigger_L_Pressed: 2061912357639510440
+      Mini_Dpad_Down_Highlighted: -109191529
+      Thumbstick_L_Up: -7622435778095656584
+      D-pad_3: 6116153025745184076
+      Xbox_Button_Select_Highlighted: 2900192384692690911
+      PlaystationController_27: -2927293282940463440
+      Xbox_Trigger_RT_Pressed_Highlighted: 914751479288873773
+      Mini_Dpad_Up: 923718212
+      Thumbstick_L_Right: -758324022479699474
+      Thumbstick_L_Up_Highlighted: -6776819344537564861
+      Switch_Button_A_Pressed: -2353741067604649145
+      Xbox_Bumper_RB_Highlighted: -561065296621369082
+      Xbox_Button_Y_Pressed: 329319795925690879
+      Switch_Dpad_Left_Pressed_Highlighted: -749548694124793726
+      Mini_Dpad_Down: 2111564345
+      Switch_Dpad_Up: -3365297072824489297
+      Xbox_Button_X_Pressed: 1969450004411414365
+      Thumbstick_L_Right_Highlighted: -6308581883743034747
+      Switch_Button_Plus: -2935152435959904133
+      Xbox_Bumper_RB_Pressed: -188215513618401960
+      Switch_Trigger_ZL_Highlighted: 5502801723447471591
+      Xbox_Trigger_RT_Pressed: -6179061417286733961
+      Xbox_Button_A_Pressed: 1879500679163586791
+      Xbox_Trigger_LT: -7346460828537645311
+      Switch_Trigger_R: -8498533714249316330
+      Switch_Button_Y_Pressed: 7554274402006849950
+      Playstation_Button_Circle_Pressed_Highlighted: 1806943445834967499
+      Switch_Button_Plus_Pressed_Highlighted: -6149280183035928402
+      Playstation_Dpad_Right_Highlighted: -1101645791989260147
+      Thumbstick_L_Left: 883382057958891478
+      Switch_Trigger_ZL_Pressed: -1442172211273935197
+      Xbox_Trigger_LT_Highlighted: -3430338236764515309
+      Playstation_Button_Start: 8486738476219348078
+      Playstation_Button_X_Highlighted: -1586631473
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

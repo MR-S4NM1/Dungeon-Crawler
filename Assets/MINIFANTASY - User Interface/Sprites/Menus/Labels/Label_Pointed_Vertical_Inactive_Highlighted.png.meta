@@ -1,0 +1,2971 @@
+fileFormatVersion: 2
+guid: 70418d19454820e4eb26d6cc3ff10fc1
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 1
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 1
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Label_Rounded_Vertical_Active_Tan
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 832
+        width: 12
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a315d1e48555784cbdc82c77fd32453
+      internalID: -1118421697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Label_Rounded_Vertical_Active_LightBrown
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 832
+        width: 12
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4461d017d65043e439380b50ed0b0aa7
+      internalID: -1230709632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Label_Rounded_Vertical_Active_Red
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 832
+        width: 12
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f319301c7a1ba704eb98fc6559575213
+      internalID: 1028291303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Label_Rounded_Vertical_Active_Purple
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 832
+        width: 12
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0752e4e65fcfb047bcfb6e973d708fb
+      internalID: 667243462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Label_Rounded_Vertical_Active_Blue
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 832
+        width: 12
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe2f8fd940a28804a9d2f9aa184d51e3
+      internalID: 269806572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Label_Rounded_Vertical_Active_Green
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 832
+        width: 12
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb7cec5c6b1ea934ea0d147258e62caa
+      internalID: 1428325414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Label_Rounded_Vertical_Active_Yellow
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 832
+        width: 12
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97d6d8958aaf2d041b57709e01be6eb5
+      internalID: -229603928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Label_Rounded_Vertical_Active_Orange
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 832
+        width: 12
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9340c39541161254d96b286187a6b37c
+      internalID: 111494232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Label_Rounded_Vertical_Inactive_Tan
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 832
+        width: 12
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2b54abcba096444082d47a5dda6a652
+      internalID: 1651829490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Label_Rounded_Vertical_Inactive_LightBrown
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 832
+        width: 12
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a7152f262888424da9ab0c3c6751677
+      internalID: 1155490849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Label_Rounded_Vertical_Inactive_Red
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 832
+        width: 12
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08555144957bde545819e40bb068a75c
+      internalID: 674294539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Label_Rounded_Vertical_Inactive_Purple
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 832
+        width: 12
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 791bf472264ca0a4ca0d7928a01c970b
+      internalID: 548893775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Label_Rounded_Vertical_Inactive_Blue
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 832
+        width: 12
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1923dd94ad12894fbcf016aaea853ef
+      internalID: -204656662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Label_Rounded_Vertical_Inactive_Green
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 832
+        width: 12
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2de403c26d06b264bbaec4fd90ce9c97
+      internalID: -180855806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Label_Rounded_Vertical_Inactive_Yellow
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 832
+        width: 12
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f21dad739d31c5d429f27a49e11fb361
+      internalID: 989552126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Label_Rounded_Vertical_Inactive_Orange
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 832
+        width: 12
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9447cbe5c15d7b74eb926d4959150a89
+      internalID: 795062586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Label_Rounded_Horizontal_Active_Orange
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 802
+        width: 48
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64ca1c5c0b80edb41b7af597988093e8
+      internalID: -512758366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Label_Rounded_Horizontal_Active_Yellow
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 786
+        width: 48
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9dbfa53b1881a3a48a817bf5ef0d99da
+      internalID: 204363282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Label_Rounded_Horizontal_Active_Green
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 770
+        width: 48
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 847dca5442fe8534ab7598a0e9ade1f6
+      internalID: 237560048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Label_Rounded_Horizontal_Active_Blue
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 754
+        width: 48
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 738c8d1fc8d88b84883ddd20f356a206
+      internalID: -172257976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Label_Rounded_Horizontal_Active_Purple
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 738
+        width: 48
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33d051dd061e351478effa7d236d00e1
+      internalID: 49835950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Label_Rounded_Horizontal_Active_Red
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 722
+        width: 48
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d3dad9e0fd2da54cb8880b2788d89e6
+      internalID: 2066040363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Label_Rounded_Horizontal_Active_LightBrown
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 706
+        width: 48
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a278a74ef8804344f97a3b633c77be41
+      internalID: 924573981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Label_Rounded_Horizontal_Active_Tan
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 690
+        width: 48
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3875194f8d025994da347d34d0b7aae9
+      internalID: -704659125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Label_Rounded_Horizontal_Inactive_Orange
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 802
+        width: 48
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ea2e41e53398d647939c72dfad27a3b
+      internalID: -771767519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Label_Rounded_Horizontal_Inactive_Yellow
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 786
+        width: 48
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2a75f94943c32d409bb465f8d414df9
+      internalID: -1177816834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Label_Rounded_Horizontal_Inactive_Green
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 770
+        width: 48
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 836f474db3a831542b7d3da3cd24199e
+      internalID: -784492691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Label_Rounded_Horizontal_Inactive_Blue
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 754
+        width: 48
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cccbfda65607774e9da6f9989b054ad
+      internalID: 740867347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Label_Rounded_Horizontal_Inactive_Purple
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 738
+        width: 48
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 667b27513e4bbab42a903fb251586907
+      internalID: -1372298662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Label_Rounded_Horizontal_Inactive_Red
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 722
+        width: 48
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e85be521c4d0e56429510c4744bfe5cb
+      internalID: 689830756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Label_Rounded_Horizontal_Inactive_LightBrown
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 706
+        width: 48
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 411be1b3418eba840adb4065a327e3a5
+      internalID: 887425162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Label_Rounded_Horizontal_Inactive_Tan
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 690
+        width: 48
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a2fb778cca758c4ab253be5391a24f0
+      internalID: -109233630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Label_Pointed_Vertical_Active_Tan
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 608
+        width: 14
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdd627c3da225294886ec7d9633a792d
+      internalID: -864520404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Label_Pointed_Vertical_Active_LightBrown
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 608
+        width: 14
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a55b6fff7ebf9d4aae171d831f08224
+      internalID: -1851934916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Label_Pointed_Vertical_Active_Red
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 608
+        width: 14
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed9c09c165484974185b0f70d4ff6936
+      internalID: -1100567856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Label_Pointed_Vertical_Active_Purple
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 608
+        width: 14
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 513ca89e3446d4e468ef515a887cb263
+      internalID: -1210283596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Label_Pointed_Vertical_Active_Blue
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 608
+        width: 14
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7bfa27c20e677d47918444bde5335a6
+      internalID: -1381867301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Label_Pointed_Vertical_Active_Green
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 608
+        width: 14
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b82d2da0f1ebdc1419ba4f8a9d371770
+      internalID: -772938860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Label_Pointed_Vertical_Active_Yellow
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 608
+        width: 14
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93eb0ecae343a1649ac26a4146906556
+      internalID: 1893607514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Label_Pointed_Vertical_Active_Orange
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 608
+        width: 14
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86b2bcaf47329ee4ea972ac5cf2f062c
+      internalID: -1818945850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Label_Pointed_Vertical_Inactive_Tan
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 608
+        width: 14
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c319e9788e416d7448077a1a56ab7455
+      internalID: -387380811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Label_Pointed_Vertical_Inactive_LightBrown
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 608
+        width: 14
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b13eff062f4ba347b55d0046c0bf18e
+      internalID: -2105661553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Label_Pointed_Vertical_Inactive_Red
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 608
+        width: 14
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a876cbadcb7aaee438f80296ba7f4080
+      internalID: 688185290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Label_Pointed_Vertical_Inactive_Purple
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 608
+        width: 14
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 829db471360f22f42b426ef197f1051f
+      internalID: 963794752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Label_Pointed_Vertical_Inactive_Blue
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 608
+        width: 14
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 969f3bb9b20bb074090fa4db833bbb0a
+      internalID: 1724119494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Label_Pointed_Vertical_Inactive_Green
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 608
+        width: 14
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a9e9ca42e10f2c42b2e5ee7c22dec66
+      internalID: 1937713097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Label_Pointed_Vertical_Inactive_Yellow
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 608
+        width: 14
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85730938df04fc64393cd4ceb7ee2948
+      internalID: -2104787503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Label_Pointed_Vertical_Inactive_Orange
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 608
+        width: 14
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 400373e4fbfdb4f4a8c5a8a314e06b94
+      internalID: -1230440064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Label_Pointed_Horizontal_Active_Orange
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 577
+        width: 48
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ba1d0ab713402548ba55bd88a6ef294
+      internalID: 1705257317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Label_Pointed_Horizontal_Active_Yellow
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 561
+        width: 48
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c76115947a94c9a4dbce8039a0475138
+      internalID: -2052624224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Label_Pointed_Horizontal_Active_Green
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 545
+        width: 48
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6bd3392265f708468a46d4460587580
+      internalID: 1649786748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Label_Pointed_Horizontal_Active_Blue
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 529
+        width: 48
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e6f5ff3afc3fe44fa5410bffa102840
+      internalID: 1709380800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Label_Pointed_Horizontal_Active_Purple
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 513
+        width: 48
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f5a26beddae67c4a956d94f57f515a2
+      internalID: 1389408264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Label_Pointed_Horizontal_Active_Red
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 497
+        width: 48
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc498adfea7f68d4481e242dac30f013
+      internalID: -653358945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Label_Pointed_Horizontal_Active_LightBrown
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 481
+        width: 48
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c6e7fcee7c9a8644a0b6e8c45a0af14
+      internalID: 1512141370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Label_Pointed_Horizontal_Active_Tan
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 465
+        width: 48
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d702843d0b005124aaab87f73df5af9b
+      internalID: -1201067488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Label_Pointed_Horizontal_Inactive_Orange
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 577
+        width: 48
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b3f43ee3daadfc4d972ff5370e418c6
+      internalID: 441270246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Label_Pointed_Horizontal_Inactive_Yellow
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 561
+        width: 48
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f845ef3b413c20d41a3c3a9ede1bc9e0
+      internalID: -1089676113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Label_Pointed_Horizontal_Inactive_Green
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 545
+        width: 48
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79cb82dc74d766a449d2d774dace9aae
+      internalID: 1466837605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Label_Pointed_Horizontal_Inactive_Blue
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 529
+        width: 48
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2126dc939693de64b860786658c2a8ac
+      internalID: -2011514055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Label_Pointed_Horizontal_Inactive_Purple
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 513
+        width: 48
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fee63e3bd49f294b82b9a131bb4fa52
+      internalID: -1899780141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Label_Pointed_Horizontal_Inactive_Red
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 497
+        width: 48
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c926df905064b4d47bb4dfeaadc6b789
+      internalID: -429461600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Label_Pointed_Horizontal_Inactive_LightBrown
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 481
+        width: 48
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c72c9c20c7c383b4fae303e2f5bf5ed0
+      internalID: -117580660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Label_Pointed_Horizontal_Inactive_Tan
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 465
+        width: 48
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9592401e0c49906418d54ba5da1a5766
+      internalID: -71182163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Label_Rounded_Vertical_Active_Highlighted_Tan
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 384
+        width: 12
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7170b5f1dfd127340bdce437b6458490
+      internalID: -215258499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Label_Rounded_Vertical_Active_Highlighted_LightBrown
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 384
+        width: 12
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05ee19daa9597cc499178fc41f5396fe
+      internalID: -852785746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Label_Rounded_Vertical_Active_Highlighted_Red
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 384
+        width: 12
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 508da0c162961af42990d2b485f913ad
+      internalID: -240734131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Label_Rounded_Vertical_Active_Highlighted_Purple
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 384
+        width: 12
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ff5a84ed91f8434c9dbacd267b802f8
+      internalID: -359424592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Label_Rounded_Vertical_Active_Highlighted_Blue
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 384
+        width: 12
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbd7165a5dfa07543b88eafa6f915d0d
+      internalID: 859941675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Label_Rounded_Vertical_Active_Highlighted_Green
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 384
+        width: 12
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d621c9fe3344dd41a871ffb1c72c945
+      internalID: -1257118304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Label_Rounded_Vertical_Active_Highlighted_Yellow
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 384
+        width: 12
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 511932d3cbd76ab4d9a3827f3798dfe6
+      internalID: 2016902199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Label_Rounded_Vertical_Active_Highlighted_Orange
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 384
+        width: 12
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 093f1eae1c375ad4480033c3e0b4e7c5
+      internalID: 1078377483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Label_Rounded_Vertical_Inactive_Highlighted_Tan
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 384
+        width: 12
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c48d6f7f67b015947904c710c660fe63
+      internalID: 540001629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Label_Rounded_Vertical_Inactive_Highlighted_LightBrown
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 384
+        width: 12
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae6fb0f64a959a94c8175d8df6ea885e
+      internalID: 428479861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Label_Rounded_Vertical_Inactive_Highlighted_Red
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 384
+        width: 12
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e555fc2b70712e45a6049ebe5f4f420
+      internalID: 1131021268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Label_Rounded_Vertical_Inactive_Highlighted_Purple
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 384
+        width: 12
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddb3b0628e4634a4a9ae36384854d157
+      internalID: 1738579807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Label_Rounded_Vertical_Inactive_Highlighted_Blue
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 384
+        width: 12
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1848a79dacb7784997433ecdeef48e0
+      internalID: -163511980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Label_Rounded_Vertical_Inactive_Highlighted_Green
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 384
+        width: 12
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e80f3d5cd8b109c498586c36a84e98bb
+      internalID: 1835405172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Label_Rounded_Vertical_Inactive_Highlighted_Yellow
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 384
+        width: 12
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2510c0d46c555f41928f40f0ec3ed44
+      internalID: -1395266317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Label_Rounded_Vertical_Inactive_Highlighted_Orange
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 384
+        width: 12
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d30e69b827211b040bbba12ac93eb66f
+      internalID: 114340687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Label_Rounded_Horizontal_Active_Highlighted_Orange
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 354
+        width: 48
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e355f8fe1f52006449b719a8fce8444a
+      internalID: -1969216580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Label_Rounded_Horizontal_Active_Highlighted_Yellow
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 338
+        width: 48
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a90149700c6aaa845bf0be917524b3f2
+      internalID: -338330364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Label_Rounded_Horizontal_Active_Highlighted_Green
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 322
+        width: 48
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 646db79847ec29341ae3c9acb5ec3c56
+      internalID: -1374495700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Label_Rounded_Horizontal_Active_Highlighted_Blue
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 306
+        width: 48
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df835f8180388a6439afb45b7ba2ecce
+      internalID: -270577407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Label_Rounded_Horizontal_Active_Highlighted_Purple
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 290
+        width: 48
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85baa42b6e678f041811a45ae721e34e
+      internalID: 239639077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Label_Rounded_Horizontal_Active_Highlighted_Red
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 274
+        width: 48
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f57a5d83d572798478d8726965d9e055
+      internalID: 248241067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Label_Rounded_Horizontal_Active_Highlighted_LightBrown
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 258
+        width: 48
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc6ffadf41cd6864e9ce3f55bf9d1743
+      internalID: -379958922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Label_Rounded_Horizontal_Active_Highlighted_Tan
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 242
+        width: 48
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34158a724c8ce6b44948957f1f475aed
+      internalID: -92728890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Label_Rounded_Horizontal_Inactive_Highlighted_Orange
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 354
+        width: 48
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5a867b70dae5304eaa5a0cf6db0a67b
+      internalID: -2132463639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Label_Rounded_Horizontal_Inactive_Highlighted_Yellow
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 338
+        width: 48
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 113aa5a3b26b46d4aa9e34764d1ac9eb
+      internalID: -603026544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Label_Rounded_Horizontal_Inactive_Highlighted_Green
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 322
+        width: 48
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f29d43405f9eb0479f311817f70e326
+      internalID: -1166902183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Label_Rounded_Horizontal_Inactive_Highlighted_Blue
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 306
+        width: 48
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0856b7e4615cb904d84805d2895c045b
+      internalID: -237220113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Label_Rounded_Horizontal_Inactive_Highlighted_Purple
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 290
+        width: 48
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b6703f3cde3b2944ace9440db8e5189
+      internalID: 1469203599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Label_Rounded_Horizontal_Inactive_Highlighted_Red
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 274
+        width: 48
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1df2a3c853a1bb4a88d57417d9e632e
+      internalID: -2087068726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Label_Rounded_Horizontal_Inactive_Highlighted_LightBrown
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 258
+        width: 48
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b858e71e32499f47ad7e6ca441a8795
+      internalID: -241952463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Label_Rounded_Horizontal_Inactive_Highlighted_Tan
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 242
+        width: 48
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ad7842070fbb4d498c3bd51d446576b
+      internalID: 127212258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Label_Pointed_Vertical_Active_Highlighted_Tan
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 160
+        width: 14
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94ed2dd79a375934a850b6e4ea084946
+      internalID: 861896320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Label_Pointed_Vertical_Active_Highlighted_LightBrown
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 160
+        width: 14
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9e65c55c9f484c4f9a752c04ceadd70
+      internalID: 488532828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Label_Pointed_Vertical_Active_Highlighted_Red
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 160
+        width: 14
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdbebcf4731ca7045b3f52b2d3209002
+      internalID: 1428056927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Label_Pointed_Vertical_Active_Highlighted_Purple
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 160
+        width: 14
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 066ee30dfbb9f51499f1ef618111100a
+      internalID: 142214490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Label_Pointed_Vertical_Active_Highlighted_Blue
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 160
+        width: 14
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81d425fa90d57334191232650b5fca22
+      internalID: -693658676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Label_Pointed_Vertical_Active_Highlighted_Green
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 160
+        width: 14
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b31ccb15590021849ab01a9f07576cc5
+      internalID: -681841601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Label_Pointed_Vertical_Active_Highlighted_Yellow
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 160
+        width: 14
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43046423a5091014198f9713c86a3523
+      internalID: 335827719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Label_Pointed_Vertical_Active_Highlighted_Orange
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 160
+        width: 14
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a780bd9db58ff964b8fa54b8aa601fb2
+      internalID: -690424980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Label_Pointed_Horizontal_Active_Highlighted_Orange
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 129
+        width: 48
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b5722ec16d8e544abc67ead393133aa
+      internalID: -428049368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Label_Pointed_Horizontal_Active_Highlighted_Yellow
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 113
+        width: 48
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dfd26f6fa080b943943c3ebbe7b377a
+      internalID: 386253978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Label_Pointed_Horizontal_Active_Highlighted_Green
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 97
+        width: 48
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d08c3faeb1d7de47a40bd11d5a1e9b8
+      internalID: 466530124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Label_Pointed_Horizontal_Active_Highlighted_Blue
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 81
+        width: 48
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63d01c938576bb3478ff216c3beb4b32
+      internalID: -290294490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Label_Pointed_Horizontal_Active_Highlighted_Purple
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 65
+        width: 48
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31847d8d5f7412d4b94cbda4022a4d7b
+      internalID: 762863277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Label_Pointed_Horizontal_Active_Highlighted_Red
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 49
+        width: 48
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aeb42544f9b9ef041bc6fa43cb807fec
+      internalID: 398083316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Label_Pointed_Horizontal_Active_Highlighted_LightBrown
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 33
+        width: 48
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e9b9795de598224ca2d295bf566c38c
+      internalID: -49056197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Label_Pointed_Horizontal_Active_Highlighted_Tan
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 17
+        width: 48
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd17680107a9f1944bfd358b4855d964
+      internalID: -1207597265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Label_Pointed_Horizontal_Inactive_Highlighted_Orange
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 129
+        width: 48
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd8961f23d6d08e40bbc97ecf6a78954
+      internalID: -1139062075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Label_Pointed_Horizontal_Inactive_Highlighted_Yellow
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 113
+        width: 48
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4836ddb1b113d8347980610eed712b7e
+      internalID: 722079930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Label_Pointed_Horizontal_Inactive_Highlighted_Green
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 97
+        width: 48
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6228bc056c2fbb4f8a3a925d9072dde
+      internalID: -559262881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Label_Pointed_Horizontal_Inactive_Highlighted_Blue
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 81
+        width: 48
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0900df3487502ae4b95f4dff34c03056
+      internalID: 755157172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Label_Pointed_Horizontal_Inactive_Highlighted_Purple
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 65
+        width: 48
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a587aa410c863d42bc38e1b89f59ee5
+      internalID: 117616907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Label_Pointed_Horizontal_Inactive_Highlighted_Red
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 49
+        width: 48
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0cc520a497accb468fd2cea9ba513bd
+      internalID: 1780556586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Label_Pointed_Horizontal_Inactive_Highlighted_LightBrown
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 33
+        width: 48
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 428fb5a1aed19bc4b8610e1061d8a96b
+      internalID: -613747361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Label_Pointed_Horizontal_Inactive_Highlighted_Tan
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 17
+        width: 48
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 001a2d6b8318fbe44aeda63e6a0665b2
+      internalID: -1545667350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Label_Pointed_Vertical_Inactive_Highlighted_Tan
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 160
+        width: 14
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 222f73b5621673545aa9009cfe6e31ed
+      internalID: 1220317658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Label_Pointed_Vertical_Inactive_Highlighted_LightBrown
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 160
+        width: 14
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7399642155e2ed8478c063bf95214557
+      internalID: 2102646228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Label_Pointed_Vertical_Inactive_Highlighted_Red
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 160
+        width: 14
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f29cdc60010109d45b7bc5da6acc1bd0
+      internalID: 1593973084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Label_Pointed_Vertical_Inactive_Highlighted_Purple
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 160
+        width: 14
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89aeab0c2bc51664f91083cb3e9b50c6
+      internalID: 649464858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Label_Pointed_Vertical_Inactive_Highlighted_Blue
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 160
+        width: 14
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c58e06db35169344ac5bd32d37c7605
+      internalID: -1741094825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Label_Pointed_Vertical_Inactive_Highlighted_Green
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 160
+        width: 14
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0a29642d280c83468cd652a6432fdad
+      internalID: 1694615655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Label_Pointed_Vertical_Inactive_Highlighted_Yellow
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 160
+        width: 14
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: daa6cceaf283f514d8fa648e85776730
+      internalID: 1541194911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Label_Pointed_Vertical_Inactive_Highlighted_Orange
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 160
+        width: 14
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9854c1f5e49149a438575800e29db5c2
+      internalID: 130529762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Label_Pointed_Horizontal_Inactive_Highlighted_4: 117616907
+      Label_Pointed_Horizontal_Active_5: -653358945
+      Label_Rounded_Horizontal_Active_7: -704659125
+      Label_Rounded_Vertical_Active_3: 667243462
+      xxxxxxxxxxxx_0: 819277547
+      Label_Pointed_Vertical_Inactive_6: -2104787503
+      Label_Rounded_Vertical_Inactive_2: 674294539
+      Label_Pointed_Horizontal_Inactive_6: -117580660
+      Label_Rounded_Vertical_Active_0: -1118421697
+      Label_Pointed_Horizontal_Active_Highlighted_1: 386253978
+      Label_Rounded_Horizontal_Active_4: 49835950
+      Label_Rounded_Vertical_Active_6: -229603928
+      Label_Pointed_Horizontal_Inactive_Highlighted_1: 722079930
+      Label_Pointed_Horizontal_Active_0: 1705257317
+      Label_Pointed_Horizontal_Active_Highlighted_0: -428049368
+      Label_Pointed_Horizontal_Active_1: -2052624224
+      GuiLabels_2: -1967662661
+      Label_Rounded_Horizontal_Inactive_Highlighted_3: -237220113
+      xxxxxxx_3: 2128516749
+      Label_Pointed_Horizontal_Inactive_Highlighted_6: -613747361
+      Label_Pointed_Vertical_Inactive_Highlighted_1: 2102646228
+      Label_Pointed_Vertical_Active_Highlighted_2: 1428056927
+      Label_Pointed_Vertical_Inactive_1: -2105661553
+      Label_Pointed_Vertical_Active_Highlighted_6: 335827719
+      Label_Rounded_Vertical_Active_5: 1428325414
+      Label_Rounded_Vertical_Inactive_Highlighted_6: -1395266317
+      GuiLabels_1: 2001934956
+      Label_Rounded_Horizontal_Inactive_1: -1177816834
+      Label_Pointed_Horizontal_Active_6: 1512141370
+      Label_Rounded_Vertical_Inactive_4: -204656662
+      Label_Rounded_Horizontal_Inactive_4: -1372298662
+      Label_Rounded_Horizontal_Inactive_Highlighted_1: -603026544
+      Label_Rounded_Vertical_Inactive_Highlighted_4: -163511980
+      Label_Pointed_Horizontal_Active_Highlighted_2: 466530124
+      Label_Pointed_Vertical_Inactive_5: 1937713097
+      Label_Rounded_Horizontal_Active_Highlighted_3: -270577407
+      Label_Pointed_Horizontal_Inactive_Highlighted_0: -1139062075
+      Label_Pointed_Vertical_Active_Highlighted_7: -690424980
+      Label_Rounded_Vertical_Active_4: 269806572
+      Label_Rounded_Horizontal_Active_5: 2066040363
+      Label_Pointed_Vertical_Active_Highlighted_0: 861896320
+      Label_Rounded_Vertical_Inactive_5: -180855806
+      Label_Pointed_Horizontal_Inactive_Highlighted_7: -1545667350
+      Label_Rounded_Horizontal_Inactive_5: 689830756
+      Label_Rounded_Horizontal_Inactive_Highlighted_6: -241952463
+      Label_Pointed_Horizontal_Active_3: 1709380800
+      Label_Rounded_Vertical_Active_Highlighted_4: 859941675
+      Label_Rounded_Horizontal_Active_2: 237560048
+      Label_Rounded_Vertical_Inactive_Highlighted_7: 114340687
+      Label_Rounded_Horizontal_Inactive_Highlighted_0: -2132463639
+      Label_Pointed_Horizontal_Active_2: 1649786748
+      Label_Pointed_Vertical_Inactive_Highlighted_2: 1593973084
+      Label_Rounded_Vertical_Active_Highlighted_2: -240734131
+      Label_Rounded_Vertical_Active_Highlighted_6: 2016902199
+      Label_Rounded_Vertical_Active_1: -1230709632
+      Label_Rounded_Vertical_Inactive_6: 989552126
+      Label_Rounded_Horizontal_Inactive_6: 887425162
+      Label_Rounded_Vertical_Inactive_Highlighted_5: 1835405172
+      Label_Rounded_Vertical_Active_Highlighted_5: -1257118304
+      Label_Rounded_Vertical_Active_Highlighted_1: -852785746
+      Label_Rounded_Horizontal_Inactive_Highlighted_4: 1469203599
+      Label_Pointed_Vertical_Active_2: -1100567856
+      Label_Rounded_Horizontal_Active_0: -512758366
+      Label_Pointed_Vertical_Inactive_Highlighted_6: 1541194911
+      Label_Rounded_Horizontal_Active_Highlighted_2: -1374495700
+      xxxxxxx_1: 1988954678
+      Label_Rounded_Vertical_Inactive_Highlighted_2: 1131021268
+      Label_Pointed_Vertical_Inactive_4: 1724119494
+      Label_Pointed_Vertical_Inactive_Highlighted_0: 1220317658
+      Label_Pointed_Vertical_Inactive_Highlighted_3: 649464858
+      Label_Pointed_Horizontal_Active_4: 1389408264
+      Label_Rounded_Horizontal_Inactive_7: -109233630
+      Label_Pointed_Vertical_Active_7: -1818945850
+      Label_Rounded_Horizontal_Inactive_2: -784492691
+      Label_Rounded_Vertical_Inactive_1: 1155490849
+      Label_Pointed_Vertical_Inactive_Highlighted_7: 130529762
+      Label_Pointed_Horizontal_Inactive_3: -2011514055
+      Label_Rounded_Horizontal_Active_Highlighted_1: -338330364
+      Label_Rounded_Horizontal_Active_Highlighted_7: -92728890
+      GuiLabels_0: -886068031
+      Label_Rounded_Horizontal_Inactive_Highlighted_5: -2087068726
+      Label_Pointed_Horizontal_Active_7: -1201067488
+      Label_Rounded_Vertical_Inactive_Highlighted_3: 1738579807
+      Label_Pointed_Vertical_Inactive_Highlighted_4: -1741094825
+      Label_Pointed_Vertical_Active_1: -1851934916
+      Label_Pointed_Horizontal_Active_Highlighted_3: -290294490
+      Label_Pointed_Vertical_Active_3: -1210283596
+      Label_Pointed_Horizontal_Inactive_4: -1899780141
+      Label_Pointed_Vertical_Active_6: 1893607514
+      xxxxxxx_0: -658874161
+      Label_Rounded_Vertical_Inactive_3: 548893775
+      Label_Pointed_Horizontal_Inactive_Highlighted_3: 755157172
+      Label_Rounded_Horizontal_Inactive_0: -771767519
+      Label_Pointed_Vertical_Active_Highlighted_1: 488532828
+      Label_Rounded_Horizontal_Inactive_Highlighted_7: 127212258
+      Label_Pointed_Vertical_Inactive_0: -387380811
+      Label_Pointed_Horizontal_Inactive_Highlighted_2: -559262881
+      Label_Rounded_Horizontal_Active_Highlighted_6: -379958922
+      Label_Rounded_Vertical_Inactive_Highlighted_0: 540001629
+      Label_Pointed_Horizontal_Active_Highlighted_5: 398083316
+      Label_Pointed_Horizontal_Active_Highlighted_7: -1207597265
+      Label_Pointed_Vertical_Active_Highlighted_4: -693658676
+      Label_Pointed_Vertical_Inactive_Highlighted_5: 1694615655
+      Label_Pointed_Horizontal_Inactive_1: -1089676113
+      Label_Pointed_Horizontal_Inactive_7: -71182163
+      Label_Pointed_Vertical_Active_5: -772938860
+      Label_Pointed_Vertical_Inactive_2: 688185290
+      Label_Pointed_Vertical_Active_Highlighted_3: 142214490
+      Label_Rounded_Vertical_Inactive_Highlighted_1: 428479861
+      Label_Rounded_Horizontal_Inactive_Highlighted_2: -1166902183
+      Label_Rounded_Horizontal_Active_Highlighted_4: 239639077
+      Label_Rounded_Vertical_Active_7: 111494232
+      Label_Pointed_Vertical_Inactive_7: -1230440064
+      Label_Pointed_Horizontal_Inactive_2: 1466837605
+      Label_Rounded_Vertical_Inactive_7: 795062586
+      Label_Pointed_Vertical_Active_0: -864520404
+      Label_Rounded_Vertical_Inactive_0: 1651829490
+      Label_Rounded_Vertical_Active_2: 1028291303
+      Label_Pointed_Horizontal_Inactive_0: 441270246
+      Label_Rounded_Horizontal_Active_Highlighted_5: 248241067
+      Label_Rounded_Horizontal_Active_6: 924573981
+      Label_Pointed_Vertical_Active_Highlighted_5: -681841601
+      Label_Rounded_Vertical_Active_Highlighted_3: -359424592
+      Label_Pointed_Horizontal_Inactive_5: -429461600
+      Label_Rounded_Vertical_Active_Highlighted_0: -215258499
+      Label_Rounded_Horizontal_Active_1: 204363282
+      Label_Pointed_Horizontal_Active_Highlighted_6: -49056197
+      Label_Pointed_Vertical_Active_4: -1381867301
+      Label_Rounded_Horizontal_Inactive_3: 740867347
+      Label_Pointed_Horizontal_Inactive_Highlighted_5: 1780556586
+      Label_Pointed_Vertical_Inactive_3: 963794752
+      Label_Rounded_Horizontal_Active_3: -172257976
+      xxxxxxx_2: -1196793924
+      Label_Pointed_Horizontal_Active_Highlighted_4: 762863277
+      Label_Rounded_Horizontal_Active_Highlighted_0: -1969216580
+      Label_Rounded_Vertical_Active_Highlighted_7: 1078377483
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

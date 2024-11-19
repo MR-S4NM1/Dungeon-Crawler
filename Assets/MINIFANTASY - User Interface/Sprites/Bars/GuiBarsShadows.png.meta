@@ -1,0 +1,523 @@
+fileFormatVersion: 2
+guid: 634da535e8f8a0942ac5e4753497c8d6
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 1
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 1
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Frame_Shadow_Vertical_L
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 631
+        width: 10
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 8, z: 0, w: 8}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c62ef2ce44980647a348ae263d9bae6
+      internalID: -1227345039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frame_Shadow_Vertical_M
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 631
+        width: 7
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 8, z: 0, w: 8}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bc421ba8504cd344836a1786fca9bd8
+      internalID: 1394681517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frame_Shadow_Vertical_S
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 632
+        width: 6
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 8, z: 0, w: 8}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15b63f658950ba44e9080cfadc79d268
+      internalID: -639457122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frame_Shadow_Vertical_XS
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 632
+        width: 5
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 8, z: 0, w: 8}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b65f5a99bf11fa47906ae611515a6a0
+      internalID: -1131109604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frame_Shadow_Highlight_Vertical_L
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 566
+        width: 12
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 8, z: 0, w: 8}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26811df87c550f24fb7c677c2ab4928a
+      internalID: 560664140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frame_Shadow_Highlight_Vertical_M
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 566
+        width: 9
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 8, z: 0, w: 8}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99027a84566b90b4db5546ae861a29c5
+      internalID: 1663102097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frame_Shadow_Highlight_Vertical_S
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 567
+        width: 8
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 8, z: 0, w: 8}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c59d48102891cdb4a9b3efc9d7423877
+      internalID: 1180279329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frame_Shadow_Highlight_Vertical_XS
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 567
+        width: 7
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 8, z: 0, w: 8}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d9472b8b83ca36479c4f6ad294d3748
+      internalID: -1462259488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frame_Shadow_Horizontal_L
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 659
+        width: 34
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 8, y: 0, z: 8, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e248f38956725e4aba4db54f26298f5
+      internalID: -1951018897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frame_Shadow_Horizontal_M
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 645
+        width: 34
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 8, y: 0, z: 8, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb36946bd72e36342ae638d02b1f57d3
+      internalID: -1375897951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frame_Shadow_Horizontal_S
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 629
+        width: 32
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 8, y: 0, z: 8, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf07b490a765a7549ae8501b94f14569
+      internalID: 1581076417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frame_Shadow_Horizontal_XS
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 614
+        width: 32
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 8, y: 0, z: 8, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7ea1d3ceb4209a4a876bde11da2931b
+      internalID: 1038064155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frame_Shadow_Highlight_Horizontal_L
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 530
+        width: 36
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 8, y: 0, z: 8, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 168cd80ad297f7440b78f3d02b4bc3c1
+      internalID: -812601982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frame_Shadow_Highlight_Horizontal_M
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 516
+        width: 36
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 8, y: 0, z: 8, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa5dae2b784966845b086a0c6e9d6ba8
+      internalID: 1280437707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frame_Shadow_Highlight_Horizontal_S
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 500
+        width: 34
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 8, y: 0, z: 8, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b4bc224201b97d4fb895bea4324873d
+      internalID: -580939032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frame_Shadow_Highlight_Horizontal_XS
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 485
+        width: 34
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 8, y: 0, z: 8, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f36f37af4910a74eb430cd5580b2229
+      internalID: -349887063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Frame_Shadow_Light_Highlight_Horizontal_XS: -349887063
+      Frame_Shadow_Light_Horizontal_S: 1581076417
+      Frame_Shadow_Light_Highlight_Horizontal_S: -580939032
+      Frame_Shadow_Light_Horizontal_4: -950974180
+      Frame_Shadow_Highlight_Vertical_M: 1663102097
+      Frame_Shadow_Vertical_L_9: 439140530
+      Frame_Shadow_Light_Highlight_Vertical_L: -1555910396
+      Frame_Shadow_Light_Highlight_Horizontal_M: 1280437707
+      Frame_Shadow_Brown_Vertical_L_0: 2055572207
+      Frame_Shadow_Light_Vertical_XS: 187144274
+      GuiBarsShadows_2: -1476705969
+      Frame_Shadow_Light_Vertical_L: 1573449311
+      Frame_Shadow_Vertical_L_11: -977197922
+      Frame_Shadow_Vertical_S: -639457122
+      Frame_Shadow_Vertical_M: 1394681517
+      Frame_Shadow_Light_Highlight_Vertical_XS: 857003855
+      Frame_Shadow_Light_Horizontal_5: -1106988426
+      GuiBarsShadows_0: 498980884
+      Frame_Shadow_Light_Horizontal_XS: 1038064155
+      Frame_Shadow_Light_Horizontal_7: 993609421
+      GuiBarsShadows_1: 846462654
+      Frame_Shadow_Highlight_Vertical_S: 1180279329
+      Frame_Shadow_Highlight_Vertical_XS: -1462259488
+      Frame_Shadow_Light_Vertical_L_6: 119403761
+      Frame_Shadow_Vertical_L: -1227345039
+      Frame_Shadow_Highlight_Vertical_L: 560664140
+      Frame_Shadow_Light_Vertical_L_7: 38230768
+      Frame_Shadow_Light_Highlight_Horizontal_L: -812601982
+      Frame_Shadow_Light_Vertical_M: 253543378
+      Frame_Shadow_Vertical_XS: -1131109604
+      Frame_Shadow_Light_Vertical_L_5: -926913712
+      Frame_Shadow_Light_Vertical_S: 2106134761
+      Frame_Shadow_Light_Horizontal_6: 824270072
+      Frame_Shadow_Light_Vertical_L_4: -549808004
+      Frame_Shadow_Vertical_L_10: 1874426587
+      Frame_Shadow_Light_Horizontal_L: -1951018897
+      Frame_Shadow_Vertical_L_8: 76312684
+      Frame_Shadow_Light_Highlight_Vertical_S: 1926407679
+      Frame_Shadow_Light_Horizontal_M: -1375897951
+      Frame_Shadow_Light_Highlight_Vertical_M: -1346617869
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

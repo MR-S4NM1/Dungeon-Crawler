@@ -1,0 +1,38 @@
+Check out the Unity User Interface Documentation
+	Unity UI: Unity User Interface (uGUI) - https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/index.html
+
+Demos
+	The demos were creating using the Unity UI system, which is the recommended runtime UI system for current LTS versions of Unity. 
+
+Pixel Perfect / Pixel Quality
+	Some UI Elements may not appear pixel perfect.
+	Some UI elements were scaled. 
+		When they were scaled, height and width were multiplied or divided by the same factor to maintain the aspect ratio of the sprites.
+
+Placing Objects in the Scene
+	We recommend one of these two options for maintaining crisp pixels while moving objects around the scene:
+		1. Grid Snapping
+			Set Size = 0.125 (1 pixel)
+			You can change this setting in "Edit > Grid and Snap Settings > World Grid > Size."
+		2. Grid and Snap Increment Snap
+			Set Move = 0.125 (1 pixel) or 0.0625 (1/2 pixel)
+			You can change this setting in Grid Snapping Settings, found on the Scene Window.
+			Then hold "ctrl" while moving objects to increment their position based on the move setting.
+	To assist in aligning pixels on the Canvas, a Pixel Grid Alignment Sprite is included as a prefab. 
+		Toggle this prefab on and off to help align pixels on the canvas.
+
+Mockup Images
+	The mockup images contain assets from Minifantasy - Icy Wilderness and Minifantasy - Dungeon packages.
+	The contents of these packages are not included in the Minifantasy UI package.
+
+Game Display
+	The demos were created using a 16:9 Aspect Ratio. 
+	If you have issues with the game screen displaying incorrectly, try setting the display to 16:9 Aspect and the Scale to 1x.
+	Also, try toggling the "Run In Edit Mode" button on the Pixel Perfect Camera component located on the Main Camera gameobject for crisp pixels in the game window while editing.
+
+Unity UI Toolkit
+	The emerging Unity UI Toolkit is not the recommended UI system for the current LTS version of Unity, 2021.3. https://docs.unity.cn/2021.3/Documentation/Manual/UI-system-compare.html
+	This version of Unity UI Toolkit does not include options to use tiled or sliced sprites, which leads to a loss of pixel quality on some sprites included in this package.
+
+Questions
+	If you have any questions or concerns, contact us at: krishna.palacio@gmail.com

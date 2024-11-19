@@ -1,0 +1,14 @@
+Demo
+	The demo is meant to showcase each character's animations. 
+	The Druid's forms are separated into separate models for the sake of the demo.
+
+Scripts
+	None of the scripts included in this pack are necessary to use the basic pack contents.
+
+Game Display
+	The demos were created using a 16:9 Aspect Ratio. 
+	If you have issues with the game screen displaying incorrectly, try setting the display to 16:9 Aspect and the Scale to 1x.
+	Also, try toggling the "Run In Edit Mode" button on the Pixel Perfect Camera component located on the Main Camera gameobject for crisp pixels in the game window while editing.
+
+Questions
+	If you have any questions or concerns, contact us at: krishna.palacio@gmail.com
