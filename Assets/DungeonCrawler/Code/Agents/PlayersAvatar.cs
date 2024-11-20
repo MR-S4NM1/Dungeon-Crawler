@@ -79,12 +79,11 @@ namespace MrSanmi.DungeonCrawler
                 _fsm.SetMovementDirection = _movementInputVector;
                 CalculateStateMechanicDirection();
                 _fsm.StateMechanic(_stateMechanic);
-                _fsm.InitializeState();
             }
             else if (value.canceled)
             {
                 _fsm.StateMechanic(StateMechanics.STOP);
-                _fsm.FinalizeState();
+                _fsm.InitializeState();
             }
         }
 

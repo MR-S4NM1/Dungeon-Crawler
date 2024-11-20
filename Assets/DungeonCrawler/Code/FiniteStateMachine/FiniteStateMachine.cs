@@ -136,7 +136,12 @@ namespace MrSanmi.DungeonCrawler
                 case States.IDLE_RIGHT:
                     InitializeIdleState();
                     break;
-
+                case States.MOVING_UP:
+                case States.MOVING_DOWN:
+                case States.MOVING_LEFT:
+                case States.MOVING_RIGHT:
+                    InitializeMovingState();
+                    break;
                 case States.ATTACKING_UP:
                 case States.ATTACKING_DOWN:
                 case States.ATTACKING_LEFT:
@@ -252,6 +257,7 @@ namespace MrSanmi.DungeonCrawler
         // Action
         public void StateMechanic(StateMechanics value)
         {
+            FinalizeState();
             _animator.SetBool(value.ToString() , true);
         }
 
@@ -288,7 +294,7 @@ namespace MrSanmi.DungeonCrawler
         #region IdleState
         protected virtual void InitializeIdleState()
         {
-            _movementSpeed = 10.0f;
+            _movementSpeed = 0.0f;
         }
 
         protected virtual void ExecutingIdleState()
@@ -304,7 +310,7 @@ namespace MrSanmi.DungeonCrawler
         #region MovingState
         protected virtual void InitializeMovingState()
         {
-
+            _movementSpeed = 10.0f;
         }
 
         protected virtual void ExecutingMovingState()
@@ -313,9 +319,7 @@ namespace MrSanmi.DungeonCrawler
         }
         protected virtual void FinalizeMovingState()
         {
-            _rigibody2D.velocity = Vector2.zero;
-            _movementDirection = Vector2.zero;
-            _movementSpeed = 0.0f;
+
         }
         #endregion MovingState
 
@@ -338,7 +342,7 @@ namespace MrSanmi.DungeonCrawler
         #region SprintingState
         protected virtual void InitializeSprintingState()
         {
-            _movementSpeed *= 1.25f;
+            _movementSpeed = 12.5f;
         }
 
         protected virtual void ExecutingSprintingState()
@@ -347,7 +351,7 @@ namespace MrSanmi.DungeonCrawler
         }
         protected virtual void FinalizeSprintingState()
         {
-            _movementSpeed *= 0.75f;
+
         }
         #endregion SprintingState
 
