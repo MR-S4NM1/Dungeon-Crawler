@@ -367,7 +367,7 @@ namespace MrSanmi.DungeonCrawler
         }
         #endregion InteractingState
 
-        #region InteractingState
+        #region DeathState
         protected virtual void InitializeDeathState()
         {
 
