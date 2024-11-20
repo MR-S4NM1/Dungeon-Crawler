@@ -56,6 +56,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 2783063553743618370, guid: fb2557a00e16109458d4b9aa0e1b28b1, type: 3}
+      propertyPath: _agent
+      value: 
+      objectReference: {fileID: 1521976690935750505}
     - target: {fileID: 2918486855590528406, guid: fb2557a00e16109458d4b9aa0e1b28b1, type: 3}
       propertyPath: m_Size.y
       value: 1.14
@@ -141,7 +145,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 7508950997976026459}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4c007825e02c5fb4e9c662de3f6af696, type: 3}
+  m_Script: {fileID: 11500000, guid: 5c186d9e7f0b181408796d1b3e2bc57b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!50 &7041081982617726009 stripped
@@ -168,6 +172,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rb: {fileID: 7041081982617726009}
   _fsm: {fileID: 66483776782582842}
-  _gameReferee: {fileID: 0}
   playerIndex: 0
   _hitBox: {fileID: 0}
+  _gameReferee: {fileID: 0}

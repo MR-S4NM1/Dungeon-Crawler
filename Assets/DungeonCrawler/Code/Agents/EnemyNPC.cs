@@ -26,6 +26,8 @@ namespace MrSanmi.DungeonCrawler
 
         #region References
 
+        [SerializeField] protected EnemyPool _enemyPool;
+
         #endregion
 
         #region RunTimeVariables
@@ -228,6 +230,11 @@ namespace MrSanmi.DungeonCrawler
         public override void InitializeAgent()
         {
            InitializePatrolBehaviour();
+        }
+
+        public virtual void AlertPoolAboutDeath()
+        {
+            _enemyPool?.SubstractEnemyFromEnemyCount();
         }
 
         #endregion

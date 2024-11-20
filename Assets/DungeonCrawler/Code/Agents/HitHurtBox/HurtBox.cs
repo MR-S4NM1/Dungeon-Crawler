@@ -10,7 +10,6 @@ namespace MrSanmi.DungeonCrawler
         #region Knobs
 
         //TODO: Stored in a Scriptable Object for robustness
-        public int maxHealthPoints = 3; //HP
         public float cooldownTime = 1.0f; //Damage (Hit Box) Per Second (Cooldown)
 
         #endregion
@@ -18,6 +17,8 @@ namespace MrSanmi.DungeonCrawler
         #region References
 
         [SerializeField] protected Agent _agent;
+
+        [SerializeField] protected EnemyNPC _enemyNPC;
 
         #endregion
 
@@ -42,7 +43,7 @@ namespace MrSanmi.DungeonCrawler
 
         private void Start()
         {
-            _currentHealthPoints = maxHealthPoints;
+            _currentHealthPoints = _agent.maxHealthPoints;
         }
 
         private void OnTriggerStay2D(Collider2D other)
@@ -63,9 +64,12 @@ namespace MrSanmi.DungeonCrawler
                         {
                             //I will die, it´s time ;-;
                             _agent.StateMechanic(StateMechanics.DIE);
+
                             //TODO: Complete the administration of this state
                             //Animator
                             //Initialize, Executing and Finalize
+
+                            _enemyNPC?.AlertPoolAboutDeath();
                         }
                         else
                         {
@@ -85,6 +89,16 @@ namespace MrSanmi.DungeonCrawler
             _isInCooldown = true; // To be immune for a certain time
             yield return new WaitForSeconds(cooldownTime);
             _isInCooldown = false;
+        }
+
+        #endregion
+
+        #region GettersSetters
+
+        public int CurrentHealthPoints
+        {
+            get { return _currentHealthPoints; }
+            set { _currentHealthPoints = value; }
         }
 
         #endregion

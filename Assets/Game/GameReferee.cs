@@ -1,69 +1,127 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace MrSanmi.Game
+namespace MrSanmi.DungeonCrawler
 {
-    #region Enum
+    #region Enums
 
     public enum GameStates
     {
-        GAME,
-        PAUSE,
-        GAME_OVER, //GAME_OVER
+        GAME, //= 0
+        PAUSE, //= 1
+        GAME_OVER, //= 2
         VICTORY
-        //DRAW
     }
 
     #endregion
 
     public class GameReferee : MonoBehaviour
     {
+        #region References
+
+        public GameObject panelPause;
+
+        #endregion
+
         #region RuntimeVariables
 
-        protected GameStates _gameState;
+        [SerializeField] protected GameStates _gameState;
 
         #endregion
 
         #region UnityMethods
-        void Start()
+        void Start() //Runtime
         {
-            InitializeGameReferee();
+            InitializeGameState();
         }
-        private void Update()
+
+        void FixedUpdate() //Update(): Max 200 FPS / FixedUpdate(): 50 FPS
         {
-            print(_gameState.ToString());
+            switch (_gameState)
+            {
+                case GameStates.GAME:
+                    ExecutingGameState();
+                    break;
+                case GameStates.GAME_OVER:
+                    //ExecutingGameOverState();
+                    break;
+                case GameStates.VICTORY:
+                    //ExecutingVictoryState();
+                    break;
+                case GameStates.PAUSE:
+                    ExecutingPauseState();
+                    break;
+            }
         }
 
         #endregion
 
-        #region RuntimeMethods
+        #region PublicMethods
 
-        protected virtual void InitializeGameReferee()
+        public void PauseGame()
         {
-            _gameState = GameStates.GAME;
-        }
-
-        public void SetPauseGameState()
-        {
-            if(_gameState == GameStates.GAME)
+            //State Mechanics / Actions to move within the Finite State Machine
+            if (_gameState == GameStates.GAME)
             {
+                FinalizeGameState();
+                //I should go to pause
                 _gameState = GameStates.PAUSE;
-                Time.timeScale = 0.0f;
+                InitializePauseState();
             }
-            else if(_gameState == GameStates.PAUSE)
+            if (_gameState == GameStates.PAUSE)
             {
+                FinalizePauseState();
+                //I return to the game
                 _gameState = GameStates.GAME;
-                Time.timeScale = 1.0f;
-            }
-            else
-            {
-                Time.timeScale = 1.0f;
+                InitializeGameState();
             }
         }
 
         #endregion
+
+        #region GameStateMethods
+
+        #region GameState
+
+        protected void InitializeGameState()
+        {
+            //TODO: Configuration of every aspect of the game
+        }
+
+        protected void ExecutingGameState()
+        {
+            //TODO: Manage in runtime several aspects of this state
+        }
+
+        protected void FinalizeGameState()
+        {
+            //TODO: Clean or liberate certain variables from this state
+        }
+
+        #endregion
+
+        #region PauseState
+
+        protected void InitializePauseState()
+        {
+            panelPause.SetActive(true);
+            Time.timeScale = 0f;
+        }
+
+        protected void ExecutingPauseState()
+        {
+            //TODO: Pending
+        }
+
+        protected void FinalizePauseState()
+        {
+            panelPause.SetActive(false);
+            Time.timeScale = 1f;
+        }
+
+        #endregion
+
+        #endregion GameStateMethods
     }
 }
-

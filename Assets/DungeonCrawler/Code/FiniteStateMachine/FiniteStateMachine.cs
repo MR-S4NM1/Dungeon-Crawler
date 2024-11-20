@@ -72,9 +72,9 @@ namespace MrSanmi.DungeonCrawler
 
         #region References
 
-        [SerializeField, HideInInspector] protected Animator _animator;
-        [SerializeField, HideInInspector] protected Rigidbody2D _rigibody2D;
-        [SerializeField, HideInInspector] protected Agent _agent;
+        [SerializeField] protected Animator _animator;
+        [SerializeField] protected Rigidbody2D _rigibody2D;
+        [SerializeField] protected Agent _agent;
 
         #endregion
 

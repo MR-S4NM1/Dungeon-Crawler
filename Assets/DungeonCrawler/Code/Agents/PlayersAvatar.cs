@@ -1,4 +1,3 @@
-using MrSanmi.Game;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -123,7 +122,7 @@ namespace MrSanmi.DungeonCrawler
         {
             if (value.performed)
             {
-                _gameReferee.SetPauseGameState();
+                _gameReferee.PauseGame();
             }
         }
 

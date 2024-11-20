@@ -239,7 +239,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rb: {fileID: 5171730959285840193}
   _fsm: {fileID: 2783063553743618370}
-  _gameReferee: {fileID: 0}
 --- !u!114 &2783063553743618370
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -249,12 +248,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 5640327576269834275}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4c007825e02c5fb4e9c662de3f6af696, type: 3}
+  m_Script: {fileID: 11500000, guid: 5c186d9e7f0b181408796d1b3e2bc57b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _animator: {fileID: -6225775655275200431}
   _rigibody2D: {fileID: 5171730959285840193}
-  _agent: {fileID: 0}
+  _agent: {fileID: 789071888510828446}
   _state: 0
   _movementDirection: {x: 0, y: 0}
   _movementSpeed: 0
