@@ -29,11 +29,6 @@ namespace MrSanmi.DungeonCrawler
         SPRINTING_DOWN,
         SPRINTING_LEFT,
         SPRINTING_RIGHT,
-        //INTERACTING
-        INTERACTING_UP,
-        INTERACTING_DOWN,
-        INTERACTING_LEFT,
-        INTERACTING_RIGHT,
         //DEATH
         DEATH
     }
@@ -54,8 +49,6 @@ namespace MrSanmi.DungeonCrawler
         SPRINT_DOWN,
         SPRINT_LEFT,
         SPRINT_RIGHT,
-        //INTERACTING
-        INTERACT,
         //DIE
         DIE //TODO: Complete the code to administrate DIE
     }
@@ -75,6 +68,7 @@ namespace MrSanmi.DungeonCrawler
         [SerializeField] protected Animator _animator;
         [SerializeField] protected Rigidbody2D _rigibody2D;
         [SerializeField] protected Agent _agent;
+        [SerializeField] protected PlayersAvatar _playersAvatar;
 
         #endregion
 
@@ -158,12 +152,6 @@ namespace MrSanmi.DungeonCrawler
                 case States.SPRINTING_DOWN:
                     InitializeSprintingState();
                     break;
-                case States.INTERACTING_UP:
-                case States.INTERACTING_LEFT:
-                case States.INTERACTING_RIGHT:
-                case States.INTERACTING_DOWN:
-                    InitializeInteractingState();
-                    break;
                 case States.DEATH:
                     InitializeDeathState();
                     //gameObject.SetActive(false); //PROTOTYPE TO DELETE
@@ -198,12 +186,6 @@ namespace MrSanmi.DungeonCrawler
                 case States.SPRINTING_DOWN:
                     ExecutingSprintingState();
                     break;
-                case States.INTERACTING_UP:
-                case States.INTERACTING_LEFT:
-                case States.INTERACTING_RIGHT:
-                case States.INTERACTING_DOWN:
-                    ExecutingInteractingState();
-                    break;
                 case States.DEATH:
                     ExecutingDeathState();
                     break;
@@ -237,12 +219,6 @@ namespace MrSanmi.DungeonCrawler
                 case States.SPRINTING_RIGHT:
                 case States.SPRINTING_DOWN:
                     FinalizeSprintingState();
-                    break;
-                case States.INTERACTING_UP:
-                case States.INTERACTING_LEFT:
-                case States.INTERACTING_RIGHT:
-                case States.INTERACTING_DOWN:
-                    FinalizeInteractingState();
                     break;
                 case States.DEATH:
                     FinalizeDeathState();
@@ -310,7 +286,7 @@ namespace MrSanmi.DungeonCrawler
         #region MovingState
         protected virtual void InitializeMovingState()
         {
-            _movementSpeed = 10.0f;
+            _movementSpeed = 5.0f;
         }
 
         protected virtual void ExecutingMovingState()
@@ -326,7 +302,9 @@ namespace MrSanmi.DungeonCrawler
         #region AttackingState
         protected virtual void InitializeAttackingState()
         {
-
+            _playersAvatar.ActivateHitBox();
+            _movementSpeed = 0.0f;
+            StateMechanic(StateMechanics.MOVE_DOWN);
         }
 
         protected virtual void ExecutingAttackingState()
@@ -342,7 +320,7 @@ namespace MrSanmi.DungeonCrawler
         #region SprintingState
         protected virtual void InitializeSprintingState()
         {
-            _movementSpeed = 12.5f;
+            _movementSpeed = 6.75f;
         }
 
         protected virtual void ExecutingSprintingState()
@@ -354,22 +332,6 @@ namespace MrSanmi.DungeonCrawler
 
         }
         #endregion SprintingState
-
-        #region InteractingState
-        protected virtual void InitializeInteractingState()
-        {
-
-        }
-
-        protected virtual void ExecutingInteractingState()
-        {
-
-        }
-        protected virtual void FinalizeInteractingState()
-        {
-
-        }
-        #endregion InteractingState
 
         #region DeathState
         protected virtual void InitializeDeathState()

@@ -239,11 +239,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 1
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
-  ignoreMasterTextureLimit: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -282,6 +283,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
   cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
@@ -294,6 +296,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -306,6 +309,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -318,6 +322,33 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -688,8 +719,8 @@ TextureImporter:
         y: 64
         width: 8
         height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1846,81 +1877,80 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Food_Icon_White_Border: -4198661471344093979
-      Compass_Icon_Black_Border: -8413292522543769667
-      CrossedSwords_Icon_White_Border: -75773863873177693
-      Mouse_Icon_White_Border: 4327429665976205456
-      MusicNote_Icon_White_Border_1: 4141176686295298239
-      InkAndFeather_Icon_White_Border: -3778820340652084524
-      Book_Icon_Black_Border: 445722311244567339
-      MusicNote_Icon_Black_Border_0: -5519410584366228400
-      Keyboard_Icon_Black_Border: -7648855419065137044
-      Save_Icon_White_Border: 3179997464632977233
-      Compass_Icon_White_Border: -6852761105146921987
-      SaveFailed_Icon_Black_Border: 2666267530556447891
-      HumanBody_Icon_Black_Border: 7604432212858310299
-      Keyboard_Icon_White_Border: 1566498585489473869
-      Shield_Icon_White_Border: -8834490114693273557
-      Scroll_Icon_Black_Border: 3787397043039254746
-      SaveFailed_Icon_White_Border: 3830990809239311660
-      Hammer_Icon_White_Border: 4718286472447203959
-      MusicNote_Icon_White_Border_0: -5357484017470201423
-      Hammer_Icon_Black_Border: 1484120846865163570
-      Gear_Icon_Black_Border: -5698555881311855726
-      Lock_White_Border: 4225271214502769209
-      BluePrint_Icon_White_Border: -8765748897097584866
-      Backpack_Icon_Black_Border: -8443817795208728079
-      Chest_Icon_Black_Border: 6905526984500468438
-      Screen_Icon_White_Border: -2714356905990264954
-      NeedleAndThread_Icon_White_Border: 5856734080674935155
-      InkAndFeather_Icon_Black_Border: 8281702994365398396
-      HumanBody_Icon_White_Border: -8397064534303519914
-      Controller_Icon_White_Border: -3678191272069349511
-      MusicNote_Icon_Black_Border_1: 1475133310365711624
-      Sound_Icon_Black_Border: -1415505138796735824
-      CrossedSwords_Icon_Black_Border: -2033416961543248077
-      MagicSpark_Icon_Black_Border: 4203841360402641665
-      Screen_Icon_Black_Border: 2142920065354140852
-      AugmentLens_Icon_Black_Border: -3739543790196266034
-      NeedleAndThread_Icon_Black_Border: 262459678075707702
-      Scroll_Icon_White_Border: 5490969080470188746
-      Backpack_Icon_White_Border: 3520184761249217967
-      AugmentLens_Icon_White_Border: -6307759920698968431
-      InkAndPen_Icon_White_Border: -3478694099977200058
-      Map_Icon_White_Border: 6904231003953805671
-      Stamina_Icon_White_Border: 6126220786210666155
-      MagicSpark_Icon_White_Border: 1555382754790181384
-      SaveSuccessful_Icon_Black_Border: 4139199934885449802
-      Lock_Black_Border: -7262182526637359478
-      Water_Icon_White_Border: -4418435341856802630
-      Mouse_Icon_Black_Border: -3771734468983897812
-      Water_Icon_Black_Border: -4424430338592838562
-      Book_Icon_White_Border: 3277033052680753612
-      Anvil_Icon_White_Border: -5920284451894823309
-      Armor_Icon_White_Border: 6976143357487803340
-      Stamina_Icon_Black_Border: -5377790861339816902
-      Lightning_Icon_Black_Border: -3040388936786037212
       Anvil_Icon_Black_Border: -3456740428706337709
-      SaveSuccessful_Icon_White_Border: -6485283447895394062
-      Lightning_Icon_White_Border: -2404568775988606526
+      Anvil_Icon_White_Border: -5920284451894823309
       Armor_Icon_Black_Border: 7326851798258329101
-      Sound_Icon_White_Border: 206446959501569903
-      Shield_Icon_Black_Border: -889952467139433889
-      Heart_Icon_White_Border: 7594492507039880160
-      Map_Icon_Black_Border: -7388954732963061535
-      Heart_Icon_Black_Border: 4107143414915700083
-      InkAndPen_Icon_Black_Border: 6205543668910404912
-      Unlock_White_Border: -3955554300876315883
-      Controller_Icon_Black_Border: 6125730185205118722
-      Save_Icon_Black_Border: 8509771801836723726
+      Armor_Icon_White_Border: 6976143357487803340
+      AugmentLens_Icon_Black_Border: -3739543790196266034
+      AugmentLens_Icon_White_Border: -6307759920698968431
+      Backpack_Icon_Black_Border: -8443817795208728079
+      Backpack_Icon_White_Border: 3520184761249217967
       BluePrint_Icon_Black_Border: 8845324141347694044
-      Unlock_Black_Border: 3776872756236307474
-      Food_Icon_Black_Border: -1492196961426665715
-      Gear_Icon_White_Border: 971340812558604912
+      BluePrint_Icon_White_Border: -8765748897097584866
+      Book_Icon_Black_Border: 445722311244567339
+      Book_Icon_White_Border: 3277033052680753612
+      Chest_Icon_Black_Border: 6905526984500468438
       Chest_Icon_White_Border: -4227615811565890867
-  spritePackingTag: 
+      Compass_Icon_Black_Border: -8413292522543769667
+      Compass_Icon_White_Border: -6852761105146921987
+      Controller_Icon_Black_Border: 6125730185205118722
+      Controller_Icon_White_Border: -3678191272069349511
+      CrossedSwords_Icon_Black_Border: -2033416961543248077
+      CrossedSwords_Icon_White_Border: -75773863873177693
+      Food_Icon_Black_Border: -1492196961426665715
+      Food_Icon_White_Border: -4198661471344093979
+      Gear_Icon_Black_Border: -5698555881311855726
+      Gear_Icon_White_Border: 971340812558604912
+      Hammer_Icon_Black_Border: 1484120846865163570
+      Hammer_Icon_White_Border: 4718286472447203959
+      Heart_Icon_Black_Border: 4107143414915700083
+      Heart_Icon_White_Border: 7594492507039880160
+      HumanBody_Icon_Black_Border: 7604432212858310299
+      HumanBody_Icon_White_Border: -8397064534303519914
+      InkAndFeather_Icon_Black_Border: 8281702994365398396
+      InkAndFeather_Icon_White_Border: -3778820340652084524
+      InkAndPen_Icon_Black_Border: 6205543668910404912
+      InkAndPen_Icon_White_Border: -3478694099977200058
+      Keyboard_Icon_Black_Border: -7648855419065137044
+      Keyboard_Icon_White_Border: 1566498585489473869
+      Lightning_Icon_Black_Border: -3040388936786037212
+      Lightning_Icon_White_Border: -2404568775988606526
+      Lock_Black_Border: -7262182526637359478
+      Lock_White_Border: 4225271214502769209
+      MagicSpark_Icon_Black_Border: 4203841360402641665
+      MagicSpark_Icon_White_Border: 1555382754790181384
+      Map_Icon_Black_Border: -7388954732963061535
+      Map_Icon_White_Border: 6904231003953805671
+      Mouse_Icon_Black_Border: -3771734468983897812
+      Mouse_Icon_White_Border: 4327429665976205456
+      MusicNote_Icon_Black_Border_0: -5519410584366228400
+      MusicNote_Icon_Black_Border_1: 1475133310365711624
+      MusicNote_Icon_White_Border_0: -5357484017470201423
+      MusicNote_Icon_White_Border_1: 4141176686295298239
+      NeedleAndThread_Icon_Black_Border: 262459678075707702
+      NeedleAndThread_Icon_White_Border: 5856734080674935155
+      SaveFailed_Icon_Black_Border: 2666267530556447891
+      SaveFailed_Icon_White_Border: 3830990809239311660
+      SaveSuccessful_Icon_Black_Border: 4139199934885449802
+      SaveSuccessful_Icon_White_Border: -6485283447895394062
+      Save_Icon_Black_Border: 8509771801836723726
+      Save_Icon_White_Border: 3179997464632977233
+      Screen_Icon_Black_Border: 2142920065354140852
+      Screen_Icon_White_Border: -2714356905990264954
+      Scroll_Icon_Black_Border: 3787397043039254746
+      Scroll_Icon_White_Border: 5490969080470188746
+      Shield_Icon_Black_Border: -889952467139433889
+      Shield_Icon_White_Border: -8834490114693273557
+      Sound_Icon_Black_Border: -1415505138796735824
+      Sound_Icon_White_Border: 206446959501569903
+      Stamina_Icon_Black_Border: -5377790861339816902
+      Stamina_Icon_White_Border: 6126220786210666155
+      Unlock_Black_Border: 3776872756236307474
+      Unlock_White_Border: -3955554300876315883
+      Water_Icon_Black_Border: -4424430338592838562
+      Water_Icon_White_Border: -4418435341856802630
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

@@ -16,6 +16,26 @@ PrefabInstance:
       propertyPath: _agent
       value: 
       objectReference: {fileID: 2732844654820337736}
+    - target: {fileID: 3398122664769042816, guid: 47030a6110a6b1349ba0fb24e7d41e30, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 40194102, guid: 3d1cb00dddc66014ea8602d37474db57, type: 3}
+    - target: {fileID: 3398122664769042816, guid: 47030a6110a6b1349ba0fb24e7d41e30, type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3398122664769042816, guid: 47030a6110a6b1349ba0fb24e7d41e30, type: 3}
+      propertyPath: m_Color.g
+      value: 0.8113208
+      objectReference: {fileID: 0}
+    - target: {fileID: 3398122664769042816, guid: 47030a6110a6b1349ba0fb24e7d41e30, type: 3}
+      propertyPath: m_Color.r
+      value: 0.120835096
+      objectReference: {fileID: 0}
+    - target: {fileID: 5679708228090771436, guid: 47030a6110a6b1349ba0fb24e7d41e30, type: 3}
+      propertyPath: _spriteRenderer
+      value: 
+      objectReference: {fileID: 4906651720401135140}
     - target: {fileID: 5704502083720884401, guid: 47030a6110a6b1349ba0fb24e7d41e30, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -57,16 +77,36 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7379942603315175333, guid: 47030a6110a6b1349ba0fb24e7d41e30, type: 3}
+      propertyPath: m_Size.x
+      value: 0.84137297
+      objectReference: {fileID: 0}
+    - target: {fileID: 7379942603315175333, guid: 47030a6110a6b1349ba0fb24e7d41e30, type: 3}
+      propertyPath: m_Size.y
+      value: 0.88534975
+      objectReference: {fileID: 0}
+    - target: {fileID: 7379942603315175333, guid: 47030a6110a6b1349ba0fb24e7d41e30, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.044186458
+      objectReference: {fileID: 0}
+    - target: {fileID: 7379942603315175333, guid: 47030a6110a6b1349ba0fb24e7d41e30, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.43617487
+      objectReference: {fileID: 0}
+    - target: {fileID: 7379942603315175333, guid: 47030a6110a6b1349ba0fb24e7d41e30, type: 3}
       propertyPath: m_SpriteTilingProperty.pivot.y
-      value: 0.406
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7379942603315175333, guid: 47030a6110a6b1349ba0fb24e7d41e30, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
-      value: 4
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7379942603315175333, guid: 47030a6110a6b1349ba0fb24e7d41e30, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.y
-      value: 4
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8326830953136155342, guid: 47030a6110a6b1349ba0fb24e7d41e30, type: 3}
+      propertyPath: m_Offset.x
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -84,3 +124,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9dd76039f564ba4488f89a59594c7295, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!212 &4906651720401135140 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 3398122664769042816, guid: 47030a6110a6b1349ba0fb24e7d41e30, type: 3}
+  m_PrefabInstance: {fileID: 7728004549840117668}
+  m_PrefabAsset: {fileID: 0}

@@ -60,6 +60,10 @@ PrefabInstance:
       propertyPath: _agent
       value: 
       objectReference: {fileID: 1521976690935750505}
+    - target: {fileID: 2783063553743618370, guid: fb2557a00e16109458d4b9aa0e1b28b1, type: 3}
+      propertyPath: _playersAvatar
+      value: 
+      objectReference: {fileID: 1521976690935750505}
     - target: {fileID: 2918486855590528406, guid: fb2557a00e16109458d4b9aa0e1b28b1, type: 3}
       propertyPath: m_Size.y
       value: 1.14
@@ -127,7 +131,7 @@ PrefabInstance:
     - target: {fileID: 8009190582324086357, guid: fb2557a00e16109458d4b9aa0e1b28b1, type: 3}
       propertyPath: _agent
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1521976690935750505}
     m_RemovedComponents:
     - {fileID: 789071888510828446, guid: fb2557a00e16109458d4b9aa0e1b28b1, type: 3}
     m_RemovedGameObjects: []
@@ -146,6 +150,33 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5c186d9e7f0b181408796d1b3e2bc57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!212 &4641998045694198815 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 7356893370916225383, guid: fb2557a00e16109458d4b9aa0e1b28b1, type: 3}
+  m_PrefabInstance: {fileID: 2770662829861782904}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5284133364547093293 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8009190582324086357, guid: fb2557a00e16109458d4b9aa0e1b28b1, type: 3}
+  m_PrefabInstance: {fileID: 2770662829861782904}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4681af0f9b8114247983dcbed1c9b87e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &6709783727732391569 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8894239734153690089, guid: fb2557a00e16109458d4b9aa0e1b28b1, type: 3}
+  m_PrefabInstance: {fileID: 2770662829861782904}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 202853cf5f62faa44ae052616e7ab982, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!50 &7041081982617726009 stripped
@@ -170,8 +201,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e4adf9024a1a0a43ab056abdd79f168, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxHealthPoints: 3
+  cooldownDamageTime: 1
   _rb: {fileID: 7041081982617726009}
   _fsm: {fileID: 66483776782582842}
+  _hurtBox: {fileID: 5284133364547093293}
+  _spriteRenderer: {fileID: 4641998045694198815}
+  _spriteRendererColor: {r: 0, g: 0, b: 0, a: 0}
   playerIndex: 0
-  _hitBox: {fileID: 0}
+  _hitBox: {fileID: 6709783727732391569}
   _gameReferee: {fileID: 0}

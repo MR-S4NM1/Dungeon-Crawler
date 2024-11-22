@@ -36,6 +36,8 @@ namespace MrSanmi.DungeonCrawler
         #region RunTimeVariables
 
         protected Vector2 _movementInputVector;
+        [SerializeField] protected bool _isInteracting;
+        [SerializeField] protected bool _isCarrying;
 
         #endregion
 
@@ -89,31 +91,32 @@ namespace MrSanmi.DungeonCrawler
 
         public void OnATTACK(InputAction.CallbackContext value)
         {
-            if (value.performed)
+            if(!_isCarrying)
             {
-                _fsm.StateMechanic(StateMechanics.ATTACK);
-                //PROTOTYPE OF CODE (To be deleted)
-                //_hitBox.ActivateHitBox();
-            }
-            else if (value.canceled)
-            {
-
+                if (value.performed)
+                {
+                    _fsm.StateMechanic(StateMechanics.ATTACK);
+                    _fsm.InitializeState();
+                }
             }
         }
 
         public void OnSPRINT(InputAction.CallbackContext value)
         {
-            if (value.performed)
+            if (!_isCarrying)
             {
-                CalculateSprintStateMechanicDirection();
-                _fsm.StateMechanic(_stateMechanic);
-                _fsm.InitializeState();
-            }
-            else if (value.canceled)
-            {
-                _fsm.FinalizeState();
-                CalculateStateMechanicDirection();
-                _fsm.StateMechanic(_stateMechanic);
+                if (value.performed)
+                {
+                    CalculateSprintStateMechanicDirection();
+                    _fsm.StateMechanic(_stateMechanic);
+                    _fsm.InitializeState();
+                }
+                else if (value.canceled)
+                {
+                    _fsm.FinalizeState();
+                    CalculateStateMechanicDirection();
+                    _fsm.StateMechanic(_stateMechanic);
+                }
             }
         }
 
@@ -129,11 +132,12 @@ namespace MrSanmi.DungeonCrawler
         {
             if (value.performed)
             {
-
+                _isCarrying = false;
+                _isInteracting = true;
             }
             else if (value.canceled)
             {
-
+                _isInteracting = false;
             }
         }
 
@@ -150,6 +154,17 @@ namespace MrSanmi.DungeonCrawler
         #endregion
 
         #region GettersSetters
+
+        public bool GetIsInteracting
+        {
+            get { return _isInteracting; }
+        }
+
+        public bool SetIsCarrying
+        {
+            set { _isCarrying = value; }
+        }
+
         #endregion
     }
 }
