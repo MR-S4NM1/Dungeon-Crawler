@@ -10,13 +10,13 @@ namespace MrSanmi.DungeonCrawler
         #region Knobs
 
         public int damage = 1;
-        public float lifeTime = 1;
+        public float lifeTime = 0.7f;
 
         #endregion
 
         #region RuntimeVariables
 
-        protected bool _isHitBoxActivated;
+        [SerializeField] protected bool _isHitBoxActivated;
 
         #endregion
 
@@ -44,7 +44,7 @@ namespace MrSanmi.DungeonCrawler
 
         public void ActivateHitBox()
         {
-            if (_isHitBoxActivated)
+            if (!_isHitBoxActivated)
             {
                 StartCoroutine(Lifetime());
             }
@@ -61,6 +61,15 @@ namespace MrSanmi.DungeonCrawler
             yield return new WaitForSeconds(lifeTime);
             _collider.enabled = false;
             _isHitBoxActivated = false;
+        }
+
+        #endregion
+
+        #region GettersSetters
+
+        public bool IsHitBoxActivated
+        {
+            get { return _isHitBoxActivated;}
         }
 
         #endregion

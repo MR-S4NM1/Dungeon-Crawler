@@ -29,6 +29,7 @@ namespace MrSanmi.DungeonCrawler
         #region References
 
         [SerializeField] protected HitBox _hitBox;
+        [SerializeField] protected GameObject _hitBoxGO;
         [SerializeField] protected GameReferee _gameReferee;
 
         #endregion
@@ -42,6 +43,30 @@ namespace MrSanmi.DungeonCrawler
         #endregion
 
         #region LocalMethods
+
+        protected virtual void CalculateAttackStateMechanicDirection()
+        {
+            if (Vector2.Dot(_fsm.GetMovementDirection, Vector2.down) >= 0.5f)
+            {
+                //DOWN
+                _hitBoxGO.transform.position = this.gameObject.transform.position + new Vector3(0.0f, -1.365f, 0.0f);
+            }
+            else if (Vector2.Dot(_fsm.GetMovementDirection, Vector2.right) >= 0.5f)
+            {
+                //RIGHT
+                _hitBoxGO.transform.position = this.gameObject.transform.position + new Vector3(1.5f, 0.0f, 0.0f);
+            }
+            else if (Vector2.Dot(_fsm.GetMovementDirection, Vector2.up) >= 0.5f)
+            {
+                //UP
+                _hitBoxGO.transform.position = this.gameObject.transform.position + new Vector3(0.0f, 1.365f, 0.0f);
+            }
+            else
+            {
+                //LEFT
+                _hitBoxGO.transform.position = this.gameObject.transform.position + new Vector3(-1.5f, 0.0f, 0.0f);
+            }
+        }
 
         #endregion
 
@@ -85,18 +110,19 @@ namespace MrSanmi.DungeonCrawler
             else if (value.canceled)
             {
                 _fsm.StateMechanic(StateMechanics.STOP);
-                _fsm.InitializeState();
+                //_fsm.InitializeState();
             }
         }
 
         public void OnATTACK(InputAction.CallbackContext value)
         {
-            if(!_isCarrying)
+            if(!_isCarrying && !_hitBox.IsHitBoxActivated)
             {
                 if (value.performed)
                 {
+                    CalculateAttackStateMechanicDirection();
                     _fsm.StateMechanic(StateMechanics.ATTACK);
-                    _fsm.InitializeState();
+                    //_fsm.InitializeState();
                 }
             }
         }
@@ -109,11 +135,11 @@ namespace MrSanmi.DungeonCrawler
                 {
                     CalculateSprintStateMechanicDirection();
                     _fsm.StateMechanic(_stateMechanic);
-                    _fsm.InitializeState();
+                    //_fsm.InitializeState();
                 }
                 else if (value.canceled)
                 {
-                    _fsm.FinalizeState();
+                    //_fsm.FinalizeState();
                     CalculateStateMechanicDirection();
                     _fsm.StateMechanic(_stateMechanic);
                 }

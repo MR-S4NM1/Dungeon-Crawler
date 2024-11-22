@@ -90,7 +90,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 202853cf5f62faa44ae052616e7ab982, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damage: 1
   lifeTime: 1
+  _isHitBoxActivated: 0
   _collider: {fileID: 6049302664443191699}
 --- !u!1 &5521302278063767975
 GameObject:
@@ -182,9 +184,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4681af0f9b8114247983dcbed1c9b87e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealthPoints: 3
   cooldownTime: 1
   _agent: {fileID: 789071888510828446}
+  _enemyNPC: {fileID: 0}
   _currentHealthPoints: 0
 --- !u!1 &5640327576269834275
 GameObject:
@@ -237,8 +239,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 466390af20c14b742990ea7a148d5392, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxHealthPoints: 3
+  cooldownDamageTime: 1
   _rb: {fileID: 5171730959285840193}
   _fsm: {fileID: 2783063553743618370}
+  _hurtBox: {fileID: 8009190582324086357}
+  _spriteRenderer: {fileID: 7356893370916225383}
+  _spriteRendererColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!114 &2783063553743618370
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -254,6 +261,8 @@ MonoBehaviour:
   _animator: {fileID: -6225775655275200431}
   _rigibody2D: {fileID: 5171730959285840193}
   _agent: {fileID: 789071888510828446}
+  _playersAvatar: {fileID: 0}
+  _deathAnimationClip: {fileID: 0}
   _state: 0
   _movementDirection: {x: 0, y: 0}
   _movementSpeed: 0

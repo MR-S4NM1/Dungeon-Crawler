@@ -9,7 +9,8 @@ namespace MrSanmi.DungeonCrawler
     public enum EnemyBehavioursState
     {
         PATROL,
-        PERSECUTION
+        PERSECUTION,
+        SHOOT
     }
 
     #endregion
@@ -322,6 +323,25 @@ namespace MrSanmi.DungeonCrawler
         }
 
         #endregion PersecuteAvatarSubStateMachineMethods
+
+        #region ShootToAvatarSubStateMachineMethods
+
+        protected void InitializeShootToAvatarSubStateMachine()
+        {
+
+        }
+
+        protected void ExecutingShootToAvatarSubStateMachine()
+        {
+
+        }
+
+        protected void FinalizeShootToAvatarSubStateMachine()
+        {
+
+        }
+
+        #endregion
 
         #endregion SubStateMachineStates
     }

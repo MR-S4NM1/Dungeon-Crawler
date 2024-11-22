@@ -69,6 +69,7 @@ namespace MrSanmi.DungeonCrawler
         [SerializeField] protected Rigidbody2D _rigibody2D;
         [SerializeField] protected Agent _agent;
         [SerializeField] protected PlayersAvatar _playersAvatar;
+        [SerializeField] protected AnimationClip _deathAnimationClip;
 
         #endregion
 
@@ -141,10 +142,6 @@ namespace MrSanmi.DungeonCrawler
                 case States.ATTACKING_LEFT:
                 case States.ATTACKING_RIGHT:
                     InitializeAttackingState();
-                    if(_agent as PlayersAvatar)
-                    {
-                        ((PlayersAvatar)_agent).ActivateHitBox();
-                    }
                     break;
                 case States.SPRINTING_UP:
                 case States.SPRINTING_LEFT:
@@ -154,7 +151,6 @@ namespace MrSanmi.DungeonCrawler
                     break;
                 case States.DEATH:
                     InitializeDeathState();
-                    //gameObject.SetActive(false); //PROTOTYPE TO DELETE
                     break;
             }
         }
@@ -169,16 +165,11 @@ namespace MrSanmi.DungeonCrawler
                 case States.IDLE_RIGHT:
                     ExecutingIdleState();
                     break;
-
                 case States.ATTACKING_UP:
                 case States.ATTACKING_DOWN:
                 case States.ATTACKING_LEFT:
                 case States.ATTACKING_RIGHT:
                     ExecutingAttackingState();
-                    if (_agent as PlayersAvatar)
-                    {
-                        ((PlayersAvatar)_agent).ActivateHitBox();
-                    }
                     break;
                 case States.SPRINTING_UP:
                 case States.SPRINTING_LEFT:
@@ -270,7 +261,10 @@ namespace MrSanmi.DungeonCrawler
         #region IdleState
         protected virtual void InitializeIdleState()
         {
-            _movementSpeed = 0.0f;
+            if(_agent as PlayersAvatar)
+            {
+                _movementSpeed = 0.0f;
+            }
         }
 
         protected virtual void ExecutingIdleState()
@@ -286,7 +280,10 @@ namespace MrSanmi.DungeonCrawler
         #region MovingState
         protected virtual void InitializeMovingState()
         {
-            _movementSpeed = 5.0f;
+            if (_agent as PlayersAvatar)
+            {
+                _movementSpeed = 5.0f;
+            }
         }
 
         protected virtual void ExecutingMovingState()
@@ -302,9 +299,11 @@ namespace MrSanmi.DungeonCrawler
         #region AttackingState
         protected virtual void InitializeAttackingState()
         {
-            _playersAvatar.ActivateHitBox();
-            _movementSpeed = 0.0f;
-            StateMechanic(StateMechanics.MOVE_DOWN);
+            if (_agent as PlayersAvatar)
+            {
+                _playersAvatar.ActivateHitBox();
+                _movementSpeed = 0.0f;
+            }
         }
 
         protected virtual void ExecutingAttackingState()
@@ -320,7 +319,10 @@ namespace MrSanmi.DungeonCrawler
         #region SprintingState
         protected virtual void InitializeSprintingState()
         {
-            _movementSpeed = 6.75f;
+            if (_agent as PlayersAvatar)
+            {
+                _movementSpeed = 6.75f;
+            }
         }
 
         protected virtual void ExecutingSprintingState()
@@ -336,7 +338,7 @@ namespace MrSanmi.DungeonCrawler
         #region DeathState
         protected virtual void InitializeDeathState()
         {
-
+            StartCoroutine(DeathCoroutine());
         }
 
         protected virtual void ExecutingDeathState() 
@@ -347,6 +349,22 @@ namespace MrSanmi.DungeonCrawler
         {
 
         }
+
+        IEnumerator DeathCoroutine()
+        {
+            if(!(_agent as DestroyableObject))
+            {
+                _movementDirection = Vector2.zero;
+                _movementSpeed = 0.0f;
+                yield return new WaitForSeconds(_deathAnimationClip.length);
+                this.gameObject.SetActive(false);
+            }
+            else
+            {
+                this.gameObject.SetActive(false);
+            }
+        }
+
         #endregion InteractingState
 
         #endregion FiniteStateMachineStates

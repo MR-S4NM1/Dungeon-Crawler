@@ -36,6 +36,8 @@ namespace MrSanmi.DungeonCrawler
 
         [SerializeField] public EnemyBehaviour[] persecutionBehaviours;
 
+        [SerializeField] public EnemyBehaviour[] shootingBehaviours;
+
         [SerializeField] public float visionRadius;
     }
 }

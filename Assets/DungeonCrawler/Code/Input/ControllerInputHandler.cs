@@ -33,8 +33,8 @@ namespace MrSanmi.DungeonCrawler
                 {
                     _avatarOfIndex = avatar;
                     _avatarOfIndex.gameObject.SetActive(true);
-                    /*this.transform.parent = avatar.transform;
-                    this.transform.localPosition = Vector2.zero;*/
+                    this.transform.parent = avatar.transform;
+                    this.transform.localPosition = Vector2.zero;
                 }
             }
         }

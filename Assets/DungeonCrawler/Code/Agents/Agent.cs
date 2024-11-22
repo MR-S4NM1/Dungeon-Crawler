@@ -166,6 +166,14 @@ namespace MrSanmi.DungeonCrawler
             */
         }
 
+        public void GoToDeathState()
+        {
+            if(_hurtBox.CurrentHealthPoints <= 0)
+            {
+                StateMechanic(StateMechanics.DIE);
+            }
+        }
+
         public void StateMechanic(StateMechanics value)
         {
             _fsm.StateMechanic(value);

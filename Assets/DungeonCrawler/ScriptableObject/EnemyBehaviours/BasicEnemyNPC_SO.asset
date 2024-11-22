@@ -12,18 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 971290e500be0ee4d851be5feb3ed701, type: 3}
   m_Name: BasicEnemyNPC_SO
   m_EditorClassIdentifier: 
-  patrolBehaviours:
-  - type: 0
-    speed: 0
-    time: 3
-  - type: 1
-    speed: 1
-    time: 5
-  persecutionBehaviours:
-  - type: 3
-    speed: 2
-    time: 3
-  - type: 0
-    speed: 0
-    time: 1
+  patrolBehaviours: []
+  persecutionBehaviours: []
+  shootingBehaviours: []
   visionRadius: 0
