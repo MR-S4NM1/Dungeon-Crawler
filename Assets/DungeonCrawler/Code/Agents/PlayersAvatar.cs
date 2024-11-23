@@ -103,15 +103,41 @@ namespace MrSanmi.DungeonCrawler
             if (value.performed)
             {
                 _movementInputVector = value.ReadValue<Vector2>();
-                _fsm.SetMovementDirection = _movementInputVector;
-                CalculateStateMechanicDirection();
-                _fsm.StateMechanic(_stateMechanic);
             }
             else if (value.canceled)
             {
+                _fsm.SetMovementSpeed = 0.0f;
+                _movementInputVector = Vector2.zero;
+                _fsm.SetMovementDirection = Vector2.zero;
                 _fsm.StateMechanic(StateMechanics.STOP);
                 //_fsm.InitializeState();
             }
+            switch (_fsm.GetCurrentState)
+            {
+                case States.IDLE_DOWN:
+                case States.IDLE_UP:
+                case States.IDLE_RIGHT:
+                case States.IDLE_LEFT:
+                case States.MOVING_RIGHT:
+                case States.MOVING_UP:
+                case States.MOVING_DOWN:
+                case States.MOVING_LEFT:
+                    _fsm.SetMovementDirection = _movementInputVector;
+                    _fsm.SetMovementSpeed = 3.0f;
+                    CalculateStateMechanicDirection();
+                    _fsm.StateMechanic(_stateMechanic);
+                    break;
+                case States.SPRINTING_DOWN:
+                case States.SPRINTING_RIGHT:
+                case States.SPRINTING_UP:
+                case States.SPRINTING_LEFT:
+                    _fsm.SetMovementDirection = _movementInputVector;
+                    _fsm.SetMovementSpeed = 6.0f;
+                    CalculateSprintStateMechanicDirection();
+                    _fsm.StateMechanic(_stateMechanic);
+                    break;
+            }
+
         }
 
         public void OnATTACK(InputAction.CallbackContext value)
@@ -131,17 +157,41 @@ namespace MrSanmi.DungeonCrawler
         {
             if (!_isCarrying)
             {
-                if (value.performed)
+                switch (_fsm.GetCurrentState)
                 {
-                    CalculateSprintStateMechanicDirection();
-                    _fsm.StateMechanic(_stateMechanic);
-                    //_fsm.InitializeState();
-                }
-                else if (value.canceled)
-                {
-                    //_fsm.FinalizeState();
-                    CalculateStateMechanicDirection();
-                    _fsm.StateMechanic(_stateMechanic);
+                    case States.IDLE_DOWN:
+                    case States.IDLE_UP:
+                    case States.IDLE_RIGHT:
+                    case States.IDLE_LEFT:
+                        break;
+                    case States.MOVING_RIGHT:
+                    case States.MOVING_UP:
+                    case States.MOVING_DOWN:
+                    case States.MOVING_LEFT:
+                        if (value.performed)
+                        {
+                            CalculateSprintStateMechanicDirection();
+                            _fsm.StateMechanic(_stateMechanic);
+                            //_fsm.InitializeState();
+                        }
+                        break;
+                    case States.SPRINTING_DOWN:
+                    case States.SPRINTING_RIGHT:
+                    case States.SPRINTING_UP:
+                    case States.SPRINTING_LEFT:
+                        if (value.performed)
+                        {
+                            CalculateSprintStateMechanicDirection();
+                            _fsm.StateMechanic(_stateMechanic);
+                            //_fsm.InitializeState();
+                        }
+                        else if (value.canceled)
+                        {
+                            //_fsm.FinalizeState();
+                            CalculateStateMechanicDirection();
+                            _fsm.StateMechanic(_stateMechanic);
+                        }
+                        break;
                 }
             }
         }

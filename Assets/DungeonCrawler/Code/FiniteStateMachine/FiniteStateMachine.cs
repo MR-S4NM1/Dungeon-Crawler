@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using Unity.VisualScripting;
+using UnityEditorInternal;
 
 namespace MrSanmi.DungeonCrawler
 {
@@ -252,6 +254,11 @@ namespace MrSanmi.DungeonCrawler
         public float SetMovementSpeed
         {
             set { _movementSpeed = value; }
+        }
+
+        public States GetCurrentState
+        {
+            get { return _state; }
         }
 
         #endregion
