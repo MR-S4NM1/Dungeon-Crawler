@@ -22,15 +22,15 @@ PrefabInstance:
       objectReference: {fileID: 40194102, guid: 3d1cb00dddc66014ea8602d37474db57, type: 3}
     - target: {fileID: 3398122664769042816, guid: 47030a6110a6b1349ba0fb24e7d41e30, type: 3}
       propertyPath: m_Color.b
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3398122664769042816, guid: 47030a6110a6b1349ba0fb24e7d41e30, type: 3}
       propertyPath: m_Color.g
-      value: 0.8113208
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3398122664769042816, guid: 47030a6110a6b1349ba0fb24e7d41e30, type: 3}
       propertyPath: m_Color.r
-      value: 0.120835096
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5679708228090771436, guid: 47030a6110a6b1349ba0fb24e7d41e30, type: 3}
       propertyPath: _spriteRenderer
@@ -108,6 +108,10 @@ PrefabInstance:
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8047664850729040293, guid: 47030a6110a6b1349ba0fb24e7d41e30, type: 3}
+      propertyPath: _deathAnimationClip
+      value: 
+      objectReference: {fileID: 7400000, guid: 94633d140d1520146adbe1a64f5b3744, type: 2}
     - target: {fileID: 8326830953136155342, guid: 47030a6110a6b1349ba0fb24e7d41e30, type: 3}
       propertyPath: m_Offset.x
       value: 0

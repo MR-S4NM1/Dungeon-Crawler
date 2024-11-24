@@ -238,6 +238,12 @@ namespace MrSanmi.DungeonCrawler
             _enemyPool?.SubstractEnemyFromEnemyCount();
         }
 
+        public virtual void ApplyForce(Vector2 direction)
+        {
+            print("Forceeeeeeee!" + direction);
+            _rb.AddForce(direction * 5.0f, ForceMode2D.Impulse);
+        }
+
         #endregion
 
         #region GettersSetters

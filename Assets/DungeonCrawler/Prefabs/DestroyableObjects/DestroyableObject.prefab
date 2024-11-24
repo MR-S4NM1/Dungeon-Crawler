@@ -67,7 +67,7 @@ PrefabInstance:
     - target: {fileID: 2783063553743618370, guid: fb2557a00e16109458d4b9aa0e1b28b1, type: 3}
       propertyPath: _animator
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 6965374290739624118}
     - target: {fileID: 5171730959285840193, guid: fb2557a00e16109458d4b9aa0e1b28b1, type: 3}
       propertyPath: m_Constraints
       value: 7
@@ -140,6 +140,11 @@ MonoBehaviour:
 --- !u!50 &1077993006675464614 stripped
 Rigidbody2D:
   m_CorrespondingSourceObject: {fileID: 5171730959285840193, guid: fb2557a00e16109458d4b9aa0e1b28b1, type: 3}
+  m_PrefabInstance: {fileID: 5273821840289069287}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &6965374290739624118 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: -6225775655275200431, guid: fb2557a00e16109458d4b9aa0e1b28b1, type: 3}
   m_PrefabInstance: {fileID: 5273821840289069287}
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &8047664850729040293 stripped

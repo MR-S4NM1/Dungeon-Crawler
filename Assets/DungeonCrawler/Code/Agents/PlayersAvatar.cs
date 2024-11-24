@@ -61,7 +61,7 @@ namespace MrSanmi.DungeonCrawler
                 //UP
                 _hitBoxGO.transform.position = this.gameObject.transform.position + new Vector3(0.0f, 1.365f, 0.0f);
             }
-            else
+            else if(Vector2.Dot(_fsm.GetMovementDirection, Vector2.left) >= 0.5f)
             {
                 //LEFT
                 _hitBoxGO.transform.position = this.gameObject.transform.position + new Vector3(-1.5f, 0.0f, 0.0f);
@@ -100,12 +100,9 @@ namespace MrSanmi.DungeonCrawler
 
         public void OnMOVE(InputAction.CallbackContext value)
         {
-            if (value.performed)
+            if (value.canceled)
             {
-                _movementInputVector = value.ReadValue<Vector2>();
-            }
-            else if (value.canceled)
-            {
+                //_fsm.SetMovementDirection = _movementInputVector;
                 _fsm.SetMovementSpeed = 0.0f;
                 _movementInputVector = Vector2.zero;
                 _fsm.SetMovementDirection = Vector2.zero;
@@ -115,25 +112,35 @@ namespace MrSanmi.DungeonCrawler
             switch (_fsm.GetCurrentState)
             {
                 case States.IDLE_DOWN:
-                case States.IDLE_UP:
                 case States.IDLE_RIGHT:
+                case States.IDLE_UP:
                 case States.IDLE_LEFT:
+                case States.MOVING_DOWN:
                 case States.MOVING_RIGHT:
                 case States.MOVING_UP:
-                case States.MOVING_DOWN:
                 case States.MOVING_LEFT:
+                    if (value.performed)
+                    {
+                        _movementInputVector = value.ReadValue<Vector2>();
+                    }
                     _fsm.SetMovementDirection = _movementInputVector;
-                    _fsm.SetMovementSpeed = 3.0f;
+                    _fsm.SetMovementSpeed = 5.0f;
                     CalculateStateMechanicDirection();
+                    CalculateAttackStateMechanicDirection();
                     _fsm.StateMechanic(_stateMechanic);
                     break;
                 case States.SPRINTING_DOWN:
                 case States.SPRINTING_RIGHT:
                 case States.SPRINTING_UP:
                 case States.SPRINTING_LEFT:
+                    if (value.performed)
+                    {
+                        _movementInputVector = value.ReadValue<Vector2>();
+                    }
                     _fsm.SetMovementDirection = _movementInputVector;
-                    _fsm.SetMovementSpeed = 6.0f;
+                    _fsm.SetMovementSpeed = 6.75f;
                     CalculateSprintStateMechanicDirection();
+                    CalculateAttackStateMechanicDirection();
                     _fsm.StateMechanic(_stateMechanic);
                     break;
             }
@@ -171,6 +178,7 @@ namespace MrSanmi.DungeonCrawler
                         if (value.performed)
                         {
                             CalculateSprintStateMechanicDirection();
+                            CalculateAttackStateMechanicDirection();
                             _fsm.StateMechanic(_stateMechanic);
                             //_fsm.InitializeState();
                         }
@@ -182,6 +190,7 @@ namespace MrSanmi.DungeonCrawler
                         if (value.performed)
                         {
                             CalculateSprintStateMechanicDirection();
+                            CalculateAttackStateMechanicDirection();
                             _fsm.StateMechanic(_stateMechanic);
                             //_fsm.InitializeState();
                         }
@@ -189,6 +198,7 @@ namespace MrSanmi.DungeonCrawler
                         {
                             //_fsm.FinalizeState();
                             CalculateStateMechanicDirection();
+                            CalculateAttackStateMechanicDirection();
                             _fsm.StateMechanic(_stateMechanic);
                         }
                         break;

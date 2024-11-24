@@ -173,7 +173,7 @@ PrefabInstance:
       objectReference: {fileID: 1521976690935750505}
     - target: {fileID: 8894239734153690089, guid: fb2557a00e16109458d4b9aa0e1b28b1, type: 3}
       propertyPath: lifeTime
-      value: 0.8
+      value: 0.45
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 789071888510828446, guid: fb2557a00e16109458d4b9aa0e1b28b1, type: 3}

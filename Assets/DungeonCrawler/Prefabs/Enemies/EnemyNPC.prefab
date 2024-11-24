@@ -96,6 +96,10 @@ PrefabInstance:
       propertyPath: _agent
       value: 
       objectReference: {fileID: 1529166181514896774}
+    - target: {fileID: 8009190582324086357, guid: fb2557a00e16109458d4b9aa0e1b28b1, type: 3}
+      propertyPath: _enemyNPC
+      value: 
+      objectReference: {fileID: 1529166181514896774}
     m_RemovedComponents:
     - {fileID: 789071888510828446, guid: fb2557a00e16109458d4b9aa0e1b28b1, type: 3}
     m_RemovedGameObjects: []
@@ -119,6 +123,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4681af0f9b8114247983dcbed1c9b87e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!212 &612826379977662714 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 7356893370916225383, guid: fb2557a00e16109458d4b9aa0e1b28b1, type: 3}
+  m_PrefabInstance: {fileID: 7969644912447447453}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2368794304740764094 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5640327576269834275, guid: fb2557a00e16109458d4b9aa0e1b28b1, type: 3}
@@ -141,7 +150,7 @@ MonoBehaviour:
   _rb: {fileID: 2980380450615363804}
   _fsm: {fileID: 5190029530384064735}
   _hurtBox: {fileID: 125961928001005512}
-  _spriteRenderer: {fileID: 0}
+  _spriteRenderer: {fileID: 612826379977662714}
   _spriteRendererColor: {r: 0, g: 0, b: 0, a: 0}
   scriptBehaviours: {fileID: 11400000, guid: a90f31639e3e15b47a973fa81aae11aa, type: 2}
   _enemyPool: {fileID: 0}

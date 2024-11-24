@@ -59,6 +59,10 @@ namespace MrSanmi.DungeonCrawler
                     {
                         //Damn, I am about to be hurt DX
                         _currentHealthPoints -= 1; //other.gameObject.GetComponent<HitBox>().GetDamage;
+
+                        _enemyNPC?.ApplyForce((transform.parent.gameObject.transform.position - other.gameObject.transform.position).normalized);
+
+
                         //Check if I am already dead
                         if(_currentHealthPoints <= 0)
                         {

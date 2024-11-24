@@ -53,7 +53,7 @@ namespace MrSanmi.DungeonCrawler
             {
                 _stateMechanic = StateMechanics.MOVE_DOWN;
             }
-            else if (Vector2.Dot(_fsm.GetMovementDirection, Vector2.right) >= 0.5f) 
+            else if (Vector2.Dot(_fsm.GetMovementDirection, Vector2.right) >= 0.5f)
             {
                 _stateMechanic = StateMechanics.MOVE_RIGHT;
             }
@@ -61,7 +61,7 @@ namespace MrSanmi.DungeonCrawler
             {
                 _stateMechanic = StateMechanics.MOVE_UP;
             }
-            else
+            else if (Vector2.Dot(_fsm.GetMovementDirection, Vector2.left) >= 0.5f)
             {
                 _stateMechanic = StateMechanics.MOVE_LEFT;
             }

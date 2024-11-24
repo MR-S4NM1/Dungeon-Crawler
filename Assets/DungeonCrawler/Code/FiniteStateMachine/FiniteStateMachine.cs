@@ -40,17 +40,17 @@ namespace MrSanmi.DungeonCrawler
         //STOP
         STOP,
         //MOVE
-        MOVE_UP,
         MOVE_DOWN,
-        MOVE_LEFT,
         MOVE_RIGHT,
+        MOVE_UP,
+        MOVE_LEFT,
         //ATTACK
         ATTACK,
         //SPRINTING
-        SPRINT_UP,
         SPRINT_DOWN,
-        SPRINT_LEFT,
         SPRINT_RIGHT,
+        SPRINT_UP,
+        SPRINT_LEFT,
         //DIE
         DIE //TODO: Complete the code to administrate DIE
     }
@@ -359,17 +359,10 @@ namespace MrSanmi.DungeonCrawler
 
         IEnumerator DeathCoroutine()
         {
-            if(!(_agent as DestroyableObject))
-            {
-                _movementDirection = Vector2.zero;
-                _movementSpeed = 0.0f;
-                yield return new WaitForSeconds(_deathAnimationClip.length);
-                this.gameObject.SetActive(false);
-            }
-            else
-            {
-                this.gameObject.SetActive(false);
-            }
+            _movementDirection = Vector2.zero;
+            _movementSpeed = 0.0f;
+            yield return new WaitForSeconds(_deathAnimationClip.length);
+            this.gameObject.SetActive(false);
         }
 
         #endregion InteractingState
