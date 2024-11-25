@@ -16,13 +16,25 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -6792674325730085196, guid: 07041551a0d21ad42ab3855335c7654c, type: 3}
+    - target: {fileID: 1529166181514896774, guid: 91486c711665999449c3bc0fcf3ce087, type: 3}
+      propertyPath: scriptBehaviours
+      value: 
+      objectReference: {fileID: 11400000, guid: 550f5b4579f91a44089c1a0445b34466, type: 2}
+    - target: {fileID: 1529166181514896774, guid: 91486c711665999449c3bc0fcf3ce087, type: 3}
+      propertyPath: _currentEnemyBehaviour.time
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 2368794304740764094, guid: 91486c711665999449c3bc0fcf3ce087, type: 3}
       propertyPath: m_Name
       value: EnemyNPC_Slime_Patrol
       objectReference: {fileID: 0}
     - target: {fileID: 4738752614237390559, guid: 91486c711665999449c3bc0fcf3ce087, type: 3}
+      propertyPath: m_SpriteTilingProperty.pivot.x
+      value: 0.485
+      objectReference: {fileID: 0}
+    - target: {fileID: 4738752614237390559, guid: 91486c711665999449c3bc0fcf3ce087, type: 3}
       propertyPath: m_SpriteTilingProperty.pivot.y
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4738752614237390559, guid: 91486c711665999449c3bc0fcf3ce087, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
@@ -36,6 +48,10 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 22100000, guid: 982843d5c4e810c469933b9490f67dbb, type: 2}
+    - target: {fileID: 5190029530384064735, guid: 91486c711665999449c3bc0fcf3ce087, type: 3}
+      propertyPath: _movementSpeed
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 7531085914452601291, guid: 91486c711665999449c3bc0fcf3ce087, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -76,7 +92,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5643205292678184229, guid: 91486c711665999449c3bc0fcf3ce087, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -89,6 +106,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fc0ac7e8b933f9849a1068011b4a11f5, type: 3}
+  m_Script: {fileID: 11500000, guid: e5633633b0e114345b86df3b9ab0e562, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

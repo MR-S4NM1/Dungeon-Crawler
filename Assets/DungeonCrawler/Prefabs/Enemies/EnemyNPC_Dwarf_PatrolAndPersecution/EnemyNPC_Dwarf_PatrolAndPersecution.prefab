@@ -28,6 +28,10 @@ PrefabInstance:
       propertyPath: m_WasSpriteAssigned
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1529166181514896774, guid: 91486c711665999449c3bc0fcf3ce087, type: 3}
+      propertyPath: _enemyType
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2368794304740764094, guid: 91486c711665999449c3bc0fcf3ce087, type: 3}
       propertyPath: m_Name
       value: EnemyNPC_Dwarf_PatrolAndPersecution

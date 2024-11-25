@@ -25,7 +25,7 @@ namespace MrSanmi.DungeonCrawler
         #region RuntimeVariables
 
         protected bool _isInCooldown;
-        [SerializeField] protected int _currentHealthPoints;
+        [SerializeField] public int _currentHealthPoints;
 
         #endregion
 
@@ -72,8 +72,6 @@ namespace MrSanmi.DungeonCrawler
                             //TODO: Complete the administration of this state
                             //Animator
                             //Initialize, Executing and Finalize
-
-                            _enemyNPC?.AlertPoolAboutDeath();
                         }
                         else
                         {
@@ -98,12 +96,6 @@ namespace MrSanmi.DungeonCrawler
         #endregion
 
         #region GettersSetters
-
-        public int CurrentHealthPoints
-        {
-            get { return _currentHealthPoints; }
-            set { _currentHealthPoints = value; }
-        }
 
         #endregion
     }

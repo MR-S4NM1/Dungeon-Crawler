@@ -1,14 +1,14 @@
 using MrSanmi.DungeonCrawler;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 namespace MrSanmi.DungeonCrawler
 {
     public class EnemyPool : MonoBehaviour
     {
-        [SerializeField] protected int _maxEnemyHealthPoints;
-        [SerializeField] protected List<EnemyNPC> _enemiesOfThisPool;
+        [SerializeField] protected List<Agent> _enemiesOfThisPool;
         [SerializeField] protected int _enemiesLeft;
 
         private void Start()
@@ -16,16 +16,21 @@ namespace MrSanmi.DungeonCrawler
             _enemiesLeft = _enemiesOfThisPool.Count;
         }
 
-        private void OnTriggerEnter2D(Collider2D collision)
+        private void OnTriggerEnter2D(Collider2D other)
         {
-            if(_enemiesLeft <= 0)
+            if (other.gameObject.CompareTag("Player"))
             {
-                foreach (EnemyNPC enemy in _enemiesOfThisPool)
+                if (_enemiesLeft <= 0)
                 {
-                    if (enemy.GetComponent<HurtBox>().CurrentHealthPoints <= 0)
+                    print("I always come back");
+                    for (int i = 0; i < _enemiesOfThisPool.Count; ++i)
                     {
-                        enemy.gameObject.SetActive(true);
-                        enemy.GetComponent<HurtBox>().CurrentHealthPoints = _maxEnemyHealthPoints;
+                        if (_enemiesOfThisPool[i].GetComponentInChildren<HurtBox>()._currentHealthPoints <= 0)
+                        {
+                            _enemiesOfThisPool[i].GetComponentInChildren<HurtBox>()._currentHealthPoints = _enemiesOfThisPool[i].maxHealthPoints;
+                            _enemiesOfThisPool[i].gameObject.SetActive(true);
+                            _enemiesOfThisPool[i].GetComponent<Agent>().StateMechanic(StateMechanics.REVIVE);
+                        }
                     }
                 }
             }

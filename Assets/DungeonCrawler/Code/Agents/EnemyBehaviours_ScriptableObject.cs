@@ -16,7 +16,6 @@ namespace MrSanmi.DungeonCrawler
 
     #endregion
 
-
     #region Structs
 
     [System.Serializable]

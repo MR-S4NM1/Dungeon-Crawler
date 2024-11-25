@@ -20,13 +20,12 @@ namespace MrSanmi.DungeonCrawler
         public int maxHealthPoints = 3;
         public float cooldownDamageTime = 1f;
 
-
         #endregion
 
         #region References
 
-        [SerializeField, HideInInspector] protected Rigidbody2D _rb;
-        [SerializeField, HideInInspector] protected FiniteStateMachine _fsm;
+        [SerializeField] protected Rigidbody2D _rb;
+        [SerializeField] protected FiniteStateMachine _fsm;
         [SerializeField] protected HurtBox _hurtBox;
         [SerializeField] protected SpriteRenderer _spriteRenderer;
 
@@ -120,17 +119,17 @@ namespace MrSanmi.DungeonCrawler
 
         #region UnityMethods
 
-        private void OnDrawGizmos()
-        {
-            #if UNITY_EDITOR
-            InitializeAgent();
-            #endif
-        }
-
-        //void Start()
+        //private void OnDrawGizmos()
         //{
-        //   InitializeAgent();
+        //    #if UNITY_EDITOR
+        //    InitializeAgent();
+        //    #endif
         //}
+
+        void Start()
+        {
+            InitializeAgent();
+        }
 
         void Update()
         {
@@ -168,7 +167,7 @@ namespace MrSanmi.DungeonCrawler
 
         public void GoToDeathState()
         {
-            if(_hurtBox.CurrentHealthPoints <= 0)
+            if(_hurtBox._currentHealthPoints <= 0)
             {
                 StateMechanic(StateMechanics.DIE);
             }

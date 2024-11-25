@@ -56,6 +56,10 @@ PrefabInstance:
       propertyPath: _agent
       value: 
       objectReference: {fileID: 1529166181514896774}
+    - target: {fileID: 2783063553743618370, guid: fb2557a00e16109458d4b9aa0e1b28b1, type: 3}
+      propertyPath: _enemyNPC
+      value: 
+      objectReference: {fileID: 1529166181514896774}
     - target: {fileID: 5521302278063767975, guid: fb2557a00e16109458d4b9aa0e1b28b1, type: 3}
       propertyPath: m_Layer
       value: 7
@@ -142,7 +146,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2368794304740764094}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fc0ac7e8b933f9849a1068011b4a11f5, type: 3}
+  m_Script: {fileID: 11500000, guid: e5633633b0e114345b86df3b9ab0e562, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealthPoints: 3
@@ -152,8 +156,13 @@ MonoBehaviour:
   _hurtBox: {fileID: 125961928001005512}
   _spriteRenderer: {fileID: 612826379977662714}
   _spriteRendererColor: {r: 0, g: 0, b: 0, a: 0}
-  scriptBehaviours: {fileID: 11400000, guid: a90f31639e3e15b47a973fa81aae11aa, type: 2}
+  scriptBehaviours: {fileID: 0}
+  _enemyType: 0
   _enemyPool: {fileID: 0}
+  _currentEnemyBehaviour:
+    type: 0
+    speed: 0
+    time: 0
 --- !u!58 &5643205292678184229
 CircleCollider2D:
   m_ObjectHideFlags: 0

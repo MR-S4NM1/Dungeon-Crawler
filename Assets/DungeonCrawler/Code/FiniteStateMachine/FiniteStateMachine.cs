@@ -52,7 +52,9 @@ namespace MrSanmi.DungeonCrawler
         SPRINT_UP,
         SPRINT_LEFT,
         //DIE
-        DIE //TODO: Complete the code to administrate DIE
+        DIE, //TODO: Complete the code to administrate DIE
+        //REVIVE (JUST FOR ENEMIES OF A POOL)
+        REVIVE
     }
 
     #endregion
@@ -70,6 +72,7 @@ namespace MrSanmi.DungeonCrawler
         [SerializeField] protected Animator _animator;
         [SerializeField] protected Rigidbody2D _rigibody2D;
         [SerializeField] protected Agent _agent;
+        [SerializeField] protected EnemyNPC _enemyNPC;
         [SerializeField] protected PlayersAvatar _playersAvatar;
         [SerializeField] protected AnimationClip _deathAnimationClip;
 
@@ -226,7 +229,6 @@ namespace MrSanmi.DungeonCrawler
         // Action
         public void StateMechanic(StateMechanics value)
         {
-            FinalizeState();
             _animator.SetBool(value.ToString() , true);
         }
 
@@ -362,6 +364,7 @@ namespace MrSanmi.DungeonCrawler
             _movementDirection = Vector2.zero;
             _movementSpeed = 0.0f;
             yield return new WaitForSeconds(_deathAnimationClip.length);
+            _enemyNPC?.AlertPoolAboutDeath();
             this.gameObject.SetActive(false);
         }
 

@@ -13,6 +13,13 @@ namespace MrSanmi.DungeonCrawler
         SHOOT
     }
 
+    public enum EnemyType 
+    {
+        PATROLLING,
+        PATROLLING_AND_PERSECUTION,
+        PATROLLING_AND_SHOOTING
+    }
+
     #endregion
 
     #region Structs
@@ -22,6 +29,7 @@ namespace MrSanmi.DungeonCrawler
         #region Knobs
 
         public EnemyBehaviours_ScriptableObject scriptBehaviours;
+        [SerializeField] protected EnemyType _enemyType;
 
         #endregion
 
@@ -33,7 +41,7 @@ namespace MrSanmi.DungeonCrawler
 
         #region RunTimeVariables
 
-        protected EnemyBehaviour _currentEnemyBehaviour;
+        [SerializeField] protected EnemyBehaviour _currentEnemyBehaviour;
         protected EnemyBehavioursState _currentEnemyBehaviourState;
         protected int _currentEnemyBehaviourIndex;
         protected Transform _avatarsTransform;
@@ -92,7 +100,6 @@ namespace MrSanmi.DungeonCrawler
             if (_currentEnemyBehaviour.time > 0)
             {
                 StartCoroutine(TimerForEnemyBehaviour());
-
             }
         }
 
@@ -190,6 +197,11 @@ namespace MrSanmi.DungeonCrawler
             StopAllCoroutines();
         }
 
+        private void OnEnable()
+        {
+            InitializePatrolBehaviour();
+        }
+
         void FixedUpdate()
         {
             switch (_currentEnemyBehaviour.type)
@@ -208,19 +220,29 @@ namespace MrSanmi.DungeonCrawler
 
         private void OnTriggerEnter2D(Collider2D other)
         {
-            if (other.gameObject.tag == "Player")
+            switch (_enemyType)
             {
-                _avatarsTransform = other.gameObject.transform;
-                InitializePersecutionBehaviour();
+                case EnemyType.PATROLLING_AND_PERSECUTION:
+                    if (other.CompareTag("Player"))
+                    {
+                        _avatarsTransform = other.gameObject.transform;
+                        InitializePersecutionBehaviour();
+                    }
+                    break;
             }
         }
 
         private void OnTriggerExit2D(Collider2D other)
         {
-            if (other.gameObject.tag == "Player")
+            switch (_enemyType)
             {
-                _avatarsTransform = null;
-                InitializePatrolBehaviour(); // Initialize patrol
+                case EnemyType.PATROLLING_AND_PERSECUTION:
+                    if (other.CompareTag("Player"))
+                    {
+                        _avatarsTransform = null;
+                        InitializePatrolBehaviour(); // Initialize patrol
+                    }
+                    break;
             }
         }
 
