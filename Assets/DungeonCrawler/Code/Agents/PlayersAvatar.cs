@@ -107,16 +107,24 @@ namespace MrSanmi.DungeonCrawler
             {
                 if (_isInteracting)
                 {
-                    ActivateOrbe();
+                    ActivateOrDeactivateOrbe(true);
                 }
+            }
+        }
+
+        protected void ValidateOrbePedestalTrigger(Collider2D other)
+        {
+            if (other.gameObject.CompareTag("OrbePedestal"))
+            {
+
             }
         }
 
         //TODO: Health object validation()
 
-        protected void ActivateOrbe()
+        protected void ActivateOrDeactivateOrbe(bool activateOrDeactivate)
         {
-            _orbeGO.SetActive(true);
+            _orbeGO.SetActive(activateOrDeactivate);
         }
 
         #endregion
@@ -253,6 +261,8 @@ namespace MrSanmi.DungeonCrawler
                 if (_isCarrying)
                 {
                     _isCarrying = false;
+                    ActivateOrDeactivateOrbe(false);
+                    _gameReferee.ActivateOrbeOfTheGame();
                 }
             }
             else if (value.canceled)

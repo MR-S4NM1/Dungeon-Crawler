@@ -25,6 +25,8 @@ namespace MrSanmi.DungeonCrawler
 
         [SerializeField] public CinemachineTargetGroup targetGroup;
 
+        [SerializeField] protected GameObject orbe;
+
         #endregion
 
         #region RuntimeVariables
@@ -61,6 +63,11 @@ namespace MrSanmi.DungeonCrawler
         #endregion
 
         #region PublicMethods
+
+        public void ActivateOrbeOfTheGame()
+        {
+            orbe.SetActive(true);
+        }
 
         public void PauseGame()
         {
