@@ -1,3 +1,4 @@
+using Cinemachine;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -21,6 +22,8 @@ namespace MrSanmi.DungeonCrawler
         #region References
 
         public GameObject panelPause;
+
+        [SerializeField] public CinemachineTargetGroup targetGroup;
 
         #endregion
 

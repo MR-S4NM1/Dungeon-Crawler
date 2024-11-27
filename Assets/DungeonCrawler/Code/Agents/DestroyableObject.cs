@@ -5,6 +5,13 @@ using UnityEngine;
 namespace MrSanmi.DungeonCrawler
 {
     #region Enum
+
+    public enum DestroyableObjectType
+    {
+        VESSEL,
+        BUSH
+    }
+
     #endregion
 
     #region Structs
@@ -12,12 +19,21 @@ namespace MrSanmi.DungeonCrawler
     public class DestroyableObject : Agent
     {
         #region Knobs
+
+        public DestroyableObjectType destroyableObjecttype;
+
         #endregion
 
         #region References
+
+        [SerializeField] protected GameObject spawnedHealth;
+
         #endregion
 
         #region RunTimeVariables
+
+        int percentageForSpawningObject;
+
         #endregion
 
         #region LocalMethods
@@ -28,14 +44,28 @@ namespace MrSanmi.DungeonCrawler
         {
 
         }
-
-        void Update()
-        {
-
-        }
         #endregion
 
         #region PublicMethods
+
+        public void InstantiateObject()
+        {
+            percentageForSpawningObject = UnityEngine.Random.Range(0, 10);
+
+            switch (destroyableObjecttype)
+            {
+                case DestroyableObjectType.VESSEL:
+                    Instantiate(spawnedHealth, this.gameObject.transform.position, Quaternion.identity);
+                    break;
+                case DestroyableObjectType.BUSH:
+                    if (percentageForSpawningObject == 0)
+                    {
+                        Instantiate(spawnedHealth, this.gameObject.transform.position, Quaternion.identity);
+                    }
+                    break;
+            }
+        }
+
         #endregion
 
         #region GettersSetters

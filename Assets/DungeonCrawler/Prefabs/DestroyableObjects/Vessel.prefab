@@ -33,9 +33,17 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5679708228090771436, guid: 47030a6110a6b1349ba0fb24e7d41e30, type: 3}
+      propertyPath: spawnedHealth
+      value: 
+      objectReference: {fileID: 1852854443896998593, guid: fb51b78ba7d24af48aaf9de6fbc45bd8, type: 3}
+    - target: {fileID: 5679708228090771436, guid: 47030a6110a6b1349ba0fb24e7d41e30, type: 3}
       propertyPath: _spriteRenderer
       value: 
       objectReference: {fileID: 5509702180321537419}
+    - target: {fileID: 5679708228090771436, guid: 47030a6110a6b1349ba0fb24e7d41e30, type: 3}
+      propertyPath: destroyableObjecttype
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5704502083720884401, guid: 47030a6110a6b1349ba0fb24e7d41e30, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

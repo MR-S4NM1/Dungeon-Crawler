@@ -31,10 +31,14 @@ namespace MrSanmi.DungeonCrawler
             {
                 if ((int)avatar.playerIndex == _playerInput.playerIndex)
                 {
-                    _avatarOfIndex = avatar;
-                    _avatarOfIndex.gameObject.SetActive(true);
-                    this.transform.parent = avatar.transform;
-                    this.transform.localPosition = Vector2.zero;
+                    if (!avatar._hasAlreadyBeenActivated)
+                    {
+                        _avatarOfIndex = avatar;
+                        _avatarOfIndex.gameObject.SetActive(true);
+                        this.transform.parent = avatar.transform;
+                        this.transform.localPosition = Vector2.zero;
+                        avatar._hasAlreadyBeenActivated = true;
+                    }
                 }
             }
         }

@@ -1,3 +1,4 @@
+using MrSanmi.FiniteStateMachine;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -31,6 +32,7 @@ namespace MrSanmi.DungeonCrawler
         [SerializeField] protected HitBox _hitBox;
         [SerializeField] protected GameObject _hitBoxGO;
         [SerializeField] protected GameReferee _gameReferee;
+        [SerializeField] protected GameObject _orbeGO;
 
         #endregion
 
@@ -39,6 +41,8 @@ namespace MrSanmi.DungeonCrawler
         protected Vector2 _movementInputVector;
         [SerializeField] protected bool _isInteracting;
         [SerializeField] protected bool _isCarrying;
+        [SerializeField] protected bool _isDead;
+        [SerializeField] public bool _hasAlreadyBeenActivated;
 
         #endregion
 
@@ -78,15 +82,41 @@ namespace MrSanmi.DungeonCrawler
             InitializeAgent();
             #endif
         }
-
-        void Update()
-        {
-
-        }
-
         private void FixedUpdate()
         {
             _rb.velocity = _movementInputVector;
+        }
+
+        public void OnEnable()
+        {
+            UIManager.instance.AddPlayerToSet(this);
+        }
+
+        private void OnTriggerEnter2D(Collider2D other)
+        {
+            ValidateOrbeTrigger(other);
+        }
+
+        #endregion
+
+        #region LocalMethods
+
+        protected void ValidateOrbeTrigger(Collider2D other)
+        {
+            if (other.gameObject.CompareTag("Orbe"))
+            {
+                if (_isInteracting)
+                {
+                    ActivateOrbe();
+                }
+            }
+        }
+
+        //TODO: Health object validation()
+
+        protected void ActivateOrbe()
+        {
+            _orbeGO.SetActive(true);
         }
 
         #endregion
@@ -218,8 +248,12 @@ namespace MrSanmi.DungeonCrawler
         {
             if (value.performed)
             {
-                _isCarrying = false;
                 _isInteracting = true;
+
+                if (_isCarrying)
+                {
+                    _isCarrying = false;
+                }
             }
             else if (value.canceled)
             {
