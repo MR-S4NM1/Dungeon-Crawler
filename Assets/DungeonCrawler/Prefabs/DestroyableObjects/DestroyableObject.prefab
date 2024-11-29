@@ -68,6 +68,10 @@ PrefabInstance:
       propertyPath: _animator
       value: 
       objectReference: {fileID: 6965374290739624118}
+    - target: {fileID: 2783063553743618370, guid: fb2557a00e16109458d4b9aa0e1b28b1, type: 3}
+      propertyPath: _destroyableObject
+      value: 
+      objectReference: {fileID: 5679708228090771436}
     - target: {fileID: 5171730959285840193, guid: fb2557a00e16109458d4b9aa0e1b28b1, type: 3}
       propertyPath: m_Constraints
       value: 7
@@ -137,6 +141,8 @@ MonoBehaviour:
   _hurtBox: {fileID: 0}
   _spriteRenderer: {fileID: 0}
   _spriteRendererColor: {r: 0, g: 0, b: 0, a: 0}
+  destroyableObjecttype: 0
+  spawnedHealth: {fileID: 0}
 --- !u!50 &1077993006675464614 stripped
 Rigidbody2D:
   m_CorrespondingSourceObject: {fileID: 5171730959285840193, guid: fb2557a00e16109458d4b9aa0e1b28b1, type: 3}

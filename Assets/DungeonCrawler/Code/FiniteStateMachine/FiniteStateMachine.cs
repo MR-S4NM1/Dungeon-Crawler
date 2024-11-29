@@ -73,6 +73,7 @@ namespace MrSanmi.DungeonCrawler
         [SerializeField] protected Rigidbody2D _rigibody2D;
         [SerializeField] protected Agent _agent;
         [SerializeField] protected EnemyNPC _enemyNPC;
+        [SerializeField] protected DestroyableObject _destroyableObject;
         [SerializeField] protected PlayersAvatar _playersAvatar;
         [SerializeField] protected AnimationClip _deathAnimationClip;
 
@@ -363,6 +364,7 @@ namespace MrSanmi.DungeonCrawler
         {
             _movementDirection = Vector2.zero;
             _movementSpeed = 0.0f;
+            _destroyableObject?.InstantiateObject();
             yield return new WaitForSeconds(_deathAnimationClip.length);
             _enemyNPC?.AlertPoolAboutDeath();
             this.gameObject.SetActive(false);

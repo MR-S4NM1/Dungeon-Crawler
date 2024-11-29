@@ -43,6 +43,7 @@ namespace MrSanmi.DungeonCrawler
         [SerializeField] protected bool _isCarrying;
         [SerializeField] protected bool _isDead;
         [SerializeField] public bool _hasAlreadyBeenActivated;
+        [SerializeField] public bool _isInteractingWithPedestal;
 
         #endregion
 
@@ -82,6 +83,11 @@ namespace MrSanmi.DungeonCrawler
             InitializeAgent();
             #endif
         }
+
+        private void Start()
+        {
+            ActivateOrDeactivateOrbe(false);
+        }
         private void FixedUpdate()
         {
             _rb.velocity = _movementInputVector;
@@ -92,35 +98,85 @@ namespace MrSanmi.DungeonCrawler
             UIManager.instance.AddPlayerToSet(this);
         }
 
-        private void OnTriggerEnter2D(Collider2D other)
+        private void OnTriggerStay2D(Collider2D other)
         {
             ValidateOrbeTrigger(other);
+            ValidateOrbePedestalTriggerEnter(other);
+            ValidateChestTrigger(other);
+        }
+
+        private void OnTriggerExit2D(Collider2D collision)
+        {
+            ValidateOrbePedestalTriggerExit(collision);
+        }
+
+        private void OnCollisionEnter2D(Collision2D other)
+        {
+            ValidateHealthCollision(other);
         }
 
         #endregion
 
         #region LocalMethods
 
-        protected void ValidateOrbeTrigger(Collider2D other)
+        protected void ValidateChestTrigger(Collider2D other)
         {
-            if (other.gameObject.CompareTag("Orbe"))
+            if (other.gameObject.CompareTag("Chest"))
             {
                 if (_isInteracting)
                 {
-                    ActivateOrDeactivateOrbe(true);
+                    other.gameObject.GetComponent<InteractiveStuff>().chestBool = true;
                 }
             }
         }
 
-        protected void ValidateOrbePedestalTrigger(Collider2D other)
+        protected void ValidateOrbeTrigger(Collider2D other)
         {
-            if (other.gameObject.CompareTag("OrbePedestal"))
+            if (other.gameObject.CompareTag("Orbe"))
             {
+                if (_isInteracting && !_gameReferee.orbeHasAlreadyBeenPlaced)
+                {
+                    ActivateOrDeactivateOrbe(true);
+                    _gameReferee.DeactivateOrbeOfTheGame();
+                    _isCarrying = true;
+                }
+            }
+        }
 
+        protected void ValidateOrbePedestalTriggerEnter(Collider2D other)
+        {
+            if (other.gameObject.CompareTag("Pedestal"))
+            {
+                _isInteractingWithPedestal = true;
+
+                if (_isInteracting)
+                {
+                    other.gameObject.GetComponent<InteractiveStuff>().pedestalBool = true;
+                }
+            }
+        }
+
+        protected void ValidateOrbePedestalTriggerExit(Collider2D other)
+        {
+            if (other.gameObject.CompareTag("Pedestal"))
+            {
+                _isInteractingWithPedestal = false;
             }
         }
 
         //TODO: Health object validation()
+
+        protected void ValidateHealthCollision(Collision2D other)
+        {
+            if (other.gameObject.CompareTag("Health"))
+            {
+                if(_hurtBox._currentHealthPoints < maxHealthPoints)
+                {
+                    _hurtBox._currentHealthPoints++;
+                }
+                other.gameObject.SetActive(false);
+            }
+        }
 
         protected void ActivateOrDeactivateOrbe(bool activateOrDeactivate)
         {
@@ -258,11 +314,23 @@ namespace MrSanmi.DungeonCrawler
             {
                 _isInteracting = true;
 
-                if (_isCarrying)
+                if (_isCarrying && _isInteracting)
                 {
-                    _isCarrying = false;
-                    ActivateOrDeactivateOrbe(false);
-                    _gameReferee.ActivateOrbeOfTheGame();
+                    if (!_isInteractingWithPedestal)
+                    {
+                        _isCarrying = false;
+                        ActivateOrDeactivateOrbe(false);
+                        _gameReferee.ActivateOrbeOfTheGame(0);
+                    }
+                    else
+                    {
+                        if (!_gameReferee.orbeHasAlreadyBeenPlaced)
+                        {
+                            _isCarrying = false;
+                            ActivateOrDeactivateOrbe(false);
+                            _gameReferee.orbeHasAlreadyBeenPlaced = true;
+                        }
+                    }
                 }
             }
             else if (value.canceled)

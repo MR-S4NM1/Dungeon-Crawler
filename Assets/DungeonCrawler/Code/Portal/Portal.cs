@@ -13,6 +13,7 @@ namespace MrSanmi.DungeonCrawler
         #region RuntimeVariables
 
         //We declare our Hash Set, which will contain our Player that will be transported.
+        //We use a Hash Set, because we don´t want our players to be transported indefinitely, so this guarantees that our players only appear one time in the set.
         protected HashSet<GameObject> portalPlayer;
 
         //We declare and set the position where the Player will be teleported.
@@ -40,7 +41,7 @@ namespace MrSanmi.DungeonCrawler
         protected void ValidateTriggerWithPlayer(Collider2D other)
         {
             //If we detect a Player, then we add it to the Hash Set, and then we transport it to the other location.
-            //NOTE: IF IT ALREADY CONTAINS THE PLAYER, IT WON'T TELEPORT IT.
+            //NOTE: IF IT ALREADY CONTAINS THE PLAYER, IT WON'T TRANSPORT IT.
             if (other.gameObject.CompareTag("Player"))
             {
                 if (portalPlayer.Contains(other.gameObject))

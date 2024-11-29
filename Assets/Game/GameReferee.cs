@@ -2,6 +2,7 @@ using Cinemachine;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static UnityEditor.PlayerSettings;
 
 namespace MrSanmi.DungeonCrawler
 {
@@ -25,13 +26,21 @@ namespace MrSanmi.DungeonCrawler
 
         [SerializeField] public CinemachineTargetGroup targetGroup;
 
+        [SerializeField] protected InteractiveStuff[] interactiveStuff;
+
         [SerializeField] protected GameObject orbe;
+        [SerializeField] protected Transform[] orbePositions;
+
+        [SerializeField] protected GameObject[] finalPathLocks;
+        [SerializeField] protected GameObject[] middlePathLocks;
+        [SerializeField] protected Portal[] portalsOfTheGame;
 
         #endregion
 
         #region RuntimeVariables
 
         [SerializeField] protected GameStates _gameState;
+        [SerializeField] public bool orbeHasAlreadyBeenPlaced;
 
         #endregion
 
@@ -39,6 +48,9 @@ namespace MrSanmi.DungeonCrawler
         void Start() //Runtime
         {
             InitializeGameState();
+            orbeHasAlreadyBeenPlaced = false;
+            orbe.gameObject.transform.position = orbePositions[0].gameObject.transform.position;
+            orbe.gameObject.SetActive(false);
         }
 
         void FixedUpdate() //Update(): Max 200 FPS / FixedUpdate(): 50 FPS
@@ -64,9 +76,58 @@ namespace MrSanmi.DungeonCrawler
 
         #region PublicMethods
 
-        public void ActivateOrbeOfTheGame()
+        public void DeactivatePathLocks(string typeOfLock)
         {
-            orbe.SetActive(true);
+            switch (typeOfLock)
+            {
+                case "MiddlePathLocks":
+                    foreach (GameObject pathLock in middlePathLocks)
+                    {
+                        pathLock.gameObject.SetActive(false);
+                    }
+                    break;
+                case "FinalPathLocks":
+                    foreach(GameObject pathLock in finalPathLocks)
+                    {
+                        pathLock.gameObject.SetActive(false);
+                    }
+                    break;
+            }
+        }
+
+        public void ActivateOrbeAtTheBeginningOfTheGame()
+        {
+            if (!orbeHasAlreadyBeenPlaced)
+            {
+                orbe.gameObject.transform.position = orbePositions[0].gameObject.transform.position;
+                orbe.SetActive(true);
+            }
+        }
+
+        public void ActivateOrbeOfTheGame(int pos)
+        {
+            if (!orbeHasAlreadyBeenPlaced)
+            {
+                orbe.gameObject.transform.position = orbePositions[pos].gameObject.transform.position;
+                orbe.SetActive(true);
+            }
+        }
+
+        public void DeactivateOrbeOfTheGame()
+        {
+            if (!orbeHasAlreadyBeenPlaced)
+            {
+                orbe.gameObject.transform.position = orbePositions[0].gameObject.transform.position;
+                orbe.SetActive(false);
+            }
+        }
+
+        public void ActivatePortalsOfTheGame()
+        {
+            foreach(Portal portal in portalsOfTheGame)
+            {
+                portal.gameObject.SetActive(true);
+            }
         }
 
         public void PauseGame()
@@ -96,7 +157,7 @@ namespace MrSanmi.DungeonCrawler
 
         protected void InitializeGameState()
         {
-            //TODO: Configuration of every aspect of the game
+            Time.timeScale = 1.0f;
         }
 
         protected void ExecutingGameState()

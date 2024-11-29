@@ -9,6 +9,9 @@ TagManager:
   - Portal
   - Health
   - Orbe
+  - FloorButton
+  - Pedestal
+  - Chest
   layers:
   - Default
   - TransparentFX
