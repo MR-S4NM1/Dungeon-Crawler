@@ -72,7 +72,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1508629839
   m_SortingLayer: 2
-  m_SortingOrder: 15
+  m_SortingOrder: 20
   m_Sprite: {fileID: 4203841360402641665, guid: 72ec5288bde061644bbf0836779b95c1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -326,3 +326,5 @@ MonoBehaviour:
   _isCarrying: 0
   _isDead: 0
   _hasAlreadyBeenActivated: 0
+  _isInteractingWithPedestal: 0
+  _isInteractingWithChest: 0

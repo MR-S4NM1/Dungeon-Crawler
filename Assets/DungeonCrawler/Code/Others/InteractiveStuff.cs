@@ -47,16 +47,16 @@ namespace MrSanmi.DungeonCrawler
 
         private void OnDrawGizmos()
         {
-            #if UNITY_EDITOR
-            if(_gameReferee == null)
+#if UNITY_EDITOR
+            if (_gameReferee == null)
             {
                 _gameReferee = GameObject.FindObjectOfType<GameReferee>();
             }
-            if(_spriteRenderer == null)
+            if (_spriteRenderer == null)
             {
                 _spriteRenderer = GetComponent<SpriteRenderer>();
             }
-            #endif
+#endif
 
         }
 
@@ -100,21 +100,28 @@ namespace MrSanmi.DungeonCrawler
                             break;
                     }
                     break;
-                case EnvironmentStuffType.PEDESTAL:
-                    if (pedestalBool)
-                    {
-                        _gameReferee.ActivateOrbeOfTheGame(1);
-                        _gameReferee.DeactivatePathLocks("FinalPathLocks");
-                    }
-                    break;
-                case EnvironmentStuffType.CHEST:
-                    if (chestBool)
-                    {
-                        _spriteRenderer.sprite = _interactedSprite;
-                        _gameReferee.ActivateOrbeAtTheBeginningOfTheGame();
-                    }
-                    break;
             }
         }
+
+        public void OpenChest()
+        {
+            if (typeOfEnvironmentStuff == EnvironmentStuffType.CHEST && !chestBool)
+            {
+                chestBool = true;
+                _spriteRenderer.sprite = _interactedSprite;
+                gameObject.transform.GetChild(0).gameObject.SetActive(true);
+            }
+        }
+
+        public void CloseChest()
+        {
+            if (typeOfEnvironmentStuff == EnvironmentStuffType.CHEST)
+            {
+                chestBool = false;
+                _spriteRenderer.sprite = _originalSprite;
+                gameObject.transform.GetChild(0).gameObject.SetActive(false);
+            }
+        }
+
     }
 }

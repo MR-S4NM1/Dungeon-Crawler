@@ -50,7 +50,6 @@ namespace MrSanmi.DungeonCrawler
 
         public void InstantiateObject()
         {
-            print(gameObject.name + " InstantiateObject()" + " AHHHHHHHHHHHHHHHH");
             percentageForSpawningObject = UnityEngine.Random.Range(0, 10);
 
             switch (destroyableObjecttype)

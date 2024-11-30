@@ -32,7 +32,6 @@ namespace MrSanmi.DungeonCrawler
         [SerializeField] protected HitBox _hitBox;
         [SerializeField] protected GameObject _hitBoxGO;
         [SerializeField] protected GameReferee _gameReferee;
-        [SerializeField] protected GameObject _orbeGO;
 
         #endregion
 
@@ -44,6 +43,13 @@ namespace MrSanmi.DungeonCrawler
         [SerializeField] protected bool _isDead;
         [SerializeField] public bool _hasAlreadyBeenActivated;
         [SerializeField] public bool _isInteractingWithPedestal;
+        [SerializeField] public bool _isInteractingWithChest;
+        [SerializeField] public bool _isInteractingWithOrbe;
+
+        [SerializeField] protected Transform _pedestalTransform;
+        [SerializeField] protected Transform _chestTransform;
+        [SerializeField] protected GameObject _orbe;
+
 
         #endregion
 
@@ -86,11 +92,23 @@ namespace MrSanmi.DungeonCrawler
 
         private void Start()
         {
-            ActivateOrDeactivateOrbe(false);
+            _chestTransform = null;
+            _pedestalTransform = null;
+            _orbe = null;
         }
+
         private void FixedUpdate()
         {
             _rb.velocity = _movementInputVector;
+
+            if (_isCarrying && (_orbe != null))
+            {
+                _orbe.transform.localPosition = new Vector3(0, 1.5f, 0);
+
+                //I tried to NOT do this, but due to an unknown reason, my booleans DIDN'T change when I called my functions ;-;
+                _gameReferee.aPlayerIsCarryingTheOrbe = true;
+                _gameReferee.orbeIsInChest = false;
+            }
         }
 
         public void OnEnable()
@@ -98,16 +116,14 @@ namespace MrSanmi.DungeonCrawler
             UIManager.instance.AddPlayerToSet(this);
         }
 
-        private void OnTriggerStay2D(Collider2D other)
+        private void OnTriggerEnter2D(Collider2D other)
         {
-            ValidateOrbeTrigger(other);
-            ValidateOrbePedestalTriggerEnter(other);
-            ValidateChestTrigger(other);
+            ValidateOrbePedestalOrChestTriggerEnter(other);
         }
 
         private void OnTriggerExit2D(Collider2D collision)
         {
-            ValidateOrbePedestalTriggerExit(collision);
+            ValidateOrbePedestalOrChestTriggerExit(collision);
         }
 
         private void OnCollisionEnter2D(Collision2D other)
@@ -119,10 +135,28 @@ namespace MrSanmi.DungeonCrawler
 
         #region LocalMethods
 
-        protected void ValidateChestTrigger(Collider2D other)
+        protected void ValidateOrbePedestalOrChestTriggerEnter(Collider2D other)
         {
-            if (other.gameObject.CompareTag("Chest"))
+            if (other.gameObject.CompareTag("Pedestal"))
             {
+                _isInteractingWithPedestal = true;
+                _pedestalTransform = other.transform;
+
+                if (_isInteracting)
+                {
+                    other.gameObject.GetComponent<InteractiveStuff>().pedestalBool = true;
+                }
+            }
+            else if (other.gameObject.CompareTag("Orbe"))
+            {
+                _orbe = other.gameObject;
+                _isInteractingWithOrbe = true;
+            }
+            else if (other.gameObject.CompareTag("Chest"))
+            {
+                _isInteractingWithChest = true;
+                _chestTransform = other.transform;
+
                 if (_isInteracting)
                 {
                     other.gameObject.GetComponent<InteractiveStuff>().chestBool = true;
@@ -130,37 +164,19 @@ namespace MrSanmi.DungeonCrawler
             }
         }
 
-        protected void ValidateOrbeTrigger(Collider2D other)
-        {
-            if (other.gameObject.CompareTag("Orbe"))
-            {
-                if (_isInteracting && !_gameReferee.orbeHasAlreadyBeenPlaced)
-                {
-                    ActivateOrDeactivateOrbe(true);
-                    _gameReferee.DeactivateOrbeOfTheGame();
-                    _isCarrying = true;
-                }
-            }
-        }
-
-        protected void ValidateOrbePedestalTriggerEnter(Collider2D other)
-        {
-            if (other.gameObject.CompareTag("Pedestal"))
-            {
-                _isInteractingWithPedestal = true;
-
-                if (_isInteracting)
-                {
-                    other.gameObject.GetComponent<InteractiveStuff>().pedestalBool = true;
-                }
-            }
-        }
-
-        protected void ValidateOrbePedestalTriggerExit(Collider2D other)
+        protected void ValidateOrbePedestalOrChestTriggerExit(Collider2D other)
         {
             if (other.gameObject.CompareTag("Pedestal"))
             {
                 _isInteractingWithPedestal = false;
+            }
+            else if (other.gameObject.CompareTag("Chest"))
+            {
+                _isInteractingWithChest = false;
+            }
+            else if (other.gameObject.CompareTag("Orbe"))
+            {
+                _isInteractingWithOrbe = false;
             }
         }
 
@@ -178,9 +194,48 @@ namespace MrSanmi.DungeonCrawler
             }
         }
 
-        protected void ActivateOrDeactivateOrbe(bool activateOrDeactivate)
+        protected void PickUpOrbe(GameObject orbe)
         {
-            _orbeGO.SetActive(activateOrDeactivate);
+            if (orbe != null)
+            {
+                orbe.transform.parent = null;
+                orbe.transform.parent = this.gameObject.transform;
+                orbe.transform.localPosition = new Vector3(0, 1.5f, 0);
+                _isCarrying = true;
+                _gameReferee.DeactivateChestOrbeAndCloseChest();
+                _gameReferee.aPlayerIsCarryingTheOrbe = true;
+                _gameReferee.orbeIsInChest = false;
+            }
+        }
+
+        protected void PlaceOrbeOnPedestal(GameObject orbe, Transform pedestal)
+        {
+            if ((orbe != null) && (pedestal != null))
+            {
+                orbe.transform.SetParent(null);
+                orbe.transform.position = pedestal.position;
+                _gameReferee.ActivatePedestalOrbe();
+                _isCarrying = false;
+                _gameReferee.orbeIsInPedestal = true;
+                _gameReferee.orbeIsInChest = false;
+                _orbe = null;
+                _pedestalTransform = null;
+                _chestTransform = null;
+            }
+        }
+
+        protected void ReturnOrbeToChest(GameObject orbe, Transform chest)
+        {
+            if ((orbe != null) && (chest != null))
+            {
+                orbe.transform.SetParent(null);
+                orbe.transform.parent = _chestTransform;
+                orbe.transform.position = _chestTransform.position;
+                _gameReferee.DeactivateChestOrbeAndCloseChest();
+                _isCarrying = false;
+                _gameReferee.aPlayerIsCarryingTheOrbe = false;
+                _gameReferee.orbeIsInChest = true;
+            }
         }
 
         #endregion
@@ -314,24 +369,25 @@ namespace MrSanmi.DungeonCrawler
             {
                 _isInteracting = true;
 
-                if (_isCarrying && _isInteracting)
+                //I DON'T USE ELSE IF, BECAUSE IT WON'T READ THE CONDITIONAL IS THE PREVIOUS ONE IS ACCEPTED ;-;
+                if (_isInteracting && _isInteractingWithChest && !_isCarrying && !_gameReferee.aPlayerIsCarryingTheOrbe)
                 {
-                    if (!_isInteractingWithPedestal)
-                    {
-                        _isCarrying = false;
-                        ActivateOrDeactivateOrbe(false);
-                        _gameReferee.ActivateOrbeOfTheGame(0);
-                    }
-                    else
-                    {
-                        if (!_gameReferee.orbeHasAlreadyBeenPlaced)
-                        {
-                            _isCarrying = false;
-                            ActivateOrDeactivateOrbe(false);
-                            _gameReferee.orbeHasAlreadyBeenPlaced = true;
-                        }
-                    }
+                    _gameReferee.ActivateChestOrbeAndOpenChest();
                 }
+                if (_isInteracting && _isInteractingWithOrbe && _isInteractingWithChest && !_isCarrying)
+                {
+                    PickUpOrbe(_orbe);
+                }
+                if (_isInteracting && _isInteractingWithPedestal && _isCarrying)
+                {
+                    PlaceOrbeOnPedestal(_orbe, _pedestalTransform);
+                }
+                if (_isInteracting && _isCarrying && !_isInteractingWithPedestal && !_isInteractingWithChest)
+                {
+                    ReturnOrbeToChest(_orbe, _chestTransform);
+                }
+
+                _isInteracting = false;
             }
             else if (value.canceled)
             {

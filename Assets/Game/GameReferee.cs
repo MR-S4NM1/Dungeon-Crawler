@@ -2,7 +2,7 @@ using Cinemachine;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using static UnityEditor.PlayerSettings;
+using UnityEngine.InputSystem;
 
 namespace MrSanmi.DungeonCrawler
 {
@@ -26,10 +26,8 @@ namespace MrSanmi.DungeonCrawler
 
         [SerializeField] public CinemachineTargetGroup targetGroup;
 
-        [SerializeField] protected InteractiveStuff[] interactiveStuff;
-
-        [SerializeField] protected GameObject orbe;
-        [SerializeField] protected Transform[] orbePositions;
+        [SerializeField] protected GameObject chest;
+        [SerializeField] protected GameObject pedestal;
 
         [SerializeField] protected GameObject[] finalPathLocks;
         [SerializeField] protected GameObject[] middlePathLocks;
@@ -41,6 +39,9 @@ namespace MrSanmi.DungeonCrawler
 
         [SerializeField] protected GameStates _gameState;
         [SerializeField] public bool orbeHasAlreadyBeenPlaced;
+        [SerializeField] public bool aPlayerIsCarryingTheOrbe;
+        [SerializeField] public bool orbeIsInChest;
+        [SerializeField] public bool orbeIsInPedestal;
 
         #endregion
 
@@ -49,8 +50,9 @@ namespace MrSanmi.DungeonCrawler
         {
             InitializeGameState();
             orbeHasAlreadyBeenPlaced = false;
-            orbe.gameObject.transform.position = orbePositions[0].gameObject.transform.position;
-            orbe.gameObject.SetActive(false);
+            aPlayerIsCarryingTheOrbe = false;
+            orbeIsInChest = true;
+            orbeIsInPedestal = false;
         }
 
         void FixedUpdate() //Update(): Max 200 FPS / FixedUpdate(): 50 FPS
@@ -76,6 +78,34 @@ namespace MrSanmi.DungeonCrawler
 
         #region PublicMethods
 
+        public void ActivateChestOrbeAndOpenChest()
+        {
+            if (!orbeHasAlreadyBeenPlaced)
+            {
+                chest.GetComponent<InteractiveStuff>().OpenChest();
+            }
+        }
+
+        public void ActivatePedestalOrbe()
+        {
+            if (!orbeHasAlreadyBeenPlaced)
+            {
+                pedestal.transform.GetChild(0).gameObject.SetActive(true);
+                DeactivatePathLocks("FinalPathLocks");
+                orbeHasAlreadyBeenPlaced = true;
+                orbeIsInPedestal = true;
+            }
+        }
+
+        public void DeactivateChestOrbeAndCloseChest()
+        {
+            if (!orbeHasAlreadyBeenPlaced)
+            {
+                chest.GetComponent<InteractiveStuff>().CloseChest();
+                orbeIsInChest = true;
+            }
+        }
+
         public void DeactivatePathLocks(string typeOfLock)
         {
             switch (typeOfLock)
@@ -95,32 +125,7 @@ namespace MrSanmi.DungeonCrawler
             }
         }
 
-        public void ActivateOrbeAtTheBeginningOfTheGame()
-        {
-            if (!orbeHasAlreadyBeenPlaced)
-            {
-                orbe.gameObject.transform.position = orbePositions[0].gameObject.transform.position;
-                orbe.SetActive(true);
-            }
-        }
 
-        public void ActivateOrbeOfTheGame(int pos)
-        {
-            if (!orbeHasAlreadyBeenPlaced)
-            {
-                orbe.gameObject.transform.position = orbePositions[pos].gameObject.transform.position;
-                orbe.SetActive(true);
-            }
-        }
-
-        public void DeactivateOrbeOfTheGame()
-        {
-            if (!orbeHasAlreadyBeenPlaced)
-            {
-                orbe.gameObject.transform.position = orbePositions[0].gameObject.transform.position;
-                orbe.SetActive(false);
-            }
-        }
 
         public void ActivatePortalsOfTheGame()
         {
@@ -138,7 +143,6 @@ namespace MrSanmi.DungeonCrawler
                 FinalizeGameState();
                 //I should go to pause
                 _gameState = GameStates.PAUSE;
-                InitializePauseState();
             }
             if (_gameState == GameStates.PAUSE)
             {
@@ -162,7 +166,7 @@ namespace MrSanmi.DungeonCrawler
 
         protected void ExecutingGameState()
         {
-            //TODO: Manage in runtime several aspects of this state
+
         }
 
         protected void FinalizeGameState()
@@ -176,19 +180,19 @@ namespace MrSanmi.DungeonCrawler
 
         protected void InitializePauseState()
         {
-            panelPause.SetActive(true);
-            Time.timeScale = 0f;
+            panelPause?.SetActive(true);
+            Time.timeScale = 0.0f;
         }
 
         protected void ExecutingPauseState()
         {
-            //TODO: Pending
+
         }
 
         protected void FinalizePauseState()
         {
-            panelPause.SetActive(false);
-            Time.timeScale = 1f;
+            panelPause?.SetActive(false);
+            Time.timeScale = 1.0f;
         }
 
         #endregion
