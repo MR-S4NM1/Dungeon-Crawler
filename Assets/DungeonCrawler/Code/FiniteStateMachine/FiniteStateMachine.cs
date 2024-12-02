@@ -366,8 +366,21 @@ namespace MrSanmi.DungeonCrawler
             _movementSpeed = 0.0f;
             _destroyableObject?.InstantiateObject();
             yield return new WaitForSeconds(_deathAnimationClip.length);
-            _enemyNPC?.AlertPoolAboutDeath();
-            this.gameObject.SetActive(false);
+
+            switch(_agent)
+            {
+                case PlayersAvatar:
+                    _playersAvatar?.DeactivateHitAndHurtBoxesWhenDying();
+                    _playersAvatar?.AlertGameRefereeAboutMyDeath();
+                    break;
+                case EnemyNPC:
+                    _enemyNPC?.AlertPoolAboutDeath();
+                    this.gameObject.SetActive(false);
+                    break;
+                case DestroyableObject:
+                    this.gameObject.SetActive(false);
+                    break;
+            }
         }
 
         #endregion InteractingState

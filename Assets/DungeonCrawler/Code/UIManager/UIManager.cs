@@ -10,14 +10,17 @@ namespace MrSanmi.DungeonCrawler
     {
         #region References
 
-        public static UIManager instance;
+        public static UIManager instance;  // Singleton :P
 
         [SerializeField] protected GameReferee _gameReferee;
 
-        protected HashSet<PlayersAvatar> playersSet;
+        [SerializeField] protected Dictionary<PlayersAvatar, playerIndex> playersDictionary;
 
-        [SerializeField] protected GameObject[] healthIcons;
-        [SerializeField] protected GameObject[] healthIconsGroup;
+        [SerializeField] protected GameObject[,] _healthIconsMatrix;
+        [SerializeField] protected GameObject[] _healthIcons;
+        [SerializeField] protected GameObject[] _healthIconsGroup;
+
+        [SerializeField] protected GameObject[] _playersTextUI;
 
         #endregion
 
@@ -25,8 +28,6 @@ namespace MrSanmi.DungeonCrawler
 
         private void Awake()
         {
-            //instance == null ? instance = this : Destroy(this);
-
             if(instance == null)
             {
                 instance = this;
@@ -39,17 +40,105 @@ namespace MrSanmi.DungeonCrawler
 
         void Start()
         {
-            playersSet = new HashSet<PlayersAvatar>();
+            playersDictionary = new Dictionary<PlayersAvatar, playerIndex>();
+            PrepareUIHealthMatrix();
+        }
+
+        #endregion
+
+        #region LocalMethods
+
+        protected void PrepareUIHealthMatrix()
+        {
+            _healthIconsMatrix = new GameObject[4 , 5];
+
+            for (short i = 0; i < _healthIconsGroup.Length; ++i)
+            {
+                _playersTextUI[i].gameObject.SetActive(false);
+                for (short j = 0; j < _healthIcons.Length; ++j)
+                {
+                    _healthIconsMatrix[i, j] = _healthIconsGroup[i].transform.GetChild(j).gameObject;
+                }
+            }
+        }
+
+        protected void AssignHealthUI(PlayersAvatar playersAvatar, playerIndex playerIndex)
+        {
+            _playersTextUI[(short)playerIndex].gameObject.SetActive(true);
+
+            for (short i = 0; i < playersAvatar.maxHealthPoints; ++i)
+            {
+                _healthIconsMatrix[(short)playerIndex, i].gameObject.SetActive(true);
+            }
         }
 
         #endregion
 
         #region PublicMethods
 
-        public void AddPlayerToSet(PlayersAvatar p_playersAvatar)
+        public void AddPlayerToDictionary(PlayersAvatar playersAvatar, playerIndex playerIndex)
         {
-            playersSet.Add(p_playersAvatar);
-            Debug.Log(playersSet.Count);
+            playersDictionary.Add(playersAvatar, playerIndex);
+            AssignHealthUI(playersAvatar, playerIndex);
+        }
+
+        // This didn't work properly, because it never reached the correct index when it came to the last or first index ;-;
+        //public void UpdateHeartUIIcons(PlayersAvatar playersAvatar, short currentPlayerHP, string operation)
+        //{
+        //    if(playersDictionary.TryGetValue(playersAvatar, out playerIndex playerIndex))
+        //    {
+        //        for (short i = 0; i < playersAvatar.maxHealthPoints; ++i)
+        //        {
+        //            switch (operation)
+        //            {
+        //                case "Add":
+        //                    if ((currentPlayerHP >= 1) && (currentPlayerHP < playersAvatar.maxHealthPoints))
+        //                    {
+        //                        healthIconsMatrix[(short)playerIndex, currentPlayerHP].gameObject.SetActive(true);
+        //                        print(this.gameObject.name + " yessssssss, my hearts!" + (currentPlayerHP - 1).ToString());
+        //                    }
+        //                    else if(currentPlayerHP >= playersAvatar.maxHealthPoints)
+        //                    {
+        //                        healthIconsMatrix[(short)playerIndex, currentPlayerHP - 1].gameObject.SetActive(true);
+        //                        print(this.gameObject.name + " yessssssss, my hearts!" + (currentPlayerHP - 1).ToString());
+        //                    }
+        //                    break;
+        //                case "Substract":
+        //                    if (currentPlayerHP <= 0)
+        //                    {
+        //                        healthIconsGroup[(short)playerIndex].gameObject.SetActive(false);
+        //                    }
+        //                    else if(currentPlayerHP >= 1)
+        //                    {
+        //                        healthIconsMatrix[(short)playerIndex, currentPlayerHP - 1].gameObject.SetActive(false);
+        //                    }
+        //                    break;
+        //            }
+        //        }
+        //    }
+        //}
+
+        public void UpdateHeartUIIcons(PlayersAvatar playersAvatar, short currentPlayerHP)
+        {
+            if (playersDictionary.TryGetValue(playersAvatar, out playerIndex playerIndex))
+            {
+                for (short i = 0; i < playersAvatar.maxHealthPoints; ++i)
+                {
+                    if (i < currentPlayerHP)
+                    {
+                        _healthIconsMatrix[(short)playerIndex, i].gameObject.SetActive(true);
+                    }
+                    else
+                    {
+                        _healthIconsMatrix[(short)playerIndex, i].gameObject.SetActive(false);
+                    }
+                }
+                if(currentPlayerHP <= 0)
+                {
+                    _playersTextUI[(short)playerIndex].gameObject.SetActive(false);
+                }
+            }
+
         }
 
         #endregion

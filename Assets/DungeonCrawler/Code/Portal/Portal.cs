@@ -4,9 +4,23 @@ using UnityEngine;
 
 namespace MrSanmi.DungeonCrawler
 {
+    public enum portalTypes
+    {
+        COMMON, // Portals that you can acceess during the levels.
+        FINAL // Portals that make you change from screen.
+    }
+
     public class Portal : MonoBehaviour
     {
         #region knobs
+
+        public portalTypes portalType;
+
+        #endregion
+
+        #region References
+
+        [SerializeField] protected GameReferee _gameReferee;
 
         #endregion
 
@@ -21,24 +35,50 @@ namespace MrSanmi.DungeonCrawler
 
         #endregion
 
+        #region UnityMethods
+
         private void Start()
         {
-            portalPlayer = new HashSet<GameObject>(); //We initialize our Hash Set here since it's a runtime variables :P
+            if (portalType == portalTypes.COMMON)
+            {
+                portalPlayer = new HashSet<GameObject>(); //We initialize our Hash Set here since it's a runtime variables :P
+            }
         }
 
         private void OnTriggerEnter2D(Collider2D other)
         {
-            ValidateTriggerWithPlayer(other);
+            switch (portalType)
+            {
+                case portalTypes.COMMON:
+                    ValidateTriggerWithPlayerWhenItIsANormalPortal(other);
+                    break;
+                case portalTypes.FINAL:
+                    ValidateTriggerWithPlayerWhenItIsAFinalPortal(other);
+                    break;
+            }
         }
 
         private void OnTriggerExit2D(Collider2D other)
         {
-            ValidateExitTriggerWithPlayer(other);
+            if(portalType == portalTypes.COMMON)
+            {
+                ValidateExitTriggerWithPlayerWhenItIsANormalPortal(other);
+            }
         }
+
+        private void OnDrawGizmos()
+        {
+            if(_gameReferee == null)
+            {
+                _gameReferee = GameObject.FindFirstObjectByType<GameReferee>();
+            }
+        }
+
+        #endregion
 
         #region RuntimeMethods
 
-        protected void ValidateTriggerWithPlayer(Collider2D other)
+        protected void ValidateTriggerWithPlayerWhenItIsANormalPortal(Collider2D other)
         {
             //If we detect a Player, then we add it to the Hash Set, and then we transport it to the other location.
             //NOTE: IF IT ALREADY CONTAINS THE PLAYER, IT WON'T TRANSPORT IT.
@@ -58,11 +98,19 @@ namespace MrSanmi.DungeonCrawler
             }
         }
 
-        protected void ValidateExitTriggerWithPlayer(Collider2D other)
+        protected void ValidateExitTriggerWithPlayerWhenItIsANormalPortal(Collider2D other)
         {
             if (other.gameObject.CompareTag("Player"))
             {
                 portalPlayer.Remove(other.gameObject);
+            }
+        }
+
+        protected void ValidateTriggerWithPlayerWhenItIsAFinalPortal(Collider2D other)
+        {
+            if (other.gameObject.CompareTag("Player"))
+            {
+                _gameReferee.WinGame();
             }
         }
 

@@ -19,13 +19,14 @@ namespace MrSanmi.DungeonCrawler
         [SerializeField] protected Agent _agent;
 
         [SerializeField] protected EnemyNPC _enemyNPC;
+        [SerializeField] protected PlayersAvatar _playersAvatar;
 
         #endregion
 
         #region RuntimeVariables
 
         protected bool _isInCooldown;
-        [SerializeField] public int _currentHealthPoints;
+        [SerializeField] public short _currentHealthPoints;
 
         #endregion
 
@@ -60,8 +61,16 @@ namespace MrSanmi.DungeonCrawler
                         //Damn, I am about to be hurt DX
                         _currentHealthPoints -= 1; //other.gameObject.GetComponent<HitBox>().GetDamage;
 
-                        _enemyNPC?.ApplyForce((transform.parent.gameObject.transform.position - other.gameObject.transform.position).normalized);
-
+                        switch (_agent)
+                        {
+                            case PlayersAvatar:
+                                _playersAvatar?.UpdateUIHealth();
+                                _playersAvatar?.ReturnOrbeToTheChestPublic();
+                                break;
+                            case EnemyNPC:
+                                _enemyNPC?.ApplyForce((transform.parent.gameObject.transform.position - other.gameObject.transform.position).normalized);
+                                break;
+                        }
 
                         //Check if I am already dead
                         if(_currentHealthPoints <= 0)

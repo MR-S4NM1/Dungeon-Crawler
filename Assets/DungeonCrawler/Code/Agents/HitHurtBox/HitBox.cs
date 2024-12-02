@@ -9,7 +9,7 @@ namespace MrSanmi.DungeonCrawler
     {
         #region Knobs
 
-        public int damage = 1;
+        public short damage = 1;
         public float lifeTime = 0.7f;
 
         #endregion

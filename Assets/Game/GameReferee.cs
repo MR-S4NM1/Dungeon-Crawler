@@ -125,13 +125,26 @@ namespace MrSanmi.DungeonCrawler
             }
         }
 
-
-
         public void ActivatePortalsOfTheGame()
         {
             foreach(Portal portal in portalsOfTheGame)
             {
                 portal.gameObject.SetActive(true);
+            }
+        }
+
+        public void AddPlayerToCinemachineTargetGroup(Transform playerTransform)
+        {
+            targetGroup.AddMember(playerTransform, 1 , 0);
+        }
+
+        public void RemoveAndSubstractPlayerFromTheCounter(Transform playersTransform)
+        {
+            targetGroup.RemoveMember(playersTransform);
+
+            if (targetGroup.IsEmpty)
+            {
+                LoseGame();
             }
         }
 
@@ -143,6 +156,7 @@ namespace MrSanmi.DungeonCrawler
                 FinalizeGameState();
                 //I should go to pause
                 _gameState = GameStates.PAUSE;
+                InitializePauseState();
             }
             if (_gameState == GameStates.PAUSE)
             {
@@ -150,6 +164,27 @@ namespace MrSanmi.DungeonCrawler
                 //I return to the game
                 _gameState = GameStates.GAME;
                 InitializeGameState();
+            }
+        }
+
+        public void WinGame()
+        {
+            //State Mechanics / Actions to move within the Finite State Machine
+            if (_gameState == GameStates.GAME)
+            {
+                FinalizeGameState();
+                _gameState = GameStates.VICTORY;
+                InitializeVictoryState();
+            }
+        }
+
+        public void LoseGame()
+        {
+            if (_gameState == GameStates.GAME)
+            {
+                FinalizeGameState();
+                _gameState = GameStates.GAME_OVER;
+                InitializeGameOverState();
             }
         }
 
@@ -193,6 +228,44 @@ namespace MrSanmi.DungeonCrawler
         {
             panelPause?.SetActive(false);
             Time.timeScale = 1.0f;
+        }
+
+        #endregion
+
+        #region VictoryState
+
+        protected void InitializeVictoryState()
+        {
+            SceneChanger.instance.ChangeSceneTo(2); // 2 -> Victory Scene :D
+        }
+
+        protected void ExecutingVictoryState()
+        {
+
+        }
+
+        protected void FinalizeVictoryState()
+        {
+
+        }
+
+        #endregion
+
+        #region GameOverState
+
+        protected void InitializeGameOverState()
+        {
+            SceneChanger.instance.ChangeSceneTo(3); // 3 -> Game Over Scene :(
+        }
+
+        protected void ExecutingGameOverState()
+        {
+
+        }
+
+        protected void FinalizeGameOverState()
+        {
+
         }
 
         #endregion

@@ -6,6 +6,15 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/DungeonCrawler/Scenes/Menu.unity
+    guid: 6b45fa8fb09d1b849a8363704a969d91
+  - enabled: 1
     path: Assets/DungeonCrawler/Scenes/Gameplay.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/DungeonCrawler/Scenes/Victory.unity
+    guid: 7e8383bd74afe1b40ace25fe8693b845
+  - enabled: 1
+    path: Assets/DungeonCrawler/Scenes/GameOver.unity
+    guid: 266f6ff37e0308142bb0e8063c883955
   m_configObjects: {}

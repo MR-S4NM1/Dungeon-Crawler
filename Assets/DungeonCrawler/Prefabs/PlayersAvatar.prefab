@@ -224,6 +224,10 @@ PrefabInstance:
       propertyPath: _agent
       value: 
       objectReference: {fileID: 1521976690935750505}
+    - target: {fileID: 8009190582324086357, guid: fb2557a00e16109458d4b9aa0e1b28b1, type: 3}
+      propertyPath: _playersAvatar
+      value: 
+      objectReference: {fileID: 1521976690935750505}
     - target: {fileID: 8894239734153690089, guid: fb2557a00e16109458d4b9aa0e1b28b1, type: 3}
       propertyPath: lifeTime
       value: 0.45
@@ -321,10 +325,13 @@ MonoBehaviour:
   _hitBox: {fileID: 6709783727732391569}
   _hitBoxGO: {fileID: 2335222447915220170}
   _gameReferee: {fileID: 0}
-  _orbeGO: {fileID: 4118561087445525356}
   _isInteracting: 0
   _isCarrying: 0
   _isDead: 0
   _hasAlreadyBeenActivated: 0
   _isInteractingWithPedestal: 0
   _isInteractingWithChest: 0
+  _isInteractingWithOrbe: 0
+  _pedestalTransform: {fileID: 0}
+  _chestTransform: {fileID: 0}
+  _orbe: {fileID: 0}

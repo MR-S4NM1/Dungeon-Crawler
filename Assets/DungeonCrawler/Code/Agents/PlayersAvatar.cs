@@ -9,10 +9,10 @@ namespace MrSanmi.DungeonCrawler
     #region Enum
     public enum playerIndex
     {
-        One,
-        Two,
-        Three,
-        Four
+        ONE,
+        TWO,
+        THREE,
+        FOUR
     }
 
     #endregion
@@ -53,34 +53,6 @@ namespace MrSanmi.DungeonCrawler
 
         #endregion
 
-        #region LocalMethods
-
-        protected virtual void CalculateAttackStateMechanicDirection()
-        {
-            if (Vector2.Dot(_fsm.GetMovementDirection, Vector2.down) >= 0.5f)
-            {
-                //DOWN
-                _hitBoxGO.transform.position = this.gameObject.transform.position + new Vector3(0.0f, -1.365f, 0.0f);
-            }
-            else if (Vector2.Dot(_fsm.GetMovementDirection, Vector2.right) >= 0.5f)
-            {
-                //RIGHT
-                _hitBoxGO.transform.position = this.gameObject.transform.position + new Vector3(1.5f, 0.0f, 0.0f);
-            }
-            else if (Vector2.Dot(_fsm.GetMovementDirection, Vector2.up) >= 0.5f)
-            {
-                //UP
-                _hitBoxGO.transform.position = this.gameObject.transform.position + new Vector3(0.0f, 1.365f, 0.0f);
-            }
-            else if(Vector2.Dot(_fsm.GetMovementDirection, Vector2.left) >= 0.5f)
-            {
-                //LEFT
-                _hitBoxGO.transform.position = this.gameObject.transform.position + new Vector3(-1.5f, 0.0f, 0.0f);
-            }
-        }
-
-        #endregion
-
         #region UnityMethods
 
         private void OnDrawGizmos()
@@ -113,7 +85,8 @@ namespace MrSanmi.DungeonCrawler
 
         public void OnEnable()
         {
-            UIManager.instance.AddPlayerToSet(this);
+            UIManager.instance.AddPlayerToDictionary(this, playerIndex);
+            _gameReferee.AddPlayerToCinemachineTargetGroup(this.gameObject.transform);
         }
 
         private void OnTriggerEnter2D(Collider2D other)
@@ -134,6 +107,30 @@ namespace MrSanmi.DungeonCrawler
         #endregion
 
         #region LocalMethods
+
+        protected virtual void CalculateAttackStateMechanicDirection()
+        {
+            if (Vector2.Dot(_fsm.GetMovementDirection, Vector2.down) >= 0.5f)
+            {
+                //DOWN
+                _hitBoxGO.transform.position = this.gameObject.transform.position + new Vector3(0.0f, -1.2f, 0.0f);
+            }
+            else if (Vector2.Dot(_fsm.GetMovementDirection, Vector2.right) >= 0.5f)
+            {
+                //RIGHT
+                _hitBoxGO.transform.position = this.gameObject.transform.position + new Vector3(1.1f, -0.3f, 0.0f);
+            }
+            else if (Vector2.Dot(_fsm.GetMovementDirection, Vector2.up) >= 0.5f)
+            {
+                //UP
+                _hitBoxGO.transform.position = this.gameObject.transform.position + new Vector3(0.0f, 0.75f, 0.0f);
+            }
+            else if (Vector2.Dot(_fsm.GetMovementDirection, Vector2.left) >= 0.5f)
+            {
+                //LEFT
+                _hitBoxGO.transform.position = this.gameObject.transform.position + new Vector3(-1.1f, -0.3f, 0.0f);
+            }
+        }
 
         protected void ValidateOrbePedestalOrChestTriggerEnter(Collider2D other)
         {
@@ -180,8 +177,6 @@ namespace MrSanmi.DungeonCrawler
             }
         }
 
-        //TODO: Health object validation()
-
         protected void ValidateHealthCollision(Collision2D other)
         {
             if (other.gameObject.CompareTag("Health"))
@@ -189,6 +184,8 @@ namespace MrSanmi.DungeonCrawler
                 if(_hurtBox._currentHealthPoints < maxHealthPoints)
                 {
                     _hurtBox._currentHealthPoints++;
+                    //UIManager.instance.UpdateHeartUIIcons(this, _hurtBox._currentHealthPoints, "Add");
+                    UpdateUIHealth();
                 }
                 other.gameObject.SetActive(false);
             }
@@ -241,6 +238,11 @@ namespace MrSanmi.DungeonCrawler
         #endregion
 
         #region PublicMethods
+
+        public void ReturnOrbeToTheChestPublic()
+        {
+            ReturnOrbeToChest(_orbe, _chestTransform);
+        }
 
         public void ActivateHitBox()
         {
@@ -403,6 +405,23 @@ namespace MrSanmi.DungeonCrawler
             {
                 _hitBox = transform.GetChild(0).gameObject.GetComponent<HitBox>();
             }
+        }
+
+        public void AlertGameRefereeAboutMyDeath()
+        {
+            _gameReferee.RemoveAndSubstractPlayerFromTheCounter(this.gameObject.transform);
+        }
+
+        public void DeactivateHitAndHurtBoxesWhenDying()
+        {
+            _hurtBox.gameObject.SetActive(false);
+            _hitBox.gameObject.SetActive(false);
+        }
+
+        public void UpdateUIHealth()
+        {
+            //UIManager.instance.UpdateHeartUIIcons(this, _hurtBox._currentHealthPoints, "Substract");
+            UIManager.instance.UpdateHeartUIIcons(this, _hurtBox._currentHealthPoints);
         }
 
         #endregion

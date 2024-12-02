@@ -17,7 +17,7 @@ namespace MrSanmi.DungeonCrawler
     {
         #region Knobs
 
-        public int maxHealthPoints = 3;
+        public short maxHealthPoints = 3;
         public float cooldownDamageTime = 1f;
 
         #endregion
@@ -119,17 +119,17 @@ namespace MrSanmi.DungeonCrawler
 
         #region UnityMethods
 
-        //private void OnDrawGizmos()
-        //{
-        //    #if UNITY_EDITOR
-        //    InitializeAgent();
-        //    #endif
-        //}
-
-        void Start()
+        private void OnDrawGizmos()
         {
+            #if UNITY_EDITOR
             InitializeAgent();
+            #endif
         }
+
+        //void Start()
+        //{
+        //    InitializeAgent();
+        //}
 
         void Update()
         {
