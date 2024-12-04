@@ -18,8 +18,8 @@ namespace MrSanmi.DungeonCrawler
 
         [SerializeField] protected Agent _agent;
 
-        [SerializeField] protected EnemyNPC _enemyNPC;
-        [SerializeField] protected PlayersAvatar _playersAvatar;
+        //[SerializeField] protected EnemyNPC _enemyNPC;
+        //[SerializeField] protected PlayersAvatar _playersAvatar;
 
         #endregion
 
@@ -64,14 +64,16 @@ namespace MrSanmi.DungeonCrawler
                         switch (_agent)
                         {
                             case PlayersAvatar:
-                                _playersAvatar?.UpdateUIHealth();
-                                _playersAvatar?.ReturnOrbeToTheChestPublic();
-                                _agent.DamageAgent();
+                                ((PlayersAvatar)_agent)?.UpdateUIHealth();
+                                ((PlayersAvatar)_agent)?.ReturnOrbeToTheChestPublic();
+                                ((PlayersAvatar)_agent)?.DamageAgent();
                                 break;
                             case EnemyNPC:
-                                _enemyNPC?.ApplyForce((transform.parent.gameObject.transform.position - other.gameObject.transform.position).normalized);
+                                //Debug.Break();
+                                ((EnemyNPC)_agent)?.ApplyForce((transform.parent.gameObject.transform.position - other.gameObject.transform.position).normalized);
                                 break;
                         }
+
 
                         //Check if I am already dead
                         if(_currentHealthPoints <= 0)

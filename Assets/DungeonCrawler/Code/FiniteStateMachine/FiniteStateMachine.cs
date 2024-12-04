@@ -72,9 +72,9 @@ namespace MrSanmi.DungeonCrawler
         [SerializeField] protected Animator _animator;
         [SerializeField] protected Rigidbody2D _rigibody2D;
         [SerializeField] protected Agent _agent;
-        [SerializeField] protected EnemyNPC _enemyNPC;
-        [SerializeField] protected DestroyableObject _destroyableObject;
-        [SerializeField] protected PlayersAvatar _playersAvatar;
+        //[SerializeField] protected EnemyNPC _enemyNPC;
+        //[SerializeField] protected DestroyableObject _destroyableObject;
+        //[SerializeField] protected PlayersAvatar _playersAvatar;
         [SerializeField] protected AnimationClip _deathAnimationClip;
 
         #endregion
@@ -119,8 +119,15 @@ namespace MrSanmi.DungeonCrawler
 
         void FixedUpdate()
         {
-            _rigibody2D.velocity = _movementDirection * _movementSpeed;
-
+            //The agent received a force impulse greater than the input:
+            if (_rigibody2D.velocity.magnitude > _movementSpeed)
+            {
+                //_rigibody2D.velocity += (_movementDirection * _movementSpeed);
+            }
+            else //the agent is moving normally according to the movement input or not
+            {
+                _rigibody2D.velocity = (_movementDirection * _movementSpeed);
+            }
             ExecutingState();
         }
         #endregion
@@ -311,7 +318,7 @@ namespace MrSanmi.DungeonCrawler
         {
             if (_agent as PlayersAvatar)
             {
-                _playersAvatar.ActivateHitBox();
+                ((PlayersAvatar)_agent)?.ActivateHitBox();
                 _movementSpeed = 0.0f;
             }
         }
@@ -364,17 +371,17 @@ namespace MrSanmi.DungeonCrawler
         {
             _movementDirection = Vector2.zero;
             _movementSpeed = 0.0f;
-            _destroyableObject?.InstantiateObject();
+            ((DestroyableObject)_agent)?.InstantiateObject();
             yield return new WaitForSeconds(_deathAnimationClip.length);
 
             switch(_agent)
             {
                 case PlayersAvatar:
-                    _playersAvatar?.DeactivateHitAndHurtBoxesWhenDying();
-                    _playersAvatar?.AlertGameRefereeAboutMyDeath();
+                    ((PlayersAvatar)_agent)?.DeactivateHitAndHurtBoxesWhenDying();
+                    ((PlayersAvatar)_agent)?.AlertGameRefereeAboutMyDeath();
                     break;
                 case EnemyNPC:
-                    _enemyNPC?.AlertPoolAboutDeath();
+                    ((EnemyNPC)_agent)?.AlertPoolAboutDeath();
                     this.gameObject.SetActive(false);
                     break;
                 case DestroyableObject:

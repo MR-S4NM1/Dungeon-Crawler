@@ -20,10 +20,11 @@ MonoBehaviour:
     speed: 1
     time: 5
   persecutionBehaviours:
-  - type: 3
+  - type: 2
     speed: 2
     time: 3
   - type: 0
     speed: 0
     time: 1
+  shootingBehaviours: []
   visionRadius: 0
