@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 namespace MrSanmi.DungeonCrawler
@@ -28,7 +29,7 @@ namespace MrSanmi.DungeonCrawler
     {
         #region Knobs
 
-        public EnemyBehaviours_ScriptableObject scriptBehaviours;
+        [SerializeField] public EnemyBehaviours_ScriptableObject scriptBehaviours;
         [SerializeField] protected EnemyType _enemyType;
 
         #endregion
@@ -41,11 +42,12 @@ namespace MrSanmi.DungeonCrawler
 
         #region RunTimeVariables
 
-        [SerializeField] protected EnemyBehaviour _currentEnemyBehaviour;
+        protected EnemyBehaviour _currentEnemyBehaviour;
         protected EnemyBehavioursState _currentEnemyBehaviourState;
         protected int _currentEnemyBehaviourIndex;
         protected Transform _avatarsTransform;
         protected StateMechanics _previousMovementStateMechanic;
+        protected Vector2 _shootingDirection;
 
         #endregion
 
@@ -57,11 +59,10 @@ namespace MrSanmi.DungeonCrawler
                 case EnemyBehaviourType.STOP:
                     _fsm.StateMechanic(StateMechanics.STOP);
                     break;
-                case EnemyBehaviourType.FIRE:
-                    //
+                case EnemyBehaviourType.SHOOT_THE_AVATAR:
+                    _fsm.StateMechanic(StateMechanics.ATTACK);
                     break;
                 case EnemyBehaviourType.MOVE_TO_RANDOM_DIRECTION:
-                    //
                 case EnemyBehaviourType.PERSECUTE_THE_AVATAR:
                     _fsm.StateMechanic(_stateMechanic);
                     break;
@@ -115,6 +116,9 @@ namespace MrSanmi.DungeonCrawler
                     break;
                 case EnemyBehaviourType.PERSECUTE_THE_AVATAR:
                     InitializePersecuteTheAvatarSubStateMachine();
+                    break;
+                case EnemyBehaviourType.SHOOT_THE_AVATAR:
+                    InitializeShootTheAvatarSubStateMachine();
                     break;
             }
         }
@@ -184,6 +188,50 @@ namespace MrSanmi.DungeonCrawler
             }
         }
 
+        protected void InitializeShootingBehaviour()
+        {
+            StopAllCoroutines();
+            _currentEnemyBehaviourState = EnemyBehavioursState.SHOOT;
+            _currentEnemyBehaviourIndex = 0;
+
+            if (scriptBehaviours.persecutionBehaviours.Length > 0)
+            {
+                _currentEnemyBehaviour = scriptBehaviours.persecutionBehaviours[0];
+            }
+            else
+            {
+                _currentEnemyBehaviour.type = EnemyBehaviourType.SHOOT_THE_AVATAR;
+                _currentEnemyBehaviour.time = -1;
+                _currentEnemyBehaviour.speed = 1.0f;
+            }
+            InitializeSubState();
+            CalculateStateMechanicDirection();
+            InvokeStateMechanic();
+            if (_currentEnemyBehaviour.time > 0)
+            {
+                StartCoroutine(TimerForEnemyBehaviour());
+            }
+        }
+
+        protected IEnumerator ShootAtPlayerCorroutine()
+        {
+            while(_avatarsTransform != null)
+            {
+                _shootingDirection = (_avatarsTransform.position - this.gameObject.transform.position).normalized;
+
+                if (Vector2.Dot(_avatarsTransform.position, Vector2.right) >= 0.6)
+                {
+                    // TODO: BULLETS POOL
+                }
+                else if(Vector2.Dot(_avatarsTransform.position, Vector2.left) >= 0.6)
+                {
+                    // TODO: BULLETS POOL
+                }
+
+                yield return new WaitForSeconds(1.0f);
+            }
+        }
+
         #endregion
 
         #region UnityMethods
@@ -215,6 +263,9 @@ namespace MrSanmi.DungeonCrawler
                 case EnemyBehaviourType.PERSECUTE_THE_AVATAR:
                     ExecutingPersecuteTheAvatarSubStateMachine();
                     break;
+                case EnemyBehaviourType.SHOOT_THE_AVATAR:
+                    break;
+                
             }
         }
 
@@ -229,6 +280,21 @@ namespace MrSanmi.DungeonCrawler
                         InitializePersecutionBehaviour();
                     }
                     break;
+                case EnemyType.PATROLLING_AND_SHOOTING:
+                    if (other.CompareTag("Player"))
+                    {
+                        _avatarsTransform = other.gameObject.transform;
+
+                        if (Vector2.Dot(_avatarsTransform.position, Vector2.right) >= 0.6)
+                        {
+                            InitializeShootingBehaviour();
+                        }
+                        else if (Vector2.Dot(_avatarsTransform.position, Vector2.left) >= 0.6)
+                        {
+                            InitializeShootingBehaviour();
+                        }
+                    }
+                    break;
             }
         }
 
@@ -241,6 +307,13 @@ namespace MrSanmi.DungeonCrawler
                     {
                         _avatarsTransform = null;
                         InitializePatrolBehaviour(); // Initialize patrol
+                    }
+                    break;
+                case EnemyType.PATROLLING_AND_SHOOTING:
+                    if (other.CompareTag("Player"))
+                    {
+                        _avatarsTransform = null;
+                        InitializePatrolBehaviour();
                     }
                     break;
             }
@@ -354,17 +427,19 @@ namespace MrSanmi.DungeonCrawler
 
         #region ShootToAvatarSubStateMachineMethods
 
-        protected void InitializeShootToAvatarSubStateMachine()
+        protected void InitializeShootTheAvatarSubStateMachine()
+        {
+            _fsm.SetMovementSpeed = 0.0f;
+            _fsm.SetMovementDirection = Vector2.zero;
+            StartCoroutine(ShootAtPlayerCorroutine());
+        }
+
+        protected void ExecutingShootTheAvatarSubStateMachine()
         {
 
         }
 
-        protected void ExecutingShootToAvatarSubStateMachine()
-        {
-
-        }
-
-        protected void FinalizeShootToAvatarSubStateMachine()
+        protected void FinalizeShootTheAvatarSubStateMachine()
         {
 
         }

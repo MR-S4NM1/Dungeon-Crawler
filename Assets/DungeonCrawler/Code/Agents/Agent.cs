@@ -38,7 +38,7 @@ namespace MrSanmi.DungeonCrawler
         [SerializeField] protected Color _spriteRendererColor;
         protected bool _cooldown;
         protected float _cooldownCronometer;
-        protected Coroutine _blinkDamgeCoroutine;
+        protected Coroutine _blinkDamageCoroutine;
 
 
 
@@ -87,21 +87,18 @@ namespace MrSanmi.DungeonCrawler
         }
 
         //Invocation from the HurtBox of this same agent
-        protected virtual void DamageAgent()
+        public virtual void DamageAgent()
         {
-            if (!_cooldown)
-            {
-                _cooldown = true;
-                _cooldownCronometer = cooldownDamageTime;
-                _blinkDamgeCoroutine = StartCoroutine(DamageBlink());
-            }
+            _cooldownCronometer = cooldownDamageTime;
+            StartCoroutine(DamageBlink());
         }
 
         protected IEnumerator DamageBlink()
         {
+            _spriteRendererColor = _spriteRenderer.color;
             while (_cooldownCronometer > 0)
             {
-                _spriteRendererColor.a = 0.25f;
+                _spriteRendererColor.a = 0.5f;
                 _spriteRenderer.color = _spriteRendererColor;
                 yield return new WaitForSeconds(0.25f);
                 _spriteRendererColor.a = 1f;
@@ -109,9 +106,6 @@ namespace MrSanmi.DungeonCrawler
                 yield return new WaitForSeconds(0.25f);
                 _cooldownCronometer -= 0.5f; //0.25f + 0.25f
             }
-            StopCoroutine(_blinkDamgeCoroutine);
-            _blinkDamgeCoroutine = null;
-            _cooldown = false;
         }
 
 
@@ -119,22 +113,18 @@ namespace MrSanmi.DungeonCrawler
 
         #region UnityMethods
 
-        private void OnDrawGizmos()
-        {
-            #if UNITY_EDITOR
-            InitializeAgent();
-            #endif
-        }
-
-        //void Start()
+        //private void OnDrawGizmos()
         //{
+        //    #if UNITY_EDITOR
         //    InitializeAgent();
+        //    #endif
         //}
 
-        void Update()
+        void Start()
         {
-
+            InitializeAgent();
         }
+
         #endregion
 
         #region PublicMethods

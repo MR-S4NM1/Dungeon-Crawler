@@ -187,6 +187,7 @@ MonoBehaviour:
   cooldownTime: 1
   _agent: {fileID: 789071888510828446}
   _enemyNPC: {fileID: 0}
+  _playersAvatar: {fileID: 0}
   _currentHealthPoints: 0
 --- !u!1 &5640327576269834275
 GameObject:
@@ -240,7 +241,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealthPoints: 3
-  cooldownDamageTime: 1
+  cooldownDamageTime: 0.5
   _rb: {fileID: 5171730959285840193}
   _fsm: {fileID: 2783063553743618370}
   _hurtBox: {fileID: 8009190582324086357}
@@ -261,6 +262,8 @@ MonoBehaviour:
   _animator: {fileID: -6225775655275200431}
   _rigibody2D: {fileID: 5171730959285840193}
   _agent: {fileID: 789071888510828446}
+  _enemyNPC: {fileID: 0}
+  _destroyableObject: {fileID: 0}
   _playersAvatar: {fileID: 0}
   _deathAnimationClip: {fileID: 0}
   _state: 0

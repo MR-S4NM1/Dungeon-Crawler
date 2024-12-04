@@ -66,6 +66,7 @@ namespace MrSanmi.DungeonCrawler
                             case PlayersAvatar:
                                 _playersAvatar?.UpdateUIHealth();
                                 _playersAvatar?.ReturnOrbeToTheChestPublic();
+                                _agent.DamageAgent();
                                 break;
                             case EnemyNPC:
                                 _enemyNPC?.ApplyForce((transform.parent.gameObject.transform.position - other.gameObject.transform.position).normalized);
