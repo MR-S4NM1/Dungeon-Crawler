@@ -26,7 +26,7 @@ namespace MrSanmi.DungeonCrawler
         // - 1: Gameplay Scene.
         // - 2: Victory Scene.
         // - 3: Game Over Scene.
-        public void ChangeSceneTo(short sceneID)
+        public void ChangeSceneTo(int sceneID)
         {
             SceneManager.LoadScene(sceneID);
         }

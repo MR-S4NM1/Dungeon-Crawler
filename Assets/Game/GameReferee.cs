@@ -22,15 +22,22 @@ namespace MrSanmi.DungeonCrawler
     {
         #region References
 
-        public GameObject panelPause;
+        [Header("UI Panels")]
+        [SerializeField] public GameObject pausePanel;
+        [SerializeField] public GameObject gamePanel;
 
+        [Header("Target Group")]
         [SerializeField] public CinemachineTargetGroup targetGroup;
 
+        [Header("Interactive Objects")]
         [SerializeField] protected GameObject chest;
         [SerializeField] protected GameObject pedestal;
 
+        [Header("Path Locks")]
         [SerializeField] protected GameObject[] finalPathLocks;
         [SerializeField] protected GameObject[] middlePathLocks;
+
+        [Header("Portal")]
         [SerializeField] protected Portal[] portalsOfTheGame;
 
         #endregion
@@ -48,6 +55,7 @@ namespace MrSanmi.DungeonCrawler
         #region UnityMethods
         void Start() //Runtime
         {
+            _gameState = GameStates.GAME;
             InitializeGameState();
             orbeHasAlreadyBeenPlaced = false;
             aPlayerIsCarryingTheOrbe = false;
@@ -208,6 +216,8 @@ namespace MrSanmi.DungeonCrawler
         protected void InitializeGameState()
         {
             Time.timeScale = 1.0f;
+            gamePanel?.SetActive(true);
+            pausePanel?.SetActive(false);
         }
 
         protected void ExecutingGameState()
@@ -226,7 +236,8 @@ namespace MrSanmi.DungeonCrawler
 
         protected void InitializePauseState()
         {
-            //panelPause?.SetActive(true);
+            gamePanel?.SetActive(false);
+            pausePanel?.SetActive(true);
             Time.timeScale = 0.0f;
         }
 
@@ -237,7 +248,8 @@ namespace MrSanmi.DungeonCrawler
 
         protected void FinalizePauseState()
         {
-            //panelPause?.SetActive(false);
+            gamePanel?.SetActive(true);
+            pausePanel?.SetActive(false);
             Time.timeScale = 1.0f;
         }
 
