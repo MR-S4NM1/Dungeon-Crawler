@@ -12,6 +12,7 @@ TagManager:
   - FloorButton
   - Pedestal
   - Chest
+  - Bullet
   layers:
   - Default
   - TransparentFX

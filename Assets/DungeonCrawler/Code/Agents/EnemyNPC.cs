@@ -49,9 +49,15 @@ namespace MrSanmi.DungeonCrawler
         protected int _currentEnemyBehaviourIndex;
         protected Transform _avatarsTransform;
         protected StateMechanics _previousMovementStateMechanic;
-        protected Vector2 _shootingDirection;
 
+        [Header("Shooter enemy")]
+        protected Vector2 _shootingDirection;
+        protected Transform _shootingTarget;
         protected bool _canShoot;
+        protected HashSet<Transform> playersSet;
+        protected Transform _nearestPlayer;
+        protected float _nearestDistance;
+        protected float _distance;
 
         #endregion
 
@@ -64,7 +70,7 @@ namespace MrSanmi.DungeonCrawler
                     _fsm.StateMechanic(StateMechanics.STOP);
                     break;
                 case EnemyBehaviourType.SHOOT_THE_AVATAR:
-                    _fsm.StateMechanic(StateMechanics.ATTACK);
+                    _fsm.StateMechanic(StateMechanics.STOP);
                     break;
                 case EnemyBehaviourType.MOVE_TO_RANDOM_DIRECTION:
                 case EnemyBehaviourType.PERSECUTE_THE_AVATAR:
@@ -217,44 +223,47 @@ namespace MrSanmi.DungeonCrawler
             }
         }
 
+        protected Transform GetNearestPlayer()
+        {
+            _nearestDistance = Mathf.Infinity;
+            _nearestPlayer = null;
+
+            foreach(Transform player in playersSet)
+            {
+                _distance = Vector2.SqrMagnitude(player.gameObject.transform.position - this.gameObject.transform.position);
+
+                if(_distance < _nearestDistance)
+                {
+                    _nearestDistance = _distance;
+                    _nearestPlayer = player.transform;
+                }
+            }
+
+            return _nearestPlayer;
+        }
+
         protected IEnumerator ShootAtPlayerCorroutine()
         {
             while(_avatarsTransform != null)
             {
-                if (_canShoot && !_bullet.GetHasTouchedThePlayer)
+                _bullet.gameObject.transform.position = this.gameObject.transform.position;
+
+                _bullet._target = GetNearestPlayer();
+
+                if (Vector2.Dot(_avatarsTransform.position - this.gameObject.transform.position, transform.right) >= 0.7)
                 {
-                    _canShoot = false;
-                    _shootingDirection = (_avatarsTransform.position - _bullet.gameObject.transform.position).normalized;
-
-                    _bullet.bulletDirection = _shootingDirection;
-
-                    if (Vector2.Dot(this.gameObject.transform.right, _avatarsTransform.position) >= 0.7)
-                    {
-                        _bullet.bulletDirection = _shootingDirection.normalized;
-                        _bullet.gameObject.SetActive(true);
-                    }
-                    if (Vector2.Dot(-this.gameObject.transform.right, _avatarsTransform.position) >= 0.7)
-                    {
-                        _bullet.bulletDirection = _shootingDirection.normalized;
-                        _bullet.gameObject.SetActive(true);
-                    }
-
-                    yield return new WaitForSeconds(3.0f);
-
-                    print("AHHHHHHHHHHHHHHHHHHHHHHHHHH");
-
-                    if (Vector2.Dot(this.gameObject.transform.right, _avatarsTransform.position) >= 0.7)
-                    {
-                        _bullet.gameObject.transform.position = bulletPos[0].position; //Right
-                    }
-                    if (Vector2.Dot(-this.gameObject.transform.right, _avatarsTransform.position) >= 0.7)
-                    {
-                        _bullet.gameObject.transform.position = bulletPos[1].position; //Left
-                    }
-
-                    _bullet.gameObject.SetActive(false);
-                    _canShoot = true;
+                    _bullet.gameObject.SetActive(true);
                 }
+                if (Vector2.Dot(_avatarsTransform.position - this.gameObject.transform.position, -transform.right) >= 0.7)
+                {
+                    _bullet.gameObject.SetActive(true);
+                }
+
+                yield return new WaitForSeconds(3.0f);
+
+                _bullet.gameObject.SetActive(false);
+
+                yield return new WaitForSeconds(6.0f);
             }
         }
 
@@ -264,7 +273,11 @@ namespace MrSanmi.DungeonCrawler
         void Start()
         {
             InitializeAgent();
-            _canShoot = true;
+
+            if(_enemyType == EnemyType.PATROLLING_AND_SHOOTING)
+            {
+                playersSet = new HashSet<Transform>();
+            }
         }
 
         private void OnDisable()
@@ -291,6 +304,7 @@ namespace MrSanmi.DungeonCrawler
                     ExecutingPersecuteTheAvatarSubStateMachine();
                     break;
                 case EnemyBehaviourType.SHOOT_THE_AVATAR:
+                    ExecutingShootTheAvatarSubStateMachine();
                     break;
                 
             }
@@ -310,6 +324,7 @@ namespace MrSanmi.DungeonCrawler
                 case EnemyType.PATROLLING_AND_SHOOTING:
                     if (other.CompareTag("Player"))
                     {
+                        playersSet.Add(other.gameObject.transform);
                         _avatarsTransform = other.gameObject.transform;
                         InitializeShootingBehaviour();
                     }
@@ -332,6 +347,8 @@ namespace MrSanmi.DungeonCrawler
                     if (other.CompareTag("Player"))
                     {
                         _avatarsTransform = null;
+                        playersSet.Remove(other.gameObject.transform);
+                        StopAllCoroutines();
                         InitializePatrolBehaviour();
                     }
                     break;
@@ -356,6 +373,14 @@ namespace MrSanmi.DungeonCrawler
         {
             print("Forceeeeeeee!" + direction);
             _rb.AddForce(direction * 8.0f, ForceMode2D.Impulse);
+        }
+
+        public IEnumerator DamageCorroutineEnemy()
+        {
+            _fsm.SetMovementDirection = Vector2.zero;
+            _fsm.SetMovementSpeed = 0.0f;
+            yield return new WaitForSeconds(1.0f);
+            _fsm.SetMovementSpeed = 2.0f;
         }
 
         #endregion
@@ -451,14 +476,7 @@ namespace MrSanmi.DungeonCrawler
             _fsm.SetMovementSpeed = 0.0f;
             _fsm.SetMovementDirection = Vector2.zero;
 
-            if (Vector2.Dot(this.gameObject.transform.right, _avatarsTransform.position) >= 0.7)
-            {
-                _bullet.gameObject.transform.position = bulletPos[0].position; //Right
-            }
-            if (Vector2.Dot(-this.gameObject.transform.right, _avatarsTransform.position) >= 0.7)
-            {
-                _bullet.gameObject.transform.position = bulletPos[1].position; //Left
-            }
+            _bullet.gameObject.transform.position = this.gameObject.transform.position;
 
             StartCoroutine(ShootAtPlayerCorroutine());
 

@@ -9,7 +9,7 @@ namespace MrSanmi.DungeonCrawler
         #region Knobs
 
         [SerializeField] public float bulletSpeed;
-        [SerializeField] public float bulletLifetime;
+
         #endregion
 
         #region References
@@ -21,8 +21,9 @@ namespace MrSanmi.DungeonCrawler
 
         #region RuntimeVariables
 
-        [SerializeField] public Vector2 bulletDirection;
+        [SerializeField] protected Vector2 bulletDirection;
         [SerializeField] protected bool _hasTouchedThePlayer;
+        [SerializeField] public Transform _target;
 
         #endregion
 
@@ -41,7 +42,9 @@ namespace MrSanmi.DungeonCrawler
         {
             //_rb2D.velocity = bulletDirection * bulletSpeed;
 
-            _rb2D.MovePosition(bulletDirection * bulletSpeed);
+            bulletDirection = (_target.position - this.gameObject.transform.position).normalized;
+
+            _rb2D.velocity = bulletDirection * bulletSpeed;
         }
 
         private void OnTriggerEnter2D(Collider2D other)
@@ -67,6 +70,7 @@ namespace MrSanmi.DungeonCrawler
                 if ((other.gameObject.layer != gameObject.layer) && (other.gameObject.transform.parent.gameObject.CompareTag("Player")))
                 {
                     this.gameObject.SetActive(false);
+                    this.gameObject.transform.position = this.gameObject.transform.parent.gameObject.transform.position;
                 }
             }
         }

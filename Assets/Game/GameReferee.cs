@@ -142,7 +142,7 @@ namespace MrSanmi.DungeonCrawler
         {
             targetGroup.RemoveMember(playersTransform);
 
-            if (targetGroup.IsEmpty)
+            if (targetGroup.m_Targets.Length <= 0)
             {
                 LoseGame();
             }
