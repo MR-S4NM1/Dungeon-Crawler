@@ -155,16 +155,27 @@ namespace MrSanmi.DungeonCrawler
             {
                 FinalizeGameState();
                 //I should go to pause
-                _gameState = GameStates.PAUSE;
                 InitializePauseState();
+                _gameState = GameStates.PAUSE;
             }
-            if (_gameState == GameStates.PAUSE)
+            else if (_gameState == GameStates.PAUSE)
             {
                 FinalizePauseState();
                 //I return to the game
-                _gameState = GameStates.GAME;
                 InitializeGameState();
+                _gameState = GameStates.GAME;
             }
+
+            //if (_gameState == GameStates.GAME)
+            //{
+            //    Time.timeScale = 0;
+            //    _gameState = GameStates.PAUSE;
+            //}
+            //else if (_gameState == GameStates.PAUSE)
+            //{
+            //    Time.timeScale = 1;
+            //    _gameState = GameStates.GAME;
+            //}
         }
 
         public void WinGame()
@@ -215,7 +226,7 @@ namespace MrSanmi.DungeonCrawler
 
         protected void InitializePauseState()
         {
-            panelPause?.SetActive(true);
+            //panelPause?.SetActive(true);
             Time.timeScale = 0.0f;
         }
 
@@ -226,7 +237,7 @@ namespace MrSanmi.DungeonCrawler
 
         protected void FinalizePauseState()
         {
-            panelPause?.SetActive(false);
+            //panelPause?.SetActive(false);
             Time.timeScale = 1.0f;
         }
 

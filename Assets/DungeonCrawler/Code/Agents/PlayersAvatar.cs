@@ -361,6 +361,7 @@ namespace MrSanmi.DungeonCrawler
         {
             if (value.performed)
             {
+                print("YESSSSSSSSSSSSSSSSSSSSSSSSSSS");
                 _gameReferee.PauseGame();
             }
         }
