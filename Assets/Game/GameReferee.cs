@@ -53,8 +53,20 @@ namespace MrSanmi.DungeonCrawler
         #endregion
 
         #region UnityMethods
+        private void OnEnable()
+        {
+            Time.timeScale = 1.0f;
+        }
+
+        private void OnDisable()
+        {
+            Time.timeScale = 1.0f;
+        }
+
+
         void Start() //Runtime
         {
+            Time.timeScale = 1.0f;
             _gameState = GameStates.GAME;
             InitializeGameState();
             orbeHasAlreadyBeenPlaced = false;
@@ -71,10 +83,10 @@ namespace MrSanmi.DungeonCrawler
                     ExecutingGameState();
                     break;
                 case GameStates.GAME_OVER:
-                    //ExecutingGameOverState();
+                    ExecutingGameOverState();
                     break;
                 case GameStates.VICTORY:
-                    //ExecutingVictoryState();
+                    ExecutingVictoryState();
                     break;
                 case GameStates.PAUSE:
                     ExecutingPauseState();
@@ -173,17 +185,6 @@ namespace MrSanmi.DungeonCrawler
                 InitializeGameState();
                 _gameState = GameStates.GAME;
             }
-
-            //if (_gameState == GameStates.GAME)
-            //{
-            //    Time.timeScale = 0;
-            //    _gameState = GameStates.PAUSE;
-            //}
-            //else if (_gameState == GameStates.PAUSE)
-            //{
-            //    Time.timeScale = 1;
-            //    _gameState = GameStates.GAME;
-            //}
         }
 
         public void WinGame()
@@ -192,8 +193,8 @@ namespace MrSanmi.DungeonCrawler
             if (_gameState == GameStates.GAME)
             {
                 FinalizeGameState();
-                _gameState = GameStates.VICTORY;
                 InitializeVictoryState();
+                _gameState = GameStates.VICTORY;
             }
         }
 

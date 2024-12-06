@@ -38,6 +38,16 @@ namespace MrSanmi.DungeonCrawler
             }  
         }
 
+        private void OnEnable()
+        {
+            StartCoroutine(StopPersecution());
+        }
+
+        private void OnDisable()
+        {
+            StopAllCoroutines();
+        }
+
         private void FixedUpdate()
         {
             //_rb2D.velocity = bulletDirection * bulletSpeed;
@@ -78,6 +88,14 @@ namespace MrSanmi.DungeonCrawler
         #endregion
 
         #region Corroutines
+
+        protected IEnumerator StopPersecution()
+        {
+            yield return new WaitForSeconds(3.0f);
+
+            this.gameObject.SetActive(false);
+            this.gameObject.transform.position = this.gameObject.transform.parent.gameObject.transform.position;
+        }
 
         #endregion
 

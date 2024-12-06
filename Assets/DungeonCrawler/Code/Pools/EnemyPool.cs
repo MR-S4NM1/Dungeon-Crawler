@@ -10,19 +10,30 @@ namespace MrSanmi.DungeonCrawler
     {
         [SerializeField] protected List<Agent> _enemiesOfThisPool;
         [SerializeField] protected int _enemiesLeft;
+        [SerializeField] protected bool _firstTimeDetectingAPlayer;
 
         private void Start()
         {
-            _enemiesLeft = _enemiesOfThisPool.Count;
+            _firstTimeDetectingAPlayer = false;
+            _enemiesLeft = 0;
         }
 
         private void OnTriggerEnter2D(Collider2D other)
         {
             if (other.gameObject.CompareTag("Player"))
             {
-                if (_enemiesLeft <= 0)
+                if (!_firstTimeDetectingAPlayer)
                 {
-                    print("I always come back");
+                    for (int i = 0; i < _enemiesOfThisPool.Count; ++i)
+                    {
+                        _enemiesOfThisPool[i].gameObject.SetActive(true);
+                    }
+                    _firstTimeDetectingAPlayer = true;
+                    _enemiesLeft = _enemiesOfThisPool.Count;
+                }
+
+                if ((_enemiesLeft <= 0) && _firstTimeDetectingAPlayer)
+                {
                     for (int i = 0; i < _enemiesOfThisPool.Count; ++i)
                     {
                         if (_enemiesOfThisPool[i].GetComponentInChildren<HurtBox>()._currentHealthPoints <= 0)
@@ -32,6 +43,7 @@ namespace MrSanmi.DungeonCrawler
                             _enemiesOfThisPool[i].GetComponent<Agent>().StateMechanic(StateMechanics.REVIVE);
                         }
                     }
+                    _enemiesLeft = _enemiesOfThisPool.Count;
                 }
             }
         }

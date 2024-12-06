@@ -246,6 +246,8 @@ namespace MrSanmi.DungeonCrawler
         {
             while(_avatarsTransform != null)
             {
+                yield return new WaitForSeconds(1.0f);
+
                 _bullet.gameObject.transform.position = this.gameObject.transform.position;
 
                 _bullet._target = GetNearestPlayer();
@@ -262,8 +264,6 @@ namespace MrSanmi.DungeonCrawler
                 yield return new WaitForSeconds(3.0f);
 
                 _bullet.gameObject.SetActive(false);
-
-                yield return new WaitForSeconds(6.0f);
             }
         }
 

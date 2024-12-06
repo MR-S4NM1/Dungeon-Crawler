@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 namespace MrSanmi.DungeonCrawler
@@ -39,6 +40,11 @@ namespace MrSanmi.DungeonCrawler
 
         private void Start()
         {
+            if (_gameReferee == null)
+            {
+                _gameReferee = GameObject.FindFirstObjectByType<GameReferee>();
+            }
+
             if (portalType == portalTypes.COMMON)
             {
                 portalPlayer = new HashSet<GameObject>(); //We initialize our Hash Set here since it's a runtime variables :P
@@ -58,6 +64,7 @@ namespace MrSanmi.DungeonCrawler
             }
         }
 
+
         private void OnTriggerExit2D(Collider2D other)
         {
             if(portalType == portalTypes.COMMON)
@@ -66,13 +73,13 @@ namespace MrSanmi.DungeonCrawler
             }
         }
 
-        private void OnDrawGizmos()
-        {
-            if(_gameReferee == null)
-            {
-                _gameReferee = GameObject.FindFirstObjectByType<GameReferee>();
-            }
-        }
+        //private void OnDrawGizmos()
+        //{
+        //    if(_gameReferee == null)
+        //    {
+        //        _gameReferee = GameObject.FindFirstObjectByType<GameReferee>();
+        //    }
+        //}
 
         #endregion
 

@@ -85,6 +85,7 @@ namespace MrSanmi.DungeonCrawler
 
         public void OnEnable()
         {
+            _fsm.SetState(States.IDLE_DOWN);
             UIManager.instance.AddPlayerToDictionary(this, playerIndex);
             _gameReferee.AddPlayerToCinemachineTargetGroup(this.gameObject.transform);
         }

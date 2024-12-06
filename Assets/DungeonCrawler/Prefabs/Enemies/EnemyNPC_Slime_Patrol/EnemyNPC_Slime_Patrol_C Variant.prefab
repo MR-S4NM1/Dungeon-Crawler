@@ -48,6 +48,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4260319740262698193, guid: a107bc6244f93274983afe5a9815bc06, type: 3}
+      propertyPath: _deathAnimationClip
+      value: 
+      objectReference: {fileID: 7400000, guid: d3814e3302142ef4c8e455706667823d, type: 2}
     - target: {fileID: 6036696766897685936, guid: a107bc6244f93274983afe5a9815bc06, type: 3}
       propertyPath: m_Name
       value: EnemyNPC_Slime_Patrol_C Variant

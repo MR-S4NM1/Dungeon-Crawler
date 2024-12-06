@@ -52,6 +52,10 @@ PrefabInstance:
       propertyPath: _movementSpeed
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 5190029530384064735, guid: 91486c711665999449c3bc0fcf3ce087, type: 3}
+      propertyPath: _deathAnimationClip
+      value: 
+      objectReference: {fileID: 7400000, guid: d3814e3302142ef4c8e455706667823d, type: 2}
     - target: {fileID: 7531085914452601291, guid: 91486c711665999449c3bc0fcf3ce087, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
