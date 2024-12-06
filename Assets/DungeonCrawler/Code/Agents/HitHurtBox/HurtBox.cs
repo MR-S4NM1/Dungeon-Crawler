@@ -102,7 +102,7 @@ namespace MrSanmi.DungeonCrawler
 
         private void OnTriggerEnter2D(Collider2D other)
         {
-            if (!_isInCooldown) //To be immune or not
+            if (!_isInCooldown && _currentHealthPoints > 0) //To be immune or not
             {
                 //I have the potential to be hurt by a HitBox :O
                 if (other.gameObject.CompareTag("Bullet"))
@@ -125,7 +125,7 @@ namespace MrSanmi.DungeonCrawler
 
 
                         //Check if I am already dead
-                        if (_currentHealthPoints <= 1)
+                        if (_currentHealthPoints <= 0)
                         {
                             _agent.StateMechanic(StateMechanics.DIE);
                         }

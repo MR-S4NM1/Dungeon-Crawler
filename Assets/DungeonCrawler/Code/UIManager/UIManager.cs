@@ -52,10 +52,10 @@ namespace MrSanmi.DungeonCrawler
         {
             _healthIconsMatrix = new GameObject[4 , 5];
 
-            for (short i = 0; i < _healthIconsGroup.Length; ++i)
+            for (int i = 0; i < _healthIconsGroup.Length; ++i)
             {
                 _playersTextUI[i].gameObject.SetActive(false);
-                for (short j = 0; j < _healthIcons.Length; ++j)
+                for (int j = 0; j < _healthIcons.Length; ++j)
                 {
                     _healthIconsMatrix[i, j] = _healthIconsGroup[i].transform.GetChild(j).gameObject;
                 }
@@ -64,11 +64,11 @@ namespace MrSanmi.DungeonCrawler
 
         protected void AssignHealthUI(PlayersAvatar playersAvatar, playerIndex playerIndex)
         {
-            _playersTextUI[(short)playerIndex].gameObject.SetActive(true);
+            _playersTextUI[(int)playerIndex].gameObject.SetActive(true);
 
-            for (short i = 0; i < playersAvatar.maxHealthPoints; ++i)
+            for (int i = 0; i < playersAvatar.maxHealthPoints; ++i)
             {
-                _healthIconsMatrix[(short)playerIndex, i].gameObject.SetActive(true);
+                _healthIconsMatrix[(int)playerIndex, i].gameObject.SetActive(true);
             }
         }
 
@@ -122,20 +122,20 @@ namespace MrSanmi.DungeonCrawler
         {
             if (playersDictionary.TryGetValue(playersAvatar, out playerIndex playerIndex))
             {
-                for (short i = 0; i < playersAvatar.maxHealthPoints; ++i)
+                for (int i = 0; i < playersAvatar.maxHealthPoints; ++i)
                 {
                     if (i < currentPlayerHP)
                     {
-                        _healthIconsMatrix[(short)playerIndex, i].gameObject.SetActive(true);
+                        _healthIconsMatrix[(int)playerIndex, i].gameObject.GetComponent<Image>().color = Color.white;
                     }
                     else
                     {
-                        _healthIconsMatrix[(short)playerIndex, i].gameObject.SetActive(false);
+                        _healthIconsMatrix[(int)playerIndex, i].gameObject.GetComponent<Image>().color = Color.black;
                     }
                 }
-                if(currentPlayerHP <= 0)
+                if (currentPlayerHP <= 0)
                 {
-                    _playersTextUI[(short)playerIndex].gameObject.SetActive(false);
+                    _playersTextUI[(int)playerIndex].gameObject.SetActive(false);
                 }
             }
 
