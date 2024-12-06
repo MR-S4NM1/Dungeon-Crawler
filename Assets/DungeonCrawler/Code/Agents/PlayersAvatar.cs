@@ -1,3 +1,4 @@
+using Cinemachine;
 using MrSanmi.FiniteStateMachine;
 using System.Collections;
 using System.Collections.Generic;
@@ -32,6 +33,8 @@ namespace MrSanmi.DungeonCrawler
         [SerializeField] protected HitBox _hitBox;
         [SerializeField] protected GameObject _hitBoxGO;
         [SerializeField] protected GameReferee _gameReferee;
+        public ControllerInputHandler _controllerInputHandler;
+        public CinemachineImpulseSource _impulseSource;
 
         #endregion
 
@@ -67,6 +70,8 @@ namespace MrSanmi.DungeonCrawler
             _chestTransform = null;
             _pedestalTransform = null;
             _orbe = null;
+            _controllerInputHandler = transform.GetChild(3).GetComponent<ControllerInputHandler>();
+            _impulseSource = FindObjectOfType<CinemachineImpulseSource>();
         }
 
         private void FixedUpdate()
@@ -362,7 +367,6 @@ namespace MrSanmi.DungeonCrawler
         {
             if (value.performed)
             {
-                print("YESSSSSSSSSSSSSSSSSSSSSSSSSSS");
                 _gameReferee.PauseGame();
             }
         }

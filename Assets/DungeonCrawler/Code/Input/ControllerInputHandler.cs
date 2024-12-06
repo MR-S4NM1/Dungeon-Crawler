@@ -69,6 +69,24 @@ namespace MrSanmi.DungeonCrawler
             _avatarOfIndex?.OnINTERACT(value);
         }
 
+        public void ControllerVibration(float vibrationTime)
+        {
+            StartCoroutine(VibrationCorroutineForSeconds(vibrationTime));
+        }
+
+        #endregion
+
+        #region Corroutines
+
+        protected IEnumerator VibrationCorroutineForSeconds(float vibrationTime)
+        {
+            GetComponent<PlayerInput>().GetDevice<Gamepad>()?.SetMotorSpeeds(0.25f, 0.75f);
+
+            yield return new WaitForSeconds(vibrationTime);
+
+            GetComponent<PlayerInput>().GetDevice<Gamepad>()?.SetMotorSpeeds(0.0f, 0.0f);
+        }
+
         #endregion
     }
 }

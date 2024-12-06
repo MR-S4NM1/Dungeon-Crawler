@@ -72,6 +72,8 @@ namespace MrSanmi.DungeonCrawler
                                 ((PlayersAvatar)_agent)?.UpdateUIHealth();
                                 ((PlayersAvatar)_agent)?.ReturnOrbeToTheChestPublic();
                                 ((PlayersAvatar)_agent)?.DamageAgent();
+                                ((PlayersAvatar)_agent)?._controllerInputHandler.ControllerVibration(0.2f);
+                                ((PlayersAvatar)_agent)?._impulseSource.GenerateImpulse();
                                 break;
                             case EnemyNPC:
                                 //Debug.Break();
@@ -120,6 +122,8 @@ namespace MrSanmi.DungeonCrawler
                                 ((PlayersAvatar)_agent)?.UpdateUIHealth();
                                 ((PlayersAvatar)_agent)?.ReturnOrbeToTheChestPublic();
                                 ((PlayersAvatar)_agent)?.DamageAgent();
+                                ((PlayersAvatar)_agent)?._impulseSource.GenerateImpulse();
+                                ((PlayersAvatar)_agent)?._controllerInputHandler.ControllerVibration(0.2f);
                                 break;
                         }
 

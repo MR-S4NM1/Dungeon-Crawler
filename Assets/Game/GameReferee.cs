@@ -131,9 +131,9 @@ namespace MrSanmi.DungeonCrawler
             switch (typeOfLock)
             {
                 case "MiddlePathLocks":
-                    foreach (GameObject pathLock in middlePathLocks)
+                    for (int i = 0; i < middlePathLocks.Length; ++i)
                     {
-                        pathLock.gameObject.SetActive(false);
+                        StartCoroutine(MiddlePathLockReleaseCorroutine(i));
                     }
                     break;
                 case "FinalPathLocks":
@@ -295,5 +295,18 @@ namespace MrSanmi.DungeonCrawler
         #endregion
 
         #endregion GameStateMethods
+
+        #region Corroutines
+
+        public IEnumerator MiddlePathLockReleaseCorroutine(int index)
+        {
+            middlePathLocks[index].GetComponent<Animator>().Play("PathLockRelease");
+
+            yield return new WaitForSeconds(3.0f);
+
+            middlePathLocks[index].GetComponent<BoxCollider2D>().enabled = false;
+        }
+
+        #endregion
     }
 }
